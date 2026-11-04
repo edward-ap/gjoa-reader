@@ -251,7 +251,7 @@
 .dui-color-picker__clear:hover {
   background: var(--dui-button-bg-hover);
 }
-/* Popup surfaces follow the active Dense UI theme; channel colors are accents. */
+/* Popup surfaces follow the active Tæt UI theme; channel colors are accents. */
 .dui-color-picker__panel { color:var(--dui-color-text); background:var(--dui-color-surface); }
 .dui-channel-color__panel { grid-template-columns:90px minmax(0,1fr); gap:12px; }
 .dui-channel-color__sample { display:flex; flex-direction:column; gap:8px; align-self:center; }

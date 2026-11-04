@@ -6,7 +6,7 @@ import {fixture} from './shell-fixture.mjs';
 test('independently mounted menus and import dialogs are destroyed with their screen', async () => {
   await fixture(async page => {
     const result = await page.evaluate(async () => {
-      const {Panel} = await import('dense-ui');
+      const {Panel} = await import('taet-ui');
       const {LibraryController} = await import('/library-controller.js');
       const owner = new Panel(document.body, {width:300,height:500});
       const library = new LibraryController(owner, async command => {

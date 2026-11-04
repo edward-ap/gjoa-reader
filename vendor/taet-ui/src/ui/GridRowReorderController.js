@@ -39,7 +39,7 @@ export class GridRowReorderController {
     if (!g?._canReorderRows() || !hit?.item) { event.preventDefault(); return; }
     this.state = { ids: this.ids(hit.item) };
     event.stopPropagation();
-    event.dataTransfer?.setData('text/plain', 'Dense UI rows');
+    event.dataTransfer?.setData('text/plain', 'Tæt UI rows');
     if (event.dataTransfer) event.dataTransfer.effectAllowed = 'move';
     // Projection/data changes cancel the gesture; scrolling does not.
     for (const model of [g.data, g.view, g.groups]) {

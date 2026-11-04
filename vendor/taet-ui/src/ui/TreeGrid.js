@@ -2672,6 +2672,17 @@ function compareTreeValues(left, right, direction) {
 
   else if (typeof left === "number" && typeof right === "number") result = left - right;
 
+  else if (left instanceof Date && right instanceof Date) {
+
+    const leftTime = left.getTime(), rightTime = right.getTime();
+
+    // Invalid dates retain the legacy string fallback; do not coerce mixed values.
+    result = Number.isFinite(leftTime) && Number.isFinite(rightTime)
+
+      ? leftTime - rightTime : compareGridStrings(left, right);
+
+  }
+
   else result = compareGridStrings(left, right);
 
   return direction === "desc" ? -result : result;

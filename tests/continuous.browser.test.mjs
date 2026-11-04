@@ -50,7 +50,7 @@ test('continuous host: pixel continuity, variable geometry, owned eviction and s
     const errors = []; page.on('pageerror', e => errors.push(e.message));
     await page.evaluate(async () => {
       const { ReaderViewHost } = await import('./reader-view-host.js');
-      const { Panel } = await import('dense-ui');
+      const { Panel } = await import('taet-ui');
       window.owner = new Panel(document.body, { width: 800, height: 600 });
       owner.element.style.cssText += ';position:fixed;inset:0;z-index:9999';
       window.host = new ReaderViewHost(); owner.add(host); window.renders = []; window.images = [];

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 // Derived from Dense UI; copyright (c) 2026 Edward Aponasko.
 // See LICENSE and provenance.json beside this local extension.
-import { BaseControl } from 'dense-ui/foundation';
-import type { BaseControlOptions, ControlEvent, EventHandler, MutationOptions } from 'dense-ui/foundation';
+import { BaseControl } from 'taet-ui/foundation';
+import type { BaseControlOptions, ControlEvent, EventHandler, MutationOptions } from 'taet-ui/foundation';
 
 export interface Point { x: number; y: number }
 export interface RasterSize { width: number; height: number }

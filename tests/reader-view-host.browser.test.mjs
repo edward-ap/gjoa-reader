@@ -26,7 +26,7 @@ test('real host: fit/resize, native scroll, pan sync, manual scale, lifecycle an
     // Do not use the app controller: exercise the actual host with a tiny test raster.
     await page.evaluate(async () => {
       const { ReaderViewHost } = await import('./reader-view-host.js');
-      const { Panel } = await import('dense-ui');
+      const { Panel } = await import('taet-ui');
       window.testOwner = new Panel(document.body, { width: 800, height: 600 });
       window.testHost = new ReaderViewHost();
       testOwner.add(testHost);

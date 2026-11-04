@@ -1,8 +1,8 @@
 import { defaults, applyChrome, settingsDialog, disposeTheme } from './settings.js';
 import { t, setLocale, resolveLocale, getLocale } from './i18n/i18n.js';
 import { LibraryController } from './library-controller.js';
-import { IconButton, ReadonlyText, TextInput, Panel, Layout, Toolbar } from 'dense-ui';
-import { HidingSidePanel, EdgeActionLayer, ContextMenu, ToggleIconButton } from 'dense-ui/experimental';
+import { IconButton, ReadonlyText, TextInput, Panel, Layout, Toolbar } from 'taet-ui';
+import { HidingSidePanel, EdgeActionLayer, ContextMenu, ToggleIconButton } from 'taet-ui/experimental';
 import { edgeHint, observeEdgeHints } from './edge-hints.js';
 import './icons.js';
 import { ReaderViewHost } from './reader-view-host.js';

@@ -1,4 +1,4 @@
-import {BaseControl} from 'dense-ui/foundation';
+import {BaseControl} from 'taet-ui/foundation';
 import {RenderViewport, type RasterRenderer} from '../../extensions/viewport/index.js';
 import {Painter, type PainterDocument} from '../../extensions/painter/index.js';
 const renderer:RasterRenderer=async request=>{request.signal.throwIfAborted();return {image:new OffscreenCanvas(request.targetWidth,request.targetHeight)};};

@@ -29,9 +29,9 @@ All listed font software remains under **SIL Open Font License1.1**, separately 
 | src-tauri/assets/fonts/Literata-BoldItalic.ttf | Literata | OFL-1.1 | src-tauri/assets/fonts/Literata-OFL.txt |
 | src-tauri/assets/fonts/Literata-Italic.ttf | Literata | OFL-1.1 | src-tauri/assets/fonts/Literata-OFL.txt |
 | src-tauri/assets/fonts/Literata-Regular.ttf | Literata | OFL-1.1 | src-tauri/assets/fonts/Literata-OFL.txt |
-| vendor/dense-ui/src/ui/fonts/NotoSans-variable.woff2 | Noto Sans UI | OFL-1.1 | vendor/dense-ui/src/ui/fonts/NotoSans-OFL.txt |
+| vendor/taet-ui/src/ui/fonts/NotoSans-variable.woff2 | Noto Sans UI | OFL-1.1 | vendor/taet-ui/src/ui/fonts/NotoSans-OFL.txt |
 
-Publication-font provenance is in src-tauri/assets/fonts/provenance.json, symbols-provenance.json, Literata.provenance.json, NotoSansMono.provenance.md and NotoSerifJP.provenance.md. UI font conversion provenance is vendor/dense-ui/src/ui/fonts/README.md. Font byte hashes and exact source URLs are in asset-license-manifest.json. Lossless executable compression/cache extraction does not relicense font software.
+Publication-font provenance is in src-tauri/assets/fonts/provenance.json, symbols-provenance.json, Literata.provenance.json, NotoSansMono.provenance.md and NotoSerifJP.provenance.md. UI font conversion provenance is vendor/taet-ui/src/ui/fonts/README.md. Font byte hashes and exact source URLs are in asset-license-manifest.json. Lossless executable compression/cache extraction does not relicense font software.
 
 ## PDFium and component notices
 
@@ -59,9 +59,9 @@ The ICU aggregate contains dictionary-data terms including IPADIC/ICOT and ident
 
 Recorded local file hashes and the official release archive digest were checked during preparation. The DLL is unsigned; the existing audit is a provenance/hash consistency check, not an independent rebuild/signature attestation or an assurance that every compiled component was mapped independently to source. Redistribution rights come from the licenses, not from hash matching.
 
-## Dense UI and local extensions
+## Tæt UI and local extensions
 
-Dense UI is pinned to [commit7e4b2983bcac5c640de250bc7fa1b17d8e6d369e](https://github.com/edward-ap/dense-ui/tree/7e4b2983bcac5c640de250bc7fa1b17d8e6d369e). Preserve vendor/dense-ui/LICENSE and THIRD_PARTY_NOTICES.md. Local viewport and Painter derivatives preserve extensions/viewport/LICENSE and extensions/painter/LICENSE, plus their source-provenance records. All are original upstream MIT notices; the application root license does not replace these copyrights. UI-font OFL and upstream color-math attribution remain separate.
+Tæt UI is pinned to [commit bfd3ddcddf1cdc539397e5d2ac5ed3cb976e72c2](https://github.com/edward-ap/taet-ui/tree/bfd3ddcddf1cdc539397e5d2ac5ed3cb976e72c2). Preserve vendor/taet-ui/LICENSE and THIRD_PARTY_NOTICES.md. Local viewport and Painter derivatives preserve extensions/viewport/LICENSE and extensions/painter/LICENSE, plus their source-provenance records. All are original upstream MIT notices; the application root license does not replace these copyrights. UI-font OFL and upstream color-math attribution remain separate.
 
 ## Schemas
 
@@ -86,7 +86,7 @@ The following source files should be copied without altering their legal text to
 | src-tauri/assets/fonts/NotoSansMono-OFL.txt | licenses/assets/fonts/NotoSansMono-OFL.txt |
 | src-tauri/assets/fonts/NotoSerifJP-OFL.txt | licenses/assets/fonts/NotoSerifJP-OFL.txt |
 | src-tauri/assets/fonts/Literata-OFL.txt | licenses/assets/fonts/Literata-OFL.txt |
-| vendor/dense-ui/src/ui/fonts/NotoSans-OFL.txt | licenses/assets/ui-fonts/NotoSans-OFL.txt |
+| vendor/taet-ui/src/ui/fonts/NotoSans-OFL.txt | licenses/assets/ui-fonts/NotoSans-OFL.txt |
 | src-tauri/assets/pdfium/LICENSE | licenses/pdfium/LICENSE |
 | src-tauri/assets/pdfium/licenses/pdfium.txt | licenses/pdfium/licenses/pdfium.txt |
 | src-tauri/assets/pdfium/licenses/abseil.txt | licenses/pdfium/licenses/abseil.txt |
@@ -104,9 +104,9 @@ The following source files should be copied without altering their legal text to
 | src-tauri/assets/pdfium/licenses/zlib.txt | licenses/pdfium/licenses/zlib.txt |
 | src-tauri/assets/pdfium/VERSION | licenses/pdfium/VERSION |
 | src-tauri/assets/pdfium/provenance.json | licenses/pdfium/provenance.json |
-| vendor/dense-ui/LICENSE | licenses/dense-ui/LICENSE |
+| vendor/taet-ui/LICENSE | licenses/taet-ui/LICENSE |
 | extensions/viewport/LICENSE | licenses/extensions/viewport/LICENSE |
 | extensions/painter/LICENSE | licenses/extensions/painter/LICENSE |
-| vendor/dense-ui/THIRD_PARTY_NOTICES.md | licenses/dense-ui/THIRD_PARTY_NOTICES.md |
+| vendor/taet-ui/THIRD_PARTY_NOTICES.md | licenses/taet-ui/THIRD_PARTY_NOTICES.md |
 
 Merge the separate Rust/native dependency notice inventory as well. The absence of a blanket source-offer obligation in the inspected asset notices is not an assertion about every Rust/native dependency or every future build/tool configuration. Do not redistribute additional tools/browser/runtime installers merely because they are present on a build machine.

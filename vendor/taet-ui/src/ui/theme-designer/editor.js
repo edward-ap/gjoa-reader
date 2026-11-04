@@ -18,13 +18,13 @@ const normalize=input=>editorDefinition(input,maxColors);
 const find=selector=>root.querySelector(selector.replace(/#([\w-]+)/g,'[data-designer-ref="$1"]'))??root.querySelector(selector);
 const body=options.body??root,storage=options.storage??null,hostConnection=createHostConnection(options.host);
 const getPreview=()=>options.preview??preview.contentWindow;
-const owners=[],fields={},storageKey='dense-ui.theme-editor.v1';
+const owners=[],fields={},storageKey='taet-ui.theme-editor.v1',legacyStorageKey='dense-ui.theme-editor.v1';
 let lastReported='',changeMeta={origin:'api',userAction:false};
 let definition=loadPreset(presets[0]),result,frame=null,disposed=false,custom=[],selected='builtin:0',inspectedRay='a';
 const notice=createNotice(root,options.notificationDuration);owners.push(notice);
 const preview=find('#preview');
 function attempt(action){try{action();}catch(e){notice.show(e.message);}}
-try{const saved=JSON.parse(storage?.getItem(storageKey)??'[]');if(!Array.isArray(saved)||saved.length>50)throw Error('Invalid preset storage');custom=saved.map(p=>{if(typeof p.name!=='string'||typeof p.id!=='string')throw Error('Invalid preset');return {id:p.id,name:p.name.slice(0,80),deleted:p.deleted===true,definition:normalize(p.definition)};});}catch(e){notice.show(`Saved presets unavailable: ${e.message}`);}
+try{const saved=JSON.parse(storage?.getItem(storageKey)??storage?.getItem(legacyStorageKey)??'[]');if(!Array.isArray(saved)||saved.length>50)throw Error('Invalid preset storage');custom=saved.map(p=>{if(typeof p.name!=='string'||typeof p.id!=='string')throw Error('Invalid preset');return {id:p.id,name:p.name.slice(0,80),deleted:p.deleted===true,definition:normalize(p.definition)};});}catch(e){notice.show(`Saved presets unavailable: ${e.message}`);}
 const own=c=>(owners.push(c),c);
 own(new LabelText(find('#distribution-caption'),{text:'Distribution'}));
 own(new LabelText(find('#theme-caption'),{text:'Theme'}));

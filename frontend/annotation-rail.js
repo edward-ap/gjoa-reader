@@ -1,5 +1,5 @@
-import { IconButton } from 'dense-ui';
-import { ColorPicker } from 'dense-ui/experimental';
+import { IconButton } from 'taet-ui';
+import { ColorPicker } from 'taet-ui/experimental';
 import { t } from './i18n/i18n.js';
 
 // Reader-only edge palette. It is a sibling of the workspace, never page content.

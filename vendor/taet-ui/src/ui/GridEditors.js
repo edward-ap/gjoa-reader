@@ -33,13 +33,27 @@ export class ControlCellEditor {
     this._queuePopupPosition = () => queueMicrotask(this._positionPopup);
     this._controlClick = event => {
       this._queuePopupPosition();
-      // WebKit does not focus checkboxes on pointer activation. A mounted cell
-      // editor still owns Enter/Tab after its native toggle has been clicked.
+      const control = this.control, element = this.element;
+      if (!this._gridKeyHandler || this.destroyed || !(control instanceof CheckBox || control instanceof Switch) ||
+          control.disabled || control.isReadOnly() || !element?.contains(event.target)) return;
+      if (this.destroyed || control.destroyed || this.control !== control || this.element !== element) return;
+      const input = control.getFocusElement();
+      if (this.destroyed || control.destroyed || this.control !== control || this.element !== element || !input) return;
+      const interactive = event.target.closest?.('a,button,input,select,textarea,summary,[contenteditable="true"]');
+      if (control instanceof Switch && element.tagName === "LABEL" && input.tagName === "INPUT" &&
+          input.type === "checkbox" && event.target !== input &&
+          (!interactive || !element.contains(interactive)) && !event.defaultPrevented) {
+        // WebKit focuses the input AFTER forwarding a label click. Own that
+        // forwarding in a cell editor so application input handlers keep focus.
+        event.preventDefault();
+        input.click();
+        return; // input handlers may have destroyed or replaced this session.
+      }
+      // WebKit may leave native checkbox activation unfocused. Apply the
+      // fallback only after input handlers, and only while focus is unclaimed.
       const active = document.activeElement;
-      if ((active === document.body || active === this.context?.grid?.element || active === this.element?.closest(".dui-grid__body")) &&
-          this._gridKeyHandler && !this.destroyed && (this.control instanceof CheckBox || this.control instanceof Switch) &&
-          !this.control.disabled && !this.control.isReadOnly() && this.element?.contains(event.target) &&
-          !this.element.contains(document.activeElement)) this.control.focus({ preventScroll: true });
+      if (event.target === input && (active === document.body || active === this.context?.grid?.element ||
+          active === element.closest(".dui-grid__body")) && !element.contains(active)) control.focus({ preventScroll: true });
     };
     this._gridKeyHandler = null;
     this._rootKeyDown = event => {

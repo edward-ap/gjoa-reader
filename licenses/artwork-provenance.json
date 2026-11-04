@@ -322,9 +322,9 @@
     },
     "ui": {
       "family": "Noto Sans",
-      "file": "vendor/dense-ui/src/ui/fonts/NotoSans-variable.woff2",
+      "file": "vendor/taet-ui/src/ui/fonts/NotoSans-variable.woff2",
       "license": "OFL-1.1",
-      "evidence": "vendor/dense-ui/src/ui/styles/fonts.css:2"
+      "evidence": "vendor/taet-ui/src/ui/styles/fonts.css:2"
     },
     "emblem": {
       "file": "src-tauri/assets/branding/publisher-ae.png",

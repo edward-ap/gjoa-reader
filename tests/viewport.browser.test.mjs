@@ -37,9 +37,9 @@ test('viewport browser contract on the pinned published foundation', async t => 
   assert.ok(importmap,'Build the application before browser tests');
   const map=JSON.parse(importmap);
   for(const key of Object.keys(map.imports)) map.imports[key]='/'+map.imports[key].replace(/^\.\//,'');
-  assert.ok(map.imports['dense-ui/foundation'],'One framework bundle must expose foundation');
-  const frameworkCSS=[...appHTML.matchAll(/href="([^"]+\.css)"/g)].map(m=>m[1]).find(p=>/dense-ui/.test(p));
-  assert.ok(frameworkCSS,'Matching Dense CSS must be included');
+  assert.ok(map.imports['taet-ui/foundation'],'One framework bundle must expose foundation');
+  const frameworkCSS=[...appHTML.matchAll(/href="([^"]+\.css)"/g)].map(m=>m[1]).find(p=>/taet-ui/.test(p));
+  assert.ok(frameworkCSS,'Matching Tæt CSS must be included');
   const html='<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="/'+frameworkCSS.replace(/^\.\//,'')+'">'+
     '<link rel="stylesheet" href="/extensions/viewport/viewport.css"><style>body{margin:16px}#host{width:602px;height:402px}</style><div id="host"></div>'+
     '<script type="importmap">'+JSON.stringify(map)+'</script><script type="module">'+fixtureScript+'</script>';

@@ -1,6 +1,7 @@
 const stroke = { fill: "none", stroke: "currentColor", "stroke-width": 2, "stroke-linecap": "round", "stroke-linejoin": "round" };
 
 export const coreIcons = {
+  "more-vertical": { viewBox: "0 0 6 18", nodes: [3, 9, 15].map(cy => ["circle", { cx: 3, cy, r: 1, fill: "currentColor" }]) },
   "chart-select": icon([path("M5 3v17l5-5 4 7 3-2-4-6h7Z")]),
   "chart-line": icon([path("M4 19 20 5"),circle(4,19,2),circle(20,5,2)]),
   "chart-horizontal": icon([path("M3 12h18")]),

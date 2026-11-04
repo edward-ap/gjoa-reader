@@ -1,7 +1,7 @@
 import { t, denseText } from './i18n/i18n.js';
 import { ImportStageAdapter } from './import-stage-adapter.js';
-import { Panel, Button, ReadonlyText, TextInput } from 'dense-ui';
-import { TreeExplorer, FileUpload, Dialog, FieldGroup, List, ContextMenu } from 'dense-ui/experimental';
+import { Panel, Button, ReadonlyText, TextInput } from 'taet-ui';
+import { TreeExplorer, FileUpload, Dialog, FieldGroup, List, ContextMenu } from 'taet-ui/experimental';
 import { libraryRows, moveTarget, uploadFile, progressPercent, isCompleted, MAX_SOURCE_BYTES } from './library-model.js';
 
 export class LibraryController {

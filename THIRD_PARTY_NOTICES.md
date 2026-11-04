@@ -11,11 +11,11 @@ GjøaReader original author-owned code is MIT, Copyright(c)2026 Edward Aponasko;
 
 - Windows WebView2 SDK loader: [licenses/WEBVIEW2.md](licenses/WEBVIEW2.md), with the exact official Microsoft LICENSE/NOTICE and payload match in licenses/webview2/. The SDK loader is separate from wrapper MIT; browser/runtime installers are not bundled.
 
-## Dense UI and local extensions
+## Tæt UI and local extensions
 
-- Upstream Dense UI: [vendor/dense-ui/LICENSE](vendor/dense-ui/LICENSE), [THIRD_PARTY_NOTICES](vendor/dense-ui/THIRD_PARTY_NOTICES.md), exact commit recorded in vendor/dense-ui/pin.json.
+- Upstream Tæt UI: [vendor/taet-ui/LICENSE](vendor/taet-ui/LICENSE), [THIRD_PARTY_NOTICES](vendor/taet-ui/THIRD_PARTY_NOTICES.md), exact commit recorded in vendor/taet-ui/pin.json.
 - Viewport and Painter: [extensions/viewport/LICENSE](extensions/viewport/LICENSE), [extensions/painter/LICENSE](extensions/painter/LICENSE), with each provenance.json.
-- UI Noto Sans: vendor/dense-ui/src/ui/fonts/NotoSans-OFL.txt. Its OFL remains separate from MIT.
+- UI Noto Sans: vendor/taet-ui/src/ui/fonts/NotoSans-OFL.txt. Its OFL remains separate from MIT.
 
 ## Native libraries, fonts, specifications and artwork
 

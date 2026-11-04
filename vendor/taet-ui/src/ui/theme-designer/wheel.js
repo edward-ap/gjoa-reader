@@ -3,7 +3,7 @@ import {spectrumColors} from './wheel-spectrum.js';
 import {sourceColor,sectorWidth,MAX_CHROMA} from './base-color.js';
 import {hues} from './harmony.js';
 import {dragRay} from './wheel-geometry.js';
-// Custom visualization only: all ordinary controls are Dense UI instances.
+// Custom visualization only: all ordinary controls are Tæt UI instances.
 export class HarmonyWheel {
  constructor(canvas,onChange,onSelect=()=>{},onHover=()=>{}) {
   this.onHover=onHover;this.canvas=canvas;this.onChange=onChange;this.onSelect=onSelect;this.abort=new AbortController();

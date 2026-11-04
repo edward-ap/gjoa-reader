@@ -1,7 +1,7 @@
 # Local raster viewport extension
 
-This directory contains the source-neutral raster extension omitted from Dense UI
-0.6.0-rc.1. It is application-local and MIT-licensed; original relative source names
+This directory documents the application-local, source-neutral raster extension
+used with published Tæt UI. Its extraction origin is the archived Dense UI component. It is application-local and MIT-licensed; original relative source names
 and SHA-256 values are recorded in provenance.json. Nothing is fetched from an
 archive at runtime. Import RenderViewport from extensions/viewport/index.js and
 include viewport.css. The module does not import Painter or reader/native code.
@@ -9,7 +9,7 @@ include viewport.css. The module does not import Painter or reader/native code.
 ## Public foundation boundary
 
 Only BaseControl, LifecycleError and normalizeMutationOptions from the published
-dense-ui/foundation entry are used. BaseControl lifecycle, events and disposables
+taet-ui/foundation entry are used. BaseControl lifecycle, events and disposables
 are public. Resize is observed through events rather than a private resize hook.
 Private mutation/assert/event binding methods and options writes were removed.
 The build must share one foundation instance across the UI and both extensions.

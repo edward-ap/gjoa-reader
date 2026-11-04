@@ -1,9 +1,9 @@
 # GjøaReader working boundaries
 
-This is an independent Rust/Tauri application. Keep frontend framework-free and runtime dependency-free apart from the pinned Dense UI. Read README.md, docs/APP_CONTRACTS.md, docs/NATIVE_BOUNDARIES.md and the relevant extension contract before changing behavior.
+This is an independent Rust/Tauri application. Keep frontend framework-free and runtime dependency-free apart from the pinned Tæt UI. Read README.md, docs/APP_CONTRACTS.md, docs/NATIVE_BOUNDARIES.md and the relevant extension contract before changing behavior.
 
-- vendor/dense-ui is the exact public upstream pin; use scripts/vendor-dense-ui.mjs to verify/fetch/update. Do not modify its core to work around application assumptions.
-- Build one framework module. All browser aliases share identity. Extensions import public dense-ui/foundation only; no private source paths or old framework instance.
+- vendor/taet-ui is the exact public upstream pin; use scripts/vendor-taet-ui.mjs to verify/fetch/update. Do not modify its core to work around application assumptions.
+- Build one framework module. All browser aliases share identity. Extensions import public taet-ui/foundation only; no private source paths or old framework instance.
 - RenderViewport and Painter stay independent local modules with types/styles/provenance/MIT notices. Application hosts/cache/palette/identity/native bridge remain application-owned.
 - Formats enter native DocumentFormatHandler/registry/publication. No format branches in the shell, hosts, extension, spread layout or raster IPC.
 - Preserve immutable Source/Edition compatibility, font/profile identities, bounded binary RGBA IPC, three-page Continuous cache, accepted-pixel progress and Painter v1 persistence. Do not change publication/storage policies as part of UI work.

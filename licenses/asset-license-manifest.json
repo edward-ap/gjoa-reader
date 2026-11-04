@@ -164,12 +164,12 @@
       "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
     },
     {
-      "path": "vendor/dense-ui/src/ui/fonts/NotoSans-variable.woff2",
+      "path": "vendor/taet-ui/src/ui/fonts/NotoSans-variable.woff2",
       "family": "Noto Sans UI",
       "bytes": 918168,
       "sha256": "7ed77c38412a34312e975abcd5eb2b2848a596f1921393f925a53a27938eb116",
       "license": "OFL-1.1",
-      "licensePath": "vendor/dense-ui/src/ui/fonts/NotoSans-OFL.txt",
+      "licensePath": "vendor/taet-ui/src/ui/fonts/NotoSans-OFL.txt",
       "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosans/NotoSans%5Bwdth,wght%5D.ttf",
       "provenanceVerifiedHash": true,
       "recordedModification": "Container-only WOFF2 conversion documented by upstream; canonical TTF source commit not pinned in font README",
@@ -317,11 +317,11 @@
   },
   "code": [
     {
-      "component": "Dense UI",
+      "component": "Tæt UI",
       "license": "MIT",
-      "notice": "vendor/dense-ui/LICENSE",
+      "notice": "vendor/taet-ui/LICENSE",
       "noticeSha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3",
-      "source": "https://github.com/edward-ap/dense-ui/tree/7e4b2983bcac5c640de250bc7fa1b17d8e6d369e",
+      "source": "https://github.com/edward-ap/taet-ui/tree/bfd3ddcddf1cdc539397e5d2ac5ed3cb976e72c2",
       "obligations": "Include copyright and permission in copies/substantial portions; preserve upstream THIRD_PARTY_NOTICES, including separate UI-font OFL and color-math attribution"
     },
     {
@@ -868,7 +868,7 @@
         "sha256": "8742963604cd89dc81437811a850018fc03b2bfad686d7422c8235967c87614e"
       },
       {
-        "sourcePath": "vendor/dense-ui/src/ui/fonts/NotoSans-OFL.txt",
+        "sourcePath": "vendor/taet-ui/src/ui/fonts/NotoSans-OFL.txt",
         "distributionPath": "licenses/assets/ui-fonts/NotoSans-OFL.txt",
         "purpose": "Complete font copyright and OFL-1.1 text",
         "bytes": 4396,
@@ -994,8 +994,8 @@
         "sha256": "739c3242f3957695d61d91f6e5527999dcc7a29610cf435a4a176d0988939646"
       },
       {
-        "sourcePath": "vendor/dense-ui/LICENSE",
-        "distributionPath": "licenses/dense-ui/LICENSE",
+        "sourcePath": "vendor/taet-ui/LICENSE",
+        "distributionPath": "licenses/taet-ui/LICENSE",
         "purpose": "Original MIT copyright/permission/disclaimer",
         "bytes": 1072,
         "sha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3"
@@ -1015,11 +1015,11 @@
         "sha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3"
       },
       {
-        "sourcePath": "vendor/dense-ui/THIRD_PARTY_NOTICES.md",
-        "distributionPath": "licenses/dense-ui/THIRD_PARTY_NOTICES.md",
+        "sourcePath": "vendor/taet-ui/THIRD_PARTY_NOTICES.md",
+        "distributionPath": "licenses/taet-ui/THIRD_PARTY_NOTICES.md",
         "purpose": "Upstream attribution inventory and separate UI font/color-math notices",
-        "bytes": 2794,
-        "sha256": "9597fa51abfc594d8da7161c46abbc94faaf21e8a3969fe1d84fbf8cad41ccf5"
+        "bytes": 2788,
+        "sha256": "3680a40d743c8117fbaaa50ef4affc9d2f0538387ddeb45ae42e6ebb5650e63a"
       }
     ],
     "additionalRequiredScope": "Merge the separately prepared Rust/native license inventory and notices. Preserve no-endorsement/trademark/change-marking/patent terms as applicable. Do not ship build/test tools unless their separate redistribution terms are fulfilled.",
@@ -1350,9 +1350,9 @@
     },
     "ui": {
       "family": "Noto Sans",
-      "file": "vendor/dense-ui/src/ui/fonts/NotoSans-variable.woff2",
+      "file": "vendor/taet-ui/src/ui/fonts/NotoSans-variable.woff2",
       "license": "OFL-1.1",
-      "evidence": "vendor/dense-ui/src/ui/styles/fonts.css:2"
+      "evidence": "vendor/taet-ui/src/ui/styles/fonts.css:2"
     },
     "emblem": {
       "file": "src-tauri/assets/branding/publisher-ae.png",

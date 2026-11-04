@@ -1,5 +1,5 @@
 import { t, denseText } from './i18n/i18n.js';
-import { Panel } from 'dense-ui';
+import { Panel } from 'taet-ui';
 import { RenderViewport } from '../extensions/viewport/index.js';
 import { PageWindowCache, pageWindow } from './page-window-cache.js';
 

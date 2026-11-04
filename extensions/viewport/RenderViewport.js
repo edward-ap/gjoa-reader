@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // Derived from Dense UI; copyright (c) 2026 Edward Aponasko.
 // See LICENSE and provenance.json beside this local extension.
-import { BaseControl, LifecycleError, normalizeMutationOptions } from "dense-ui/foundation";
+import { BaseControl, LifecycleError, normalizeMutationOptions } from "taet-ui/foundation";
 import { anchoredZoom, centeredView, clamp, constrainView, fitZoom, rasterTarget, resizedView, toContent, toViewport } from "./renderViewportGeometry.js";
 
 const MODES = new Set(["fit", "fit-width", "fit-height", "actual", "manual"]);

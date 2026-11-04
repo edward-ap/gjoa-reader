@@ -8,16 +8,17 @@
     "node": ">=22"
   },
   "scripts": {
-    "dense:verify": "node scripts/vendor-dense-ui.mjs --verify",
-    "dense:fetch": "node scripts/vendor-dense-ui.mjs --fetch",
     "build": "node scripts/build.mjs",
     "dev": "tauri dev",
     "desktop:build": "tauri build --no-bundle",
-    "test": "node scripts/build.mjs && node --experimental-loader ./scripts/dense-loader.mjs --test --test-concurrency=1 tests/*.test.mjs",
-    "test:unit": "node --experimental-loader ./scripts/dense-loader.mjs --test --test-concurrency=1 tests/*geometry.test.mjs tests/reader-state.test.mjs tests/reader-spread.test.mjs tests/raster-adapter.test.mjs tests/spread-renderer.test.mjs tests/page-window-cache.test.mjs",
+    "test": "node scripts/build.mjs && node --experimental-loader ./scripts/taet-loader.mjs --test --test-concurrency=1 tests/*.test.mjs",
+    "test:unit": "node --experimental-loader ./scripts/taet-loader.mjs --test --test-concurrency=1 tests/*geometry.test.mjs tests/reader-state.test.mjs tests/reader-spread.test.mjs tests/raster-adapter.test.mjs tests/spread-renderer.test.mjs tests/page-window-cache.test.mjs",
     "test:native": "node scripts/native-smoke.mjs",
     "test:types": "tsc -p tsconfig.extensions.json",
-    "test:native:release": "node scripts/native-smoke.mjs --release"
+    "test:native:release": "node scripts/native-smoke.mjs --release",
+    "taet:verify": "node scripts/vendor-taet-ui.mjs --verify",
+    "taet:fetch": "node scripts/vendor-taet-ui.mjs --fetch",
+    "test:native:formats": "node scripts/native-formats-smoke.mjs --release"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",

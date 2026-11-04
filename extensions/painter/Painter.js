@@ -1,4 +1,4 @@
-import {BaseControl} from 'dense-ui/foundation';
+import {BaseControl} from 'taet-ui/foundation';
 import {svgNode} from './svg.js';
 import {painterTools,painterClone,painterStyle,painterSize,painterTransform,painterDocument,painterBounds,painterRemap,painterClamp as clamp} from './painterGeometry.js';
 const USER={origin:'user',userAction:true};

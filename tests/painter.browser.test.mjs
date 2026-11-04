@@ -5,13 +5,13 @@ import {createServer} from 'node:http';
 import {readFile} from 'node:fs/promises';
 import {resolve, sep} from 'node:path';
 
-// Exercise the actual extension through the built application's ONE Dense UI
+// Exercise the actual extension through the built application's ONE Tæt UI
 // import map. This page supplies synthetic geometry, not a mocked Painter.
 test('local Painter browser interaction and codec contract', async t => {
   const root = resolve('dist');
   const index = await readFile(resolve(root, 'index.html'), 'utf8');
   const imports = JSON.parse(index.match(/<script type="importmap">(.*?)<\/script>/s)[1]).imports;
-  const css = index.match(/href="([^"]*dense-ui[^"<>]*\.css)"/)[1];
+  const css = index.match(/href="([^"]*taet-ui[^"<>]*\.css)"/)[1];
   const html = `<!doctype html><html><head><base href="/">
     <link rel="stylesheet" href="${css}"><link rel="stylesheet" href="/extensions/painter/styles.css">
     <script type="importmap">${JSON.stringify({imports})}</script></head><body class="dui-theme-light">

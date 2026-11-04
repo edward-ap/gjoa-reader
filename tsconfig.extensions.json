@@ -13,8 +13,8 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "dense-ui/foundation": [
-        "vendor/dense-ui/src/foundation/index.d.ts"
+      "taet-ui/foundation": [
+        "vendor/taet-ui/src/foundation/index.d.ts"
       ]
     }
   },

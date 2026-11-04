@@ -11,6 +11,7 @@ import { GridKeyboardController } from "./GridKeyboardController.js";
 import { GridSelectionController } from "./GridSelectionController.js";
 import { GridVirtualRenderer } from "./GridVirtualRenderer.js";
 import { gridIntrinsicWidth } from "./gridIntrinsicWidth.js";
+import { createIcon } from "./Icon.js";
 
 export class GridCore extends BaseControl {
   constructor(options = {}, coreOptions = {}) {
@@ -149,7 +150,7 @@ export class GridCore extends BaseControl {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "dui-grid__grid-menu-button";
-    button.textContent = "\u22ee";
+    button.append(createIcon("more-vertical"));
     button.title = "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u0442\u0430\u0431\u043b\u0438\u0446\u044b";
     button.setAttribute("aria-label", button.title);
     button.setAttribute("aria-haspopup", "menu");

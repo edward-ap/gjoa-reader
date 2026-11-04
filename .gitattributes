@@ -1,6 +1,6 @@
 * text=auto eol=lf
 # Exact upstream and legacy/extension provenance bytes must survive every checkout.
-vendor/dense-ui/** -text
+vendor/taet-ui/** -text
 extensions/** -text
 src-tauri/tests/fixtures/** -text
 src-tauri/assets/** -text

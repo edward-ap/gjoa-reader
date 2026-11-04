@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "packageVersion": "0.6.0-rc.4",
+  "changeSet": "branding-row-drag-label-2026-11-03",
+  "note": "User-authorized branding cleanup; reviewed Grid delta is the row-drag plain-text label only. Imported provenance and the other 46 candidate source hashes are preserved.",
+  "importManifestSha256": "9d32c9bcbbafcce32f04719b4b095b6c8b8bed1230ae7bc47aeff18bc3150d67",
+  "files": [
+    {
+      "path": "src/core/GridColumnModel.d.ts",
+      "importedSha256": "43eb338c4a4d3ce219aacc78ed77ea438034138f8e3708b4309443f8f4398108",
+      "sha256": "43eb338c4a4d3ce219aacc78ed77ea438034138f8e3708b4309443f8f4398108"
+    },
+    {
+      "path": "src/core/GridColumnModel.js",
+      "importedSha256": "a2751e8fb7074a2786fa7280efd50003798ab8b0442abee44e01b6de5551c641",
+      "sha256": "a2751e8fb7074a2786fa7280efd50003798ab8b0442abee44e01b6de5551c641"
+    },
+    {
+      "path": "src/core/GridDataProvider.d.ts",
+      "importedSha256": "7533d9bd5e51d048234ebea6847056761c878ac2c17f99902f0ca3ced1d7e537",
+      "sha256": "7533d9bd5e51d048234ebea6847056761c878ac2c17f99902f0ca3ced1d7e537"
+    },
+    {
+      "path": "src/core/GridDataProvider.js",
+      "importedSha256": "2e68dc16491c576c2814b0cebdb88e6d2cd686f84681ca484cb91dbea6ae298f",
+      "sha256": "2e68dc16491c576c2814b0cebdb88e6d2cd686f84681ca484cb91dbea6ae298f"
+    },
+    {
+      "path": "src/core/GridFilterModel.d.ts",
+      "importedSha256": "12c5dad5287c96d8ac74345c2ce53b8dddc016a6412b13427b25f23de15d4b4b",
+      "sha256": "12c5dad5287c96d8ac74345c2ce53b8dddc016a6412b13427b25f23de15d4b4b"
+    },
+    {
+      "path": "src/core/GridFilterModel.js",
+      "importedSha256": "b634604e2b6d5547008adb09c05aaff7dea5f30d26415e0262f475bdb9db1776",
+      "sha256": "5dd4a969783669577b82d9b49a7a8a05477ac7e268adfea5a8b9760ccd3f3644"
+    },
+    {
+      "path": "src/core/GridGroupModel.d.ts",
+      "importedSha256": "c723efbcf4b5d4e749b6c9109585cabe6044583e033ea3c0a6e2a1c7fdffc24f",
+      "sha256": "c723efbcf4b5d4e749b6c9109585cabe6044583e033ea3c0a6e2a1c7fdffc24f"
+    },
+    {
+      "path": "src/core/GridGroupModel.js",
+      "importedSha256": "f39c309995ae3d0d173539f446953abc47a7986407f5774c8d5f00663026ab81",
+      "sha256": "f39c309995ae3d0d173539f446953abc47a7986407f5774c8d5f00663026ab81"
+    },
+    {
+      "path": "src/core/GridSearchModel.d.ts",
+      "importedSha256": "a9a39631e992426a5d97ef195d8e97d027a1fedce9e350bcab8a2bb83c3fc0c8",
+      "sha256": "a9a39631e992426a5d97ef195d8e97d027a1fedce9e350bcab8a2bb83c3fc0c8"
+    },
+    {
+      "path": "src/core/GridSearchModel.js",
+      "importedSha256": "13bd03aea152dca652c6376df101d8871ecc39a6b2b87dfc611495fd62a573e0",
+      "sha256": "13bd03aea152dca652c6376df101d8871ecc39a6b2b87dfc611495fd62a573e0"
+    },
+    {
+      "path": "src/ui/grid-api.d.ts",
+      "importedSha256": "f84203207e2cd58cf38f155e28c618d2110cab77cd4f4cfa8320450e8c8d6528",
+      "sha256": "f84203207e2cd58cf38f155e28c618d2110cab77cd4f4cfa8320450e8c8d6528"
+    },
+    {
+      "path": "src/ui/grid-api.js",
+      "importedSha256": "e81e6a2d0683110975aff7a6b6c90eb77f8bc5faefdcc2168c23cb14120878d3",
+      "sha256": "e81e6a2d0683110975aff7a6b6c90eb77f8bc5faefdcc2168c23cb14120878d3"
+    },
+    {
+      "path": "src/ui/grid-columns.d.ts",
+      "importedSha256": "9ab4be82bef2ba8bcc64e110684a361a3c75d631d4a036ce84e7164f6ed8aaf7",
+      "sha256": "9ab4be82bef2ba8bcc64e110684a361a3c75d631d4a036ce84e7164f6ed8aaf7"
+    },
+    {
+      "path": "src/ui/grid-controllers.d.ts",
+      "importedSha256": "d5a3a8b594cf1c52d5584d400ca4134f58109cb60b4190ac385d51b9d8cd084b",
+      "sha256": "d5a3a8b594cf1c52d5584d400ca4134f58109cb60b4190ac385d51b9d8cd084b"
+    },
+    {
+      "path": "src/ui/grid-editor-contracts.d.ts",
+      "importedSha256": "e6398ea5197fb9b83f2e120105ab5d3f2243e2a2000f4b4b79e9c80eb9b8b90b",
+      "sha256": "997577e61823ef127b700d7a5355e4d8ddc5f6f75d261157bad1567813f56dd4"
+    },
+    {
+      "path": "src/ui/grid-editor-options.d.ts",
+      "importedSha256": "248269880ba7b41fbe9aac2c529883f08c6723eb8c2238d4302eee2ad22561ab",
+      "sha256": "248269880ba7b41fbe9aac2c529883f08c6723eb8c2238d4302eee2ad22561ab"
+    },
+    {
+      "path": "src/ui/grid-events.d.ts",
+      "importedSha256": "5e49ed77c18e54050ad8510027b842355bdc8d6c7e3518b239d03f65c3984ddb",
+      "sha256": "0989ad858b3f6fcdbdb68b917ea98fc9a5205eb130015e9efc5032601b844fc7"
+    },
+    {
+      "path": "src/ui/grid-options.d.ts",
+      "importedSha256": "1a524fd77bb1ada57fa7f7c592451d50fc76821862554b53a5b847073ef163a6",
+      "sha256": "e3cc34d3252af5cf33a38883fc4092590610d824d210438ec123cc9ec912bf13"
+    },
+    {
+      "path": "src/ui/Grid.d.ts",
+      "importedSha256": "92a5812425cfaf1d9b37f025ba5f872762f46561ded821e35ca0060240b1d96c",
+      "sha256": "070b55a7969dd8dfd6724d96b307d445cbd1a530a75a4edf89388c464418e329"
+    },
+    {
+      "path": "src/ui/Grid.js",
+      "importedSha256": "8784367eb52a32ad3799286b1a7730c3373ad60544e1f22f90bd3efa5a7e497a",
+      "sha256": "5d95c4de9e818c8fd8afa0d1414d93dd2e243f45a9da699817aeef20abdad62a"
+    },
+    {
+      "path": "src/ui/GridColumnReorderController.js",
+      "importedSha256": "66805751a1e0bbddf98dd411957f8b54a0dea6e866edca35d2775172add8cc54",
+      "sha256": "2c5eade62f5e93a7d9c7a27e6b948077cec1b84e9f7a6fdd23b9baf057832677"
+    },
+    {
+      "path": "src/ui/GridColumnResizer.js",
+      "importedSha256": "603a1ae606f842ca8016acafec4d80b3cd2ee85d2911281b1e286a2a58d9b693",
+      "sha256": "603a1ae606f842ca8016acafec4d80b3cd2ee85d2911281b1e286a2a58d9b693"
+    },
+    {
+      "path": "src/ui/GridCore.d.ts",
+      "importedSha256": "add4c7e74c35082802014f795501f98eef2a537de2eb9ae74c50171c80678515",
+      "sha256": "fe2cc9870b9ab583618755998baf4450fea3118a5b6ad5e2ea5d1c8a03b44631"
+    },
+    {
+      "path": "src/ui/GridCore.js",
+      "importedSha256": "c1da1e53a90741efa1714aabeef3495736d10f92a740c8416a0fe205eb2e2cea",
+      "sha256": "48de9b0a27092a03a783663ea9721b4f9bc6d95b3511424b6517b8eb62fbdd35"
+    },
+    {
+      "path": "src/ui/GridDefinition.d.ts",
+      "importedSha256": "09e3ede6fd6c140b600891ec1f0702cb8f95ccdefb518f5e925a1cb452a10f3c",
+      "sha256": "09e3ede6fd6c140b600891ec1f0702cb8f95ccdefb518f5e925a1cb452a10f3c"
+    },
+    {
+      "path": "src/ui/GridDefinition.js",
+      "importedSha256": "dbdc1aeabb509a8d53701f82f890bd825b81779db70a31e7b518488d8674f3c2",
+      "sha256": "dbdc1aeabb509a8d53701f82f890bd825b81779db70a31e7b518488d8674f3c2"
+    },
+    {
+      "path": "src/ui/gridEditorFactory.js",
+      "importedSha256": null,
+      "sha256": "babfe58949983e8a5311a59e577f95c4c66d13e22a258f41a1906ceadd3a97a1"
+    },
+    {
+      "path": "src/ui/gridEditorLifecycle.js",
+      "importedSha256": "df91b0bf754dddc34718ffc485b2a5c124ca037a5966f6cdebf55a569474e42f",
+      "sha256": "ebea1a8d259b3857307ece7a8ce4578c1aa5cd2159a40d371e25fd5929b7698a"
+    },
+    {
+      "path": "src/ui/GridEditors.d.ts",
+      "importedSha256": "5caee5c609f7835baf8a12e75fed14cf4fd2839fea9c75a7b4ba8624f741243c",
+      "sha256": "5caee5c609f7835baf8a12e75fed14cf4fd2839fea9c75a7b4ba8624f741243c"
+    },
+    {
+      "path": "src/ui/GridEditors.js",
+      "importedSha256": "40864c67ff0ea5dcbdde46faed0f940244e46b9e20cdfd8f72782af0f8923ff6",
+      "sha256": "df9a3edfcddda4d6c9f861834927f76a7b00d1323ff61e74aed9352f05ac5d57"
+    },
+    {
+      "path": "src/ui/GridExporters.d.ts",
+      "importedSha256": "de6254a2eb4e1d847fa17fc970eaaeedd657cf27aa513545080ea52a8eec3cb2",
+      "sha256": "de6254a2eb4e1d847fa17fc970eaaeedd657cf27aa513545080ea52a8eec3cb2"
+    },
+    {
+      "path": "src/ui/GridExporters.js",
+      "importedSha256": "bcd8c7cfb85c42c63f7aa06643656882bdf1ec5002a29dc3c3be96fb1733556c",
+      "sha256": "bcd8c7cfb85c42c63f7aa06643656882bdf1ec5002a29dc3c3be96fb1733556c"
+    },
+    {
+      "path": "src/ui/gridIntrinsicWidth.js",
+      "importedSha256": "af6ede1e4bc2922b8a4d6b9bcd9d4ea9ab36148d7e59ffaf0ee1bd4c44dc60bb",
+      "sha256": "af6ede1e4bc2922b8a4d6b9bcd9d4ea9ab36148d7e59ffaf0ee1bd4c44dc60bb"
+    },
+    {
+      "path": "src/ui/GridKeyboardController.js",
+      "importedSha256": "4bf4f3221caecfbae2c13989f1b74352754a1731fe2ef0c82bbc1b6d0702f8bd",
+      "sha256": "4bf4f3221caecfbae2c13989f1b74352754a1731fe2ef0c82bbc1b6d0702f8bd"
+    },
+    {
+      "path": "src/ui/GridPortProvider.js",
+      "importedSha256": "9ff560dc92909b5bd8bc5aeef6f3b7decc951f1a791eebdeebc98cf367b471f8",
+      "sha256": "9ff560dc92909b5bd8bc5aeef6f3b7decc951f1a791eebdeebc98cf367b471f8"
+    },
+    {
+      "path": "src/ui/GridPrimitives.js",
+      "importedSha256": "984f2764a955a31154d63e8e2684448e45c0eebcd5d324d8df2cca37bcfe6d9c",
+      "sha256": "984f2764a955a31154d63e8e2684448e45c0eebcd5d324d8df2cca37bcfe6d9c"
+    },
+    {
+      "path": "src/ui/GridRowReorderController.js",
+      "importedSha256": "dfb289d6824b2538ba98fae598a80aed5e6aecf5732231c31123506c6134bf42",
+      "sha256": "83b559b6e08b7413033402e734df54a41748b6ba9a957b11b1debd230dcfd75b"
+    },
+    {
+      "path": "src/ui/GridRowTransferController.js",
+      "importedSha256": null,
+      "sha256": "8c7f81379492176804323531e07c62fabd35647222a8304ed5adc77a22bc3f07"
+    },
+    {
+      "path": "src/ui/GridSelectionController.js",
+      "importedSha256": "6222148377cdf828f6a62a3d990eb451d682fbe915c3ecc86d3e9317e5afdc67",
+      "sha256": "6222148377cdf828f6a62a3d990eb451d682fbe915c3ecc86d3e9317e5afdc67"
+    },
+    {
+      "path": "src/ui/gridSelectionState.js",
+      "importedSha256": null,
+      "sha256": "a7e3ad53ad6e4b9329c3f3d3ab5a787e7db0143de1908f670b1489e273be03b1"
+    },
+    {
+      "path": "src/ui/gridStringCompare.js",
+      "importedSha256": "8ae6c19bdb406d6982360289a7ce09834b8f59d69f1a14e868a6ef6deeb4aa47",
+      "sha256": "8ae6c19bdb406d6982360289a7ce09834b8f59d69f1a14e868a6ef6deeb4aa47"
+    },
+    {
+      "path": "src/ui/GridTreeMove.js",
+      "importedSha256": null,
+      "sha256": "91a120e346ce84a9fb310c1f3ff9a27e26aee4c828feecff0127441a9b02c61d"
+    },
+    {
+      "path": "src/ui/GridVirtualRenderer.js",
+      "importedSha256": "96d853915ff937fa6d45b74516a21657fd288b0fb70d720d8ce47bd47eac5a21",
+      "sha256": "96d853915ff937fa6d45b74516a21657fd288b0fb70d720d8ce47bd47eac5a21"
+    },
+    {
+      "path": "src/ui/gridWindowGeometry.js",
+      "importedSha256": "48ef984c67dc8af60c12ce04ce507abbb18bff8011f23eda3b7827845cd588ec",
+      "sha256": "48ef984c67dc8af60c12ce04ce507abbb18bff8011f23eda3b7827845cd588ec"
+    },
+    {
+      "path": "src/ui/GridWindowRenderer.js",
+      "importedSha256": "a0739154a5ad0efee4477020beb2a16de07503caaa372ef474eac4ba1c5adbd4",
+      "sha256": "79e482be490ef07d1be207120f6c6492afbfe2e751bb34994cefdfcf9bfda896"
+    },
+    {
+      "path": "src/ui/TreeGrid.d.ts",
+      "importedSha256": "607eefa426cb9b06147ddff9bac4454b349cd3237c44b69a819bdbc2f3d12512",
+      "sha256": "09e444b3affd4fd2920cd34786d5003927770ea3555e9ec45eca3b79a4a086dc"
+    },
+    {
+      "path": "src/ui/TreeGrid.js",
+      "importedSha256": "4729994205f2fe3e2287f8931d41e813af328def5172fec05d5e8f60e31bdf11",
+      "sha256": "4f763242c1d6a174a1b55c9aefe6d7df8dc4ba3cb7104964d6e3141033881fc7"
+    }
+  ]
+}

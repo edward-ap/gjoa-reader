@@ -19,3 +19,7 @@
 /ui-settings.json
 /progress.json
 /annotations.sqlite*
+
+# Nested crate/tool outputs are never source distribution inputs.
+**/target/
+**/node_modules/

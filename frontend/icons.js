@@ -1,4 +1,4 @@
-import { icons } from 'dense-ui';
+import { icons } from 'taet-ui';
 const paths = {
   pen: 'M4 16L16 4l4 4L8 20l-5 1zM13 7l4 4',
   eraser: 'M3 14l9-10 9 8-8 9H9zM8 9l9 8M13 21h8',

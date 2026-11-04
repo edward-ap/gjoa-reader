@@ -2,7 +2,7 @@
 
 The shell is format-neutral. Rust Document/Library/publication services own source parsing,
 edition identity and storage. JavaScript receives bounded binary RGBA and metadata through
-Tauri; no decoder, publication or book persistence is part of Dense UI.
+Tauri; no decoder, publication or book persistence is part of Tæt UI.
 
 ## Rendering and annotations
 
@@ -15,7 +15,7 @@ Neither annotation marks nor appearance settings alter immutable edition layouts
 
 ## Public UI contracts
 
-All Dense imports resolve to one pinned framework instance. The local extensions are separate:
+All Tæt imports resolve to one pinned framework instance. The local extensions are separate:
 viewport does not import Painter. ThemeDesigner/ThemeApplicator remain the published editor and
 color service; the app confirms nested drafts and adapts persisted flat families to {tokens}.
 
@@ -30,14 +30,14 @@ semantics or revise this adapter when replacing the tree control.
 ## FileUpload stage presentation: explicit application DOM exception
 
 Publication stages appear directly above the progressbar of each queued file.
-Published Dense UI 0.6.0-rc.1 has no public row render/status slot. A small application
+Published Tæt UI 0.6.0-rc.4 has no public row render/status slot. A small application
 adapter supplies this missing presentation slot in frontend/import-stage-adapter.js.
 It is not an entirely public framework contract.
 
 The adapter uses only the pinned data-file-id entry identity, the row's ARIA
 progressbar and its immediate parent as insertion host. It inserts and owns one
 plain status node; it never mutates the framework's existing filename, indicator,
-progress, buttons or queue fields. Browse/queue/progress/cancel/retry remain Dense UI.
+progress, buttons or queue fields. Browse/queue/progress/cancel/retry remain Tæt UI.
 Each upload attempt gets an identity token; stale callbacks and settlement cannot
 remove another attempt/row. Public getEntries checks active status. Only the owned
 node is removed on completion/error/cancel/disposal. The short localized stage text
@@ -46,7 +46,7 @@ contains no filename, so a long name cannot push it out of view.
 This is a pinned semantic DOM dependency and must be covered by browser geometry,
 event-to-visible-text, multiple-entry, retry/cancel and stale-callback regressions.
 Replace this adapter with an upstream public row slot if one becomes available;
-do not add application publication behavior to the Dense UI core.
+do not add application publication behavior to the Tæt UI core.
 
 Close is disabled and beforeClose vetoes header/Escape while queued uploads or
 native jobs exist. Cancel all remains available; canceled native work can commit,

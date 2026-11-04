@@ -1,5 +1,5 @@
-import {BaseControl} from 'dense-ui/foundation';
-import type {BaseControlOptions,ControlEvent,MutationOptions} from 'dense-ui/foundation';
+import {BaseControl} from 'taet-ui/foundation';
+import type {BaseControlOptions,ControlEvent,MutationOptions} from 'taet-ui/foundation';
 export type PainterTool='select'|'area-select'|'eraser'|'pen'|'marker'|'line'|'arrow'|'rectangle'|'square'|'ellipse'|'circle'|'text';
 export interface PainterPoint {x:number;y:number}
 export interface PainterStyle {color:string;strokeWidth:number;opacity:number;fontSize:number;dash?:'solid'|'dashed'}

@@ -7,15 +7,15 @@ importing Painter does not import a raster provider, page cache, or native bridg
 
 The implementation was extracted from the archived Dense UI Painter under MIT.
 `extensions/painter/provenance.json` records original relative filenames and
-SHA-256 values, the adaptations, and the pinned Dense UI foundation revision.
+SHA-256 values, the adaptations, and the pinned Tæt UI foundation revision.
 The adjacent `LICENSE` retains the original notice. This is an application-local
-extension, not an API supplied by the published Dense UI 0.6.0 release.
+extension, not an API supplied by the published Tæt UI 0.6.0 release.
 
 ## Composition and ownership
 
-Painter extends only the public `BaseControl` exported by `dense-ui/foundation`.
+Painter extends only the public `BaseControl` exported by `taet-ui/foundation`.
 The application's import map must resolve that entry to the same module instance
-as its other Dense UI controls. The extension imports no private framework source
+as its other Tæt UI controls. The extension imports no private framework source
 paths, mutation hooks, disabled-state hooks, or destruction flags. It has its own
 mutation/teardown guard and uses public `enable`, `disable`, `mount`, `destroy`,
 `events`, and `disposables` contracts. The tiny local SVG builder creates trusted

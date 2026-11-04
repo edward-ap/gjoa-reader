@@ -4,9 +4,10 @@
   "copyright": "2026 Edward Aponasko",
   "origin": "Dense UI 0.5.0-rc.1 archived implementation (working-tree snapshot)",
   "foundation": {
-    "repository": "https://github.com/edward-ap/dense-ui",
-    "tag": "v0.6.0-rc.1",
-    "commit": "7e4b2983bcac5c640de250bc7fa1b17d8e6d369e"
+    "repository": "https://github.com/edward-ap/taet-ui",
+    "version": "0.6.0-rc.4",
+    "tag": "v0.6.0-rc.4",
+    "commit": "bfd3ddcddf1cdc539397e5d2ac5ed3cb976e72c2"
   },
   "originalFiles": [
     {
@@ -43,16 +44,17 @@
     }
   ],
   "adaptations": [
-    "Import BaseControl only from public dense-ui/foundation",
+    "Import BaseControl only from public taet-ui/foundation",
     "Local SVG helper; no private framework source imports",
     "Own mutation/teardown guard and public enable/disable overrides replace private baseline hooks",
     "Document logical coordinates, detached v1 changes, gesture/history and ownership invariants",
-    "Normalize local extension files to LF for reproducible source transport; original hashes retain archived bytes"
+    "Normalize local extension files to LF for reproducible source transport; original hashes retain archived bytes",
+    "Tæt migration changes only public foundation imports; geometry, lifecycle, resource ownership and saved codec stay unchanged"
   ],
   "deliveredFiles": [
     {
       "file": "Painter.js",
-      "sha256": "c80884ae0705a605a14826a4bbf8b2d6b8c021b6f68fa11c173e3df0b5011749"
+      "sha256": "ab0f8a07088abe11ea36bb51c4578fc98567a4cb59e992fa223ca31677bec98d"
     },
     {
       "file": "painterGeometry.js",
@@ -80,7 +82,12 @@
     },
     {
       "file": "Painter.d.ts",
-      "sha256": "447cd5a32859bda4c90cee93396bd644ab97011705ff453feb5ba0dda6c7f2ee"
+      "sha256": "3e284c64fd739e2d8528867cc6938818fc475c6e14d87a6c958ee694e2ce80c1"
     }
-  ]
+  ],
+  "previousFoundation": {
+    "repository": "https://github.com/edward-ap/dense-ui",
+    "tag": "v0.6.0-rc.1",
+    "commit": "7e4b2983bcac5c640de250bc7fa1b17d8e6d369e"
+  }
 }

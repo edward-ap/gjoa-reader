@@ -1,17 +1,27 @@
 {
-  "repository": "https://github.com/edward-ap/dense-ui",
-  "version": "0.6.0-rc.1",
-  "tag": "v0.6.0-rc.1",
-  "commit": "7e4b2983bcac5c640de250bc7fa1b17d8e6d369e",
-  "archive": "https://codeload.github.com/edward-ap/dense-ui/tar.gz/7e4b2983bcac5c640de250bc7fa1b17d8e6d369e",
+  "repository": "https://github.com/edward-ap/taet-ui",
+  "version": "0.6.0-rc.4",
+  "tag": "v0.6.0-rc.4",
+  "commit": "bfd3ddcddf1cdc539397e5d2ac5ed3cb976e72c2",
+  "delivery": "published npm tarball",
+  "archive": "https://registry.npmjs.org/taet-ui/-/taet-ui-0.6.0-rc.4.tgz",
+  "integrity": "sha512-xCPj/a/j++v19OJYYZdzH6f3CyeHLC8lnHLoT2KIJk6wW3T/xViUISZyeYyKYVlH6KRL8COMnGym1DQDM+QAWQ==",
   "files": {
     "LICENSE": {
       "bytes": 1072,
       "sha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3"
     },
     "package.json": {
-      "bytes": 3775,
-      "sha256": "3f12e65d9ea098fb7542c765847e78d363585724fbdeb5ba377328fcf4d341c0"
+      "bytes": 4260,
+      "sha256": "273208b7dbaaa668579dd5824718c5129288a57267bf59c94642f45cdb677919"
+    },
+    "provenance/grid-candidate.json": {
+      "bytes": 11306,
+      "sha256": "4037a8d23461774ea579a380515fe1ecb5fa46920770d28f29dfbc08a1be4a27"
+    },
+    "provenance/source-snapshot.json": {
+      "bytes": 151186,
+      "sha256": "9d32c9bcbbafcce32f04719b4b095b6c8b8bed1230ae7bc47aeff18bc3150d67"
     },
     "src/advanced/index.d.ts": {
       "bytes": 1009,
@@ -374,8 +384,8 @@
       "sha256": "779cbee30da1f82e69412e85cfae87761df6a6469b85694d35c059d363c80245"
     },
     "src/ui/dense.css": {
-      "bytes": 1329,
-      "sha256": "f788990a089f19b5933f218d6c7944e2e399dac0dec44707b45d80f7a8162c30"
+      "bytes": 97,
+      "sha256": "0a4447bbd0992b4cb7dc64b6f59ce3f42e1e6417cee77afc579538292a2ff608"
     },
     "src/ui/Dialog.js": {
       "bytes": 9038,
@@ -410,8 +420,8 @@
       "sha256": "743e2b0a05cd4609a54b48de97b3920be2c2830b4898b95a9e7fcf1552e49d6e"
     },
     "src/ui/EdgeActionLayer.js": {
-      "bytes": 14166,
-      "sha256": "375b5d70d703736b7696316f35d8023d916aef30ab0666a5cd4e56ec38d74a36"
+      "bytes": 14165,
+      "sha256": "d65b1f1da8a175698d00476b33ccff3613395a3a2d9d6fd2013dee66c73aec6b"
     },
     "src/ui/EditorControl.d.ts": {
       "bytes": 5060,
@@ -538,8 +548,8 @@
       "sha256": "fe2cc9870b9ab583618755998baf4450fea3118a5b6ad5e2ea5d1c8a03b44631"
     },
     "src/ui/GridCore.js": {
-      "bytes": 28565,
-      "sha256": "34cff7bdf050a2b913f257ee3287a9388247c30b9d496ea5da11515b27538658"
+      "bytes": 28619,
+      "sha256": "48de9b0a27092a03a783663ea9721b4f9bc6d95b3511424b6517b8eb62fbdd35"
     },
     "src/ui/GridDefinition.d.ts": {
       "bytes": 2514,
@@ -562,8 +572,8 @@
       "sha256": "5caee5c609f7835baf8a12e75fed14cf4fd2839fea9c75a7b4ba8624f741243c"
     },
     "src/ui/GridEditors.js": {
-      "bytes": 10895,
-      "sha256": "ea6f8abc0d488a742c1eae48f1d5640ed101244f321328ec702bce2b16b096f0"
+      "bytes": 11888,
+      "sha256": "df9a3edfcddda4d6c9f861834927f76a7b00d1323ff61e74aed9352f05ac5d57"
     },
     "src/ui/GridExporters.d.ts": {
       "bytes": 1720,
@@ -590,8 +600,8 @@
       "sha256": "984f2764a955a31154d63e8e2684448e45c0eebcd5d324d8df2cca37bcfe6d9c"
     },
     "src/ui/GridRowReorderController.js": {
-      "bytes": 5542,
-      "sha256": "dfb289d6824b2538ba98fae598a80aed5e6aecf5732231c31123506c6134bf42"
+      "bytes": 5541,
+      "sha256": "83b559b6e08b7413033402e734df54a41748b6ba9a957b11b1debd230dcfd75b"
     },
     "src/ui/GridRowTransferController.js": {
       "bytes": 9571,
@@ -646,8 +656,8 @@
       "sha256": "80d1625da5e818cf7aa2cf72b60e94a20dd911f7ef6fcdf843a2860d7f1e9b66"
     },
     "src/ui/icons/core-icons.js": {
-      "bytes": 4516,
-      "sha256": "179647311d66d89d3a5bb198465dc722d824e8c193215501f1521c1d7ac00d95"
+      "bytes": 4644,
+      "sha256": "21a52b6dbdca8e7d4c610732be2ead15ad4826f720513f8ae8608bf0602bcd6a"
     },
     "src/ui/index.d.ts": {
       "bytes": 8118,
@@ -682,8 +692,8 @@
       "sha256": "e7b2ed53dfaec3e11613e9c9e72e5082bdd134fec3b7332ac4244af79b20d294"
     },
     "src/ui/List.d.ts": {
-      "bytes": 2825,
-      "sha256": "42e929b8febfef8de09df45404f3dd3ee7160b0575f7916cd6c2963cedc50a73"
+      "bytes": 2823,
+      "sha256": "cb81ef0f02339ed977fc781beb4bf1584b9f9efd2d674361aa0ff7858580e709"
     },
     "src/ui/List.js": {
       "bytes": 15090,
@@ -878,8 +888,8 @@
       "sha256": "b36b9be48fd76666b5722bdff443f5755b43e2c0a2ff448f6b768dbbe31a15ab"
     },
     "src/ui/styles/color-picker.css": {
-      "bytes": 6863,
-      "sha256": "9d1240a8beb6be7a5ca2d8b489c2f7ae32a7afa976140689d09a809147bac866"
+      "bytes": 6862,
+      "sha256": "b9cbca9ee878735647e6fa729e4445a29f88c1719a8921bcdcd636277af87814"
     },
     "src/ui/styles/display.css": {
       "bytes": 734,
@@ -910,8 +920,8 @@
       "sha256": "e01f2a28aced802c785ecf48e3397550e6bccd8ef05ba98cde4023a22e6e430b"
     },
     "src/ui/styles/grid.css": {
-      "bytes": 26629,
-      "sha256": "0506562c6ad1934fe185bb7abbe1c51d2a97f41cdb9fc6bcd83c318b5262bb9a"
+      "bytes": 26727,
+      "sha256": "97e94a6271c10119e4ce7921f09ba3dbbcf36944cbf5f3dfb57b817662a2930d"
     },
     "src/ui/styles/header-actions.css": {
       "bytes": 1794,
@@ -946,8 +956,8 @@
       "sha256": "cfd4c6ba7e096904032162f3da71d727192e2164e062d27c83301f74266c609f"
     },
     "src/ui/styles/property-grid.css": {
-      "bytes": 6934,
-      "sha256": "314f65a731d56f36e5941bb13bd0c962580101a08d76396b90a3e1d458ea9ece"
+      "bytes": 6828,
+      "sha256": "3c62abcc2f6bedad1b2c9da3a1b3d8255193645cf201237f2ee78135ec1a5ac2"
     },
     "src/ui/styles/scrollbars.css": {
       "bytes": 1731,
@@ -1001,6 +1011,10 @@
       "bytes": 23803,
       "sha256": "a017b6aa045499aab2c20d18958d00bf58bbeac15616b3c366511ae362ead610"
     },
+    "src/ui/taet-ui.css": {
+      "bytes": 1329,
+      "sha256": "f788990a089f19b5933f218d6c7944e2e399dac0dec44707b45d80f7a8162c30"
+    },
     "src/ui/TextArea.d.ts": {
       "bytes": 2864,
       "sha256": "693cf695c4f486b4b098db632a31b20c9379445d166f8408d2d31f3bca969abd"
@@ -1038,8 +1052,8 @@
       "sha256": "5336d3679e326b2fdab7e8cb68e6a4abfe49da7ff7915c127abceeb2c6383974"
     },
     "src/ui/theme-designer/editor.js": {
-      "bytes": 13579,
-      "sha256": "61cb532606b4ce4721b3e28e6f9b8084d58ebbfe4c0bb6cb1e7316e41dca64b9"
+      "bytes": 13658,
+      "sha256": "2ceaaec8f719de5dd6ee2de72922472bfb485bc8814347b8d98b2b60e6193794"
     },
     "src/ui/theme-designer/foreground-resolver.js": {
       "bytes": 5421,
@@ -1058,8 +1072,8 @@
       "sha256": "979a89b8b6e0b92684b9c30eab2312c7985623b56ed1e7120012a9e68532801e"
     },
     "src/ui/theme-designer/preset-toolbar.js": {
-      "bytes": 5337,
-      "sha256": "7b4682383075f5910bcd9c6434214e9aec583a8d09f1263d3e36232fb317da8c"
+      "bytes": 5362,
+      "sha256": "2a3e93b7d2cd3373207b53272dff0be4070e22039f3dc1aee121f52e5c277304"
     },
     "src/ui/theme-designer/preview.js": {
       "bytes": 7721,
@@ -1114,8 +1128,8 @@
       "sha256": "1bd7fdf88c7f7a53e9d104880955b79cb141af3f9da43e7d3ec066c100ce29b1"
     },
     "src/ui/theme-designer/wheel.js": {
-      "bytes": 4927,
-      "sha256": "8a4cb11ca69aeefe433887020cd494a329ea4f546c946ae904b1e9cf83d3cb99"
+      "bytes": 4926,
+      "sha256": "5a14b0a503e0b8aff59bd71e256f66eddf85bb81251115744f7235975b56da54"
     },
     "src/ui/ThemeApplicator.d.ts": {
       "bytes": 847,
@@ -1126,8 +1140,8 @@
       "sha256": "166ee81c7cdc01bfb7af8b38836cf97df2b903eab7630b7ba0cb6d92de12364f"
     },
     "src/ui/ThemeDesigner.d.ts": {
-      "bytes": 2499,
-      "sha256": "d7dae9d0d3da5573403926983e53535753de1f1b55dd6c9b222558b6c644dc87"
+      "bytes": 2509,
+      "sha256": "fdbbe086ad7f89bfb96945a7bdce1ba92d1a87a3795ea1b980c09e5d78da2a6c"
     },
     "src/ui/ThemeDesigner.js": {
       "bytes": 4065,
@@ -1186,8 +1200,8 @@
       "sha256": "09e444b3affd4fd2920cd34786d5003927770ea3555e9ec45eca3b79a4a086dc"
     },
     "src/ui/TreeGrid.js": {
-      "bytes": 61369,
-      "sha256": "55de67f1f0fad4bd83e7cac85d087a3b6a2b4f681c2d00950982c89c5bb4b47d"
+      "bytes": 61732,
+      "sha256": "4f763242c1d6a174a1b55c9aefe6d7df8dc4ba3cb7104964d6e3141033881fc7"
     },
     "src/ui/TreeGridDefinition.d.ts": {
       "bytes": 867,
@@ -1210,8 +1224,8 @@
       "sha256": "d1b14c9b09180fbbc8eaf01fd10536bfee6fd2fa6252531550706477a663a754"
     },
     "THIRD_PARTY_NOTICES.md": {
-      "bytes": 2794,
-      "sha256": "9597fa51abfc594d8da7161c46abbc94faaf21e8a3969fe1d84fbf8cad41ccf5"
+      "bytes": 2788,
+      "sha256": "3680a40d743c8117fbaaa50ef4affc9d2f0538387ddeb45ae42e6ebb5650e63a"
     }
   }
 }

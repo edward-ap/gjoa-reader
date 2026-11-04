@@ -31,7 +31,7 @@ export interface ThemeDesignerOptions extends BaseControlOptions {
  storage?:Pick<Storage,'getItem'|'setItem'>;
  onChange?:(event:ThemeDesignerChange)=>void;
 }
-/** Experimental. Include dense.css. No iframe, network, native bridge or global theme mutation. */
+/** Experimental. Include taet-ui/taet-ui.css. No iframe, network, native bridge or global theme mutation. */
 export declare class ThemeDesigner extends BaseControl<{change:ThemeDesignerChange}> {
  constructor(options?:ThemeDesignerOptions);
  constructor(container:HTMLElement|string,options?:ThemeDesignerOptions);

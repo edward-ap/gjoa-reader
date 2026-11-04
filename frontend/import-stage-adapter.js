@@ -1,7 +1,7 @@
 /**
  * Narrow application-owned bridge for publication feedback inside FileUpload.
  *
- * Upstream 0.6.0-rc.1 has no row presentation slot. This explicit exception uses
+ * Tæt UI 0.6.0-rc.4 has no row presentation slot. This explicit exception uses
  * only its pinned data-file-id row identity and ARIA progressbar, plus the bar's
  * immediate parent as insertion host. No queue fields, Dense control instances,
  * indicator classes or existing row text/attributes are read or mutated.

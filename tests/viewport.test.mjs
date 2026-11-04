@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Derived from Dense UI; copyright (c) 2026 Edward Aponasko.
+// Derived from Tæt UI; copyright (c) 2026 Edward Aponasko.
 // See LICENSE and provenance.json beside this local extension.
 import test from "node:test";
 import assert from "node:assert/strict";

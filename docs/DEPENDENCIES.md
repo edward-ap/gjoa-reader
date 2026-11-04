@@ -1,23 +1,21 @@
 # Dependency provenance and distribution
 
-## Dense UI
+## Current UI delivery
 
-Repository https://github.com/edward-ap/dense-ui, tag v0.6.0-rc.1, commit 7e4b2983bcac5c640de250bc7fa1b17d8e6d369e. vendor/dense-ui/pin.json records every delivered source/type/style/font/license file with length and SHA-256. Hashes are for canonical GitHub archive bytes, not Windows checkout line-ending conversions. The checked source is built through public entry points into one module; no private API change has been made. MIT: vendor/dense-ui/LICENSE and THIRD_PARTY_NOTICES.md; these notices are copied to offline output. UI Noto Sans WOFF2 and OFL remain beside generated CSS.
+Tæt UI v0.6.0-rc.4, Git commit bfd3ddcddf1cdc539397e5d2ac5ed3cb976e72c2, repository https://github.com/edward-ap/taet-ui. The exact published npm tarball and its SHA-512 integrity are pinned in vendor/taet-ui/pin.json; each selected source/type/style/font/license/provenance file has a SHA-256. Reproduction downloads that immutable version and verifies all bytes before replacing owned vendor files. Build/runtime has no dependency on a local framework checkout. The application compiles one ESM from public all/foundation exports.
 
-## Local extension extraction
+Current upstream notices: vendor/taet-ui/LICENSE and THIRD_PARTY_NOTICES.md. UI Noto Sans WOFF2 keeps its OFL. Original upstream snapshot/grid provenance is retained in the delivery; do not edit vendor source to adapt application assumptions.
 
-RenderViewport/Painter are local MIT derivatives of the archived Dense UI implementation, absent from the public preview. Each extensions directory contains original-file provenance hashes, delivered-file hashes where recorded, its license and a public contract. The old implementation was adapted to public BaseControl lifecycle/events and local geometry helpers; no old core/framework/runtime module is shipped. ThemeDesigner/ThemeApplicator remain the unchanged upstream implementations. Unit/browser/consumer type checks exercise this boundary.
+## Local specialized extensions
 
-## Rust/native assets
+RenderViewport and Painter are local MIT derivatives of the previously archived Dense UI components. Their original copyright/source hashes remain in extensions/*/provenance.json and LICENSE. Current imports use public taet-ui/foundation only. They are not supplied by Tæt and do not import one another. Geometry, bitmap ownership, logical annotation coordinates and DenseUI.Painter v1 persistence stay application contracts. No old framework runtime is shipped alongside Tæt.
 
-Cargo.lock pins the Rust graph. Native PDFium Windows x64 binary, exact version/provenance and all upstream notices are in src-tauri/assets/pdfium. Do not replace it with an unpinned OS DLL. The worker owns its native handles; source-only/generated editions do not depend on a native PDF handle at reopen.
+## Native engine and assets
 
-Publication fonts include the pinned legacy PT Serif/Noto sets plus four Literata faces needed for current and historical edition profiles. Original bytes, hashes, OFL/license/provenance live in src-tauri/assets/fonts. build.rs losslessly compresses embedded font bytes; runtime verifies/caches exact bytes in the current application's data root. They are not UI fonts and must not be subset/re-encoded during packaging. System fallback persists raster evidence, not copied OS font files.
+Cargo.lock and the Rust publication/decoder/render/IPC source remain outside this UI migration. Fonts, edition identities, original PDF behavior and the three-page Continuous cache policy are unchanged. Native PDFium version/provenance/notices remain under src-tauri/assets/pdfium. Publication fonts retain exact legacy/current bytes and OFL/provenance under src-tauri/assets/fonts. The local MIT DjVu patch and notices remain in vendor/djvu-jb2.
 
-The local MIT djvu-jb2 0.31.0 Cargo patch is in vendor/djvu-jb2 with its upstream license and focused PATCHES.md. Other decoder crate versions remain locked. FB2 XSD notices are retained under docs/specifications/fb2.
+Original application code and project-owned artwork are MIT; source specifications and dependencies retain their own terms. See LICENSE_SCOPE.md, ../THIRD_PARTY_NOTICES.md and ../licenses/ASSETS.md. Companion FB2 schema permission scope remains a separate pre-publication question. UI migration does not change those rights.
 
-Original author-owned application code and project-owned artwork are MIT; see ../LICENSE, LICENSE_SCOPE.md and ../licenses/ARTWORK.md. Third-party fonts, native components and upstream code retain their existing licenses/notices. Companion FB2 schema scope remains separate in ../licenses/ASSETS.md.
+## Updates and validation
 
-## Reproducible update
-
-Run npm run dense:fetch to reproduce the current pin. For a reviewed update run node scripts/vendor-dense-ui.mjs --pin TAG FULL_COMMIT_SHA. Review manifest/source diffs and extension contracts, then build/types/browser/Rust/native isolation gates. npm dependencies are dev-only and exact-version/lockfile pinned. No global toolchain/security/credential changes are part of setup.
+Use npm run taet:fetch to reproduce the pin, or scripts/vendor-taet-ui.mjs --pin TAG FULL_COMMIT_SHA for an explicitly reviewed published update. Keep private user settings/books out of source and run tests in isolated profiles. Changing UI dependencies does not authorize republishing existing editions, moving user data or adding format branches to the frontend.

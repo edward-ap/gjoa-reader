@@ -33,8 +33,8 @@ export function createPresetToolbar(host,api){
   Copy:async()=>{const p=await pick('copy');if(p)await named('Copy preset',p.definition,p.name+' copy');},
   Import:()=>{file.value='';file.click();},
   Export:()=>{
-   const p=api.current(),text=JSON.stringify({format:'dense-ui-theme',version:1,name:p.name,definition:JSON.parse(serialize(p.definition))},null,2);
-   const url=URL.createObjectURL(new Blob([text],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=p.name.replace(/[^a-z0-9_-]/gi,'-')+'.dense-theme.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+   const p=api.current(),text=JSON.stringify({format:'taet-ui-theme',version:1,name:p.name,definition:JSON.parse(serialize(p.definition))},null,2);
+   const url=URL.createObjectURL(new Blob([text],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=p.name.replace(/[^a-z0-9_-]/gi,'-')+'.taet-theme.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   },
   Delete:async()=>{const p=api.current();if(p.readOnly)throw Error('This recovery preset is read-only.');if(await ask('Delete preset',`Permanently delete "${p.name}"?`))api.remove(p);},
   Apply:async()=>{const p=api.current();await callHost('applyPreset',{preset:{name:p.name,definition:JSON.parse(serialize(p.definition))},theme:generateTheme(p.definition),signal:abort.signal});alive();api.message('Preset applied by the host application.','success');}
@@ -44,7 +44,7 @@ export function createPresetToolbar(host,api){
  file.addEventListener('change',()=>run(async()=>{
   const selected=file.files[0];if(!selected)return;if(selected.size>24000)throw Error('Theme file is too large.');
   const text=await selected.text();alive();const data=JSON.parse(text);
-  if(data.format!==undefined&&(data.format!=='dense-ui-theme'||data.version!==1))throw Error('Unsupported theme file format.');
+  if(data.format!==undefined&&(!['taet-ui-theme','dense-ui-theme'].includes(data.format)||data.version!==1))throw Error('Unsupported theme file format.');
   const definition=deserialize(data.format?JSON.stringify(data.definition):text);
   await named('Import preset',definition,typeof data.name==='string'?data.name:'Imported theme');
  }),{signal:abort.signal});

@@ -1,6 +1,6 @@
 # GjøaReader
 
-A local Windows desktop reader built with Rust/Tauri and Dense UI to read books in formats: DjVu, PDF, CBR/CBZ, FB2, EPUB, RTF and MOBI.
+A local Windows desktop reader built with Rust/Tauri and Tæt UI to read books in formats: DjVu, PDF, CBR/CBZ, FB2, EPUB, RTF and MOBI.
 
 ## Clean checkout
 
@@ -9,7 +9,7 @@ Currently validated target: Windows x64, Rust MSVC toolchain + Windows SDK, Node
 ```powershell
 Set-Location .\gjøa-reader
 npm ci
-npm run dense:verify
+npm run taet:verify
 npm run build
 npm run test:types
 npm test
@@ -40,20 +40,20 @@ node scripts/native-smoke.mjs --release <absolute-evidence-directory-outside-che
 
 With `--release` this launches the actual optimized standalone Tauri executable from the release directory; omitting the flag selects debug. Both use embedded assets rather than a development server. The smoke uploads a generated synthetic FB2 through FileUpload/native binary IPC, checks published/raster pages, navigation, Painter v1 native persistence and exact model restoration after restart in a fresh profile. Browser pointer/file-injection automation is not physical mouse/pen/touch, native file-dialog or IME certification. Evidence defaults to a temporary directory when omitted. Browser screenshot evidence uses GJOA_EVIDENCE_DIR or a temporary directory.
 
-## Dense UI pin and updates
+## Tæt UI pin and updates
 
-The **v0.6.0-rc.1** source is pinned to **7e4b2983bcac5c640de250bc7fa1b17d8e6d369e** from [edward-ap/dense-ui](https://github.com/edward-ap/dense-ui/tree/v0.6.0-rc.1). All required upstream source bytes, fonts/types and licenses are vendored with per-file SHA-256 in vendor/dense-ui/pin.json. There is no dependency on any sibling/local Dense UI checkout. Runtime/build after dependency installation is offline. npm installs build/test tooling only; Dense UI itself is not fetched from npm.
+The current public preview is **v0.6.0-rc.4**, Git commit **bfd3ddcddf1cdc539397e5d2ac5ed3cb976e72c2**, from [edward-ap/taet-ui](https://github.com/edward-ap/taet-ui). This project vendors the exact published npm tarball for taet-ui@0.6.0-rc.4, verified by its published SHA-512 integrity and per-file SHA-256 in vendor/taet-ui/pin.json. No sibling checkout or runtime npm resolution is needed. The upstream package contains no runtime dependencies.
 
 ```powershell
-npm run dense:verify
-npm run dense:fetch
-# Deliberate dependency update: supply a reviewed public tag and full commit SHA.
-node scripts/vendor-dense-ui.mjs --pin vVERSION FULL_COMMIT_SHA
+npm run taet:verify
+npm run taet:fetch
+# Explicit reviewed update: published tag and full matching Git commit.
+node scripts/vendor-taet-ui.mjs --pin vVERSION FULL_COMMIT_SHA
 ```
 
-The fetch command downloads the exact GitHub commit archive and compares canonical file bytes with the pin. It requires system tar and network only when explicitly invoked. Updating a pin is an implementation change: inspect provenance/diff and run the full local contract suite. Do not update vendor sources manually or combine independently built Dense UI bundles.
+Build verifies the source delivery, then bundles public all/foundation exports into one ESM runtime with matching taet-ui.css/fonts/notices. All application import aliases share that instance. The local viewport/Painter modules import public taet-ui/foundation and keep their own types/styles/ownership. Existing dui-* classes, data-dui-* attributes and --dui-* tokens are retained upstream contracts, not old runtime imports.
 
-Build produces one framework module from public all/foundation entry points. Every browser import alias resolves to that same module, preserving BaseControl, registry and overlay identity. Local extensions remain separate modules and import only public foundation APIs. Build verifies the source pin before changing dist and records generated artifact hashes.
+Saved annotations deliberately retain the DenseUI.Painter v1 codec tag. It is persisted application data, not a framework dependency. Application-owned theme definitions/settings are unchanged; Tæt also accepts the earlier theme envelope/storage key where its public editor exposes those operations. No eager rewrite of user data is part of this migration.
 
 ## Local extensions and application ownership
 
@@ -69,7 +69,7 @@ ThemeDesigner and ThemeApplicator are already provided by the pinned release and
 
 The default Rust and browser suites use self-contained generated/synthetic fixtures. Thirteen existing external corpus tests are explicit opt-in ignored tests; real books are not redistributed. Run them only with an authorized external corpus and absolute GJOA_TEST_CORPUS_DIR as explained in NATIVE_BOUNDARIES. Ignored corpus tests are not counted as successful corpus coverage.
 
-The upstream Dense UI preview has disclosed failing CI cases involving Linux gutter geometry, a Windows Node24 retained-renderer case and WebKit focus. This application does not claim to fix that release or certify untested engines/platforms. Local extension, application and actual native smoke results are recorded separately outside the source checkout.
+Tæt UI remains a pre-1.0 release candidate; Grid/TreeGrid and Advanced are experimental. Application validation is separate from upstream gates and limited to the browsers/native platforms actually exercised. No other engine/platform certification follows from the library update.
 
 ## License
 
@@ -84,3 +84,10 @@ node scripts/package-notices.mjs --out C:\Path\To\New-Empty-Notices-Directory
 This creates a notice/source-availability bundle only; it copies no executable, font payload, DLL, artwork or book. Include the bundle unchanged with any eventual binary distribution. It does not resolve upstream companion-schema permission scope or certify the final linked binary's complete license scope. Project-owned artwork is MIT; third-party font licenses remain separate. Specific component obligations are in the linked license documents.
 
 No remote/push/publication is configured. The combined executable and third-party assets must not be described as MIT-only.
+
+The additional `npm run test:native:formats -- ABSOLUTE_EVIDENCE_DIRECTORY` smoke
+uses only generated FB2, EPUB, PDF and JPEG-backed DjVu containers. It checks a mixed
+FileUpload queue with one malformed file, native rasters, custom-theme persistence
+and restart in a new isolated profile. Complete all native builds before running
+WebView2 tests, and run native suites sequentially. This is automated Windows
+coverage, not a private-book corpus, physical-input or macOS certification.

@@ -52,6 +52,7 @@
   align-items: center;
   min-height: var(--dui-property-row-height);
   padding: 2px 6px;
+  margin-left: var(--dui-property-gutter);
   border-top: 1px solid var(--dui-color-border-strong);
   border-bottom: 1px solid var(--dui-color-border-strong);
 }
@@ -66,6 +67,7 @@
   width: 0;
   height: 0;
   margin-right: var(--dui-gap-xs);
+  margin-left: calc(-1 * var(--dui-property-gutter));
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 5px solid currentColor;
@@ -93,17 +95,6 @@
 .dui-property-grid__property-row.dui-selected {
   background: var(--dui-color-selection-bg);
   color: var(--dui-color-selection-text);
-}
-
-.dui-property-grid__property-row.dui-selected::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 3px;
-  background: var(--dui-color-focus-border);
 }
 
 .dui-property-grid__gutter,

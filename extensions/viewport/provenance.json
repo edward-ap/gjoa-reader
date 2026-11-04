@@ -37,14 +37,21 @@
     }
   ],
   "publicFoundationTarget": {
+    "repository": "https://github.com/edward-ap/taet-ui",
+    "version": "0.6.0-rc.4",
+    "tag": "v0.6.0-rc.4",
+    "commit": "bfd3ddcddf1cdc539397e5d2ac5ed3cb976e72c2"
+  },
+  "adaptations": [
+    "Import only public taet-ui/foundation exports",
+    "Replace inherited private mutation/event helpers with extension-owned checks and public EventBus",
+    "Observe public resize event rather than overriding private _afterResize",
+    "Do not mutate the public readonly options snapshot",
+    "Tæt migration changes only public foundation imports; geometry, lifecycle, resource ownership and saved codec stay unchanged"
+  ],
+  "previousPublicFoundationTarget": {
     "repository": "https://github.com/edward-ap/dense-ui",
     "version": "0.6.0-rc.1",
     "commit": "7e4b2983bcac5c640de250bc7fa1b17d8e6d369e"
-  },
-  "adaptations": [
-    "Import only public dense-ui/foundation exports",
-    "Replace inherited private mutation/event helpers with extension-owned checks and public EventBus",
-    "Observe public resize event rather than overriding private _afterResize",
-    "Do not mutate the public readonly options snapshot"
-  ]
+  }
 }

@@ -67,7 +67,7 @@ export class EdgeActionLayer extends BaseControl {
         const node = typeof HTMLElement !== "undefined" && indicator instanceof HTMLElement;
         if ((!control && !node) || indicators.has(indicator) ||
             control && (indicator.mounted || indicator.parent || indicator.destroyed) || node && indicator.parentNode) {
-          throw new TypeError("Indicator must be text, a detached HTMLElement, or a unique unmounted Dense UI control.");
+          throw new TypeError("Indicator must be text, a detached HTMLElement, or a unique unmounted Tæt UI control.");
         }
         indicators.add(indicator);
       }

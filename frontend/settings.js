@@ -1,5 +1,5 @@
-import { SelectInput, ReadonlyText, Button, Panel } from 'dense-ui';
-import { ColorPicker, FieldGroup, Dialog, ThemeDesigner, ThemeApplicator } from 'dense-ui/experimental';
+import { SelectInput, ReadonlyText, Button, Panel } from 'taet-ui';
+import { ColorPicker, FieldGroup, Dialog, ThemeDesigner, ThemeApplicator } from 'taet-ui/experimental';
 import { t, denseText } from './i18n/i18n.js';
 export const defaults = Object.freeze({ version: 1, language: 'en', uiTheme: 'system', pageAppearance: 'original', workspaceBackground: '#484c50' });
 export function pageColor(appearance) {

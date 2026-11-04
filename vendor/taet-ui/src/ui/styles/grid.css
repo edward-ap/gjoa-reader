@@ -1099,6 +1099,11 @@
   line-height: 1;
   cursor: default;
 }
+.dui-grid__grid-menu-button > .dui-icon {
+  width: 6px;
+  height: 18px;
+  pointer-events: none;
+}
 .dui-grid__grid-menu-button:hover,
 .dui-grid__grid-menu-button[aria-expanded="true"] {
   background: var(--dui-color-surface-strong);

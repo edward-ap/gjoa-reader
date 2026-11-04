@@ -4,7 +4,7 @@ Copyright (c)2026 Edward Aponasko. Original author-owned GjøaReader application
 
 ## Separately licensed material
 
-- Dense UI remains its pinned upstream MIT implementation with its original LICENSE and THIRD_PARTY_NOTICES. Local viewport/Painter derivatives retain their original MIT notices and provenance; the application grant does not replace them.
+- Tæt UI remains its pinned upstream MIT implementation with its original LICENSE and THIRD_PARTY_NOTICES. Local viewport/Painter derivatives retain their original MIT notices and provenance; the application grant does not replace them.
 - Rust dependencies and the patched DjVu decoder keep their individual licenses/copyrights. Native UnRAR includes extraction-specific restrictions; wrapper MIT/Apache metadata does not replace them. See [Rust dependency notices](../licenses/RUST_DEPENDENCIES.md).
 - MPL-covered source remains under MPL2.0. The five exact cached archives and hashes, local acquisition instructions and immutable upstream download references are in [source availability](../licenses/SOURCE_AVAILABILITY.md). Application MIT does not restrict the recipient's rights in that source.
 - Publication/UI fonts retain OFL and any reserved-name conditions. PDFium and its native dependencies retain their complete notice set, including FreeType/IJG acknowledgements. No OS font binaries are distributed.

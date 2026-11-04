@@ -1,7 +1,6 @@
 {
-  "name": "dense-ui",
-  "version": "0.6.0-rc.1",
-  "private": true,
+  "name": "taet-ui",
+  "version": "0.6.0-rc.4",
   "type": "module",
   "scripts": {
     "dev": "python scripts/dev-server.py --port 5173 --bind 127.0.0.1",
@@ -25,7 +24,8 @@
     "pretest:browser": "npm run build",
     "test:bundle": "npm run build && node scripts/check-bundle.js && node scripts/run-browser.js --config playwright.bundle.config.js",
     "test:webkit": "node scripts/run-browser.js --config playwright.compat.config.js --project=webkit",
-    "test:package": "node scripts/check-package-boundaries.js"
+    "test:package": "node scripts/check-package-boundaries.js",
+    "distribution": "npm run build && python scripts/package-distribution.py"
   },
   "devDependencies": {
     "@playwright/test": "1.61.1",
@@ -66,7 +66,7 @@
       "types": "./src/ui/GridEditors.d.ts",
       "default": "./src/ui/GridEditors.js"
     },
-    "./dense.css": "./src/ui/dense.css",
+    "./taet-ui.css": "./src/ui/taet-ui.css",
     "./foundation": {
       "types": "./src/foundation/index.d.ts",
       "default": "./src/foundation/index.js"
@@ -78,7 +78,8 @@
     "./advanced": {
       "types": "./src/advanced/index.d.ts",
       "default": "./src/advanced/index.js"
-    }
+    },
+    "./dense.css": "./src/ui/dense.css"
   },
   "files": [
     "src/",
@@ -98,14 +99,32 @@
     "CHANGELOG.md",
     "SECURITY.md",
     "CONTRIBUTING.md",
-    "examples/tauri-minimal/"
+    "examples/tauri-minimal/",
+    "examples/webview-standalone/"
+  ],
+  "main": "./src/ui/index.js",
+  "module": "./src/ui/index.js",
+  "types": "./src/ui/index.d.ts",
+  "author": "Edward Aponasko",
+  "keywords": [
+    "ui",
+    "desktop",
+    "webview",
+    "tauri",
+    "controls",
+    "taet-ui"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/edward-ap/dense-ui.git"
+    "url": "https://github.com/edward-ap/taet-ui.git"
   },
-  "homepage": "https://github.com/edward-ap/dense-ui#readme",
+  "homepage": "https://github.com/edward-ap/taet-ui#readme",
   "bugs": {
-    "url": "https://github.com/edward-ap/dense-ui/issues"
+    "url": "https://github.com/edward-ap/taet-ui/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "next",
+    "registry": "https://registry.npmjs.org/"
   }
 }

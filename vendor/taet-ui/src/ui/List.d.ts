@@ -29,7 +29,7 @@ export interface ListOptions<T extends object, I extends ItemId = DefaultItemId<
   data?: DataStore<T, I>; selection?: SelectionModel<T>;
   idField?: Extract<keyof T, string>; getId?: ((item: T, index: number) => I) | null;
 }
-/** Experimental standalone collection; exported by dense-ui/experimental and dense-ui/all. */
+/** Experimental standalone collection; exported by taet-ui/experimental and taet-ui/all. */
 export declare class List<T extends object = Record<string, unknown>, I extends ItemId = DefaultItemId<T>, E extends { [K in keyof E]: object } = {}> extends BaseControl<E, HTMLElement> {
   constructor(options?: ListOptions<T, I>);
   constructor(container: HTMLElement | string, options?: ListOptions<T, I>);
