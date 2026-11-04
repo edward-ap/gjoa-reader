@@ -1,0 +1,10 @@
+/* Range state and keyboard behavior are shared with TrackBar. */
+.dui-circular-slider.dui-trackbar{display:inline-flex;flex-direction:column;align-items:center;gap:6px;width:72px;min-width:0}
+.dui-circular-slider .dui-trackbar__label{display:block;text-align:center}
+.dui-circular-slider .dui-circular-slider__dial{display:block;position:relative;flex:none;width:60px;height:60px;touch-action:none;cursor:pointer;border-radius:50%;background:conic-gradient(from 180deg,var(--dui-color-accent-bg) var(--dui-circular-percent,0%),var(--dui-color-border) 0)}
+.dui-circular-slider__dial::before{content:'';position:absolute;inset:6px;background:var(--dui-color-surface);border-radius:50%;pointer-events:none}
+.dui-circular-slider .dui-trackbar__scale{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);padding:0;margin:0}
+.dui-circular-slider .dui-trackbar__value{display:flex;position:absolute;inset:0;align-items:center;justify-content:center;min-width:0;width:auto;padding:0;font-variant-numeric:tabular-nums;pointer-events:none}
+.dui-circular-slider__dial:focus-within{outline:1px solid var(--dui-color-focus-border);outline-offset:3px}
+.dui-circular-slider:has(input:disabled){opacity:.55}
+.dui-circular-slider:has(input:disabled) .dui-circular-slider__dial{cursor:default}

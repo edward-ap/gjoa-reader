@@ -1,0 +1,21 @@
+/node_modules/
+/dist/
+/src-tauri/target/
+/src-tauri/gen/
+/artifacts/
+/test-results/
+/playwright-report/
+/.env
+/.env.*
+*.log
+
+# Never place real books or process data in public source.
+/test-files/
+/books/
+/library/
+/test-data/
+/font-cache/
+/settings.json
+/ui-settings.json
+/progress.json
+/annotations.sqlite*

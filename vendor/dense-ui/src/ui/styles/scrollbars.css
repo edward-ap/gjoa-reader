@@ -1,0 +1,63 @@
+.dui-control,
+.dui-control * {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dui-scrollbar-thumb) transparent;
+}
+
+.dui-scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dui-scrollbar-thumb) transparent;
+}
+
+.dui-control::-webkit-scrollbar,
+.dui-control *::-webkit-scrollbar {
+  width: var(--dui-scrollbar-size);
+  height: var(--dui-scrollbar-size);
+}
+
+.dui-scrollable::-webkit-scrollbar {
+  width: var(--dui-scrollbar-size);
+  height: var(--dui-scrollbar-size);
+}
+
+.dui-control::-webkit-scrollbar-track,
+.dui-control *::-webkit-scrollbar-track,
+.dui-control::-webkit-scrollbar-corner,
+.dui-control *::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.dui-scrollable::-webkit-scrollbar-track,
+.dui-scrollable::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.dui-control::-webkit-scrollbar-thumb,
+.dui-control *::-webkit-scrollbar-thumb {
+  min-width: var(--dui-scrollbar-thumb-min-size);
+  min-height: var(--dui-scrollbar-thumb-min-size);
+  border: 1px solid transparent;
+  border-radius: var(--dui-scrollbar-size);
+  background: var(--dui-scrollbar-thumb);
+  background-clip: padding-box;
+}
+
+.dui-scrollable::-webkit-scrollbar-thumb {
+  min-width: var(--dui-scrollbar-thumb-min-size);
+  min-height: var(--dui-scrollbar-thumb-min-size);
+  border: 1px solid transparent;
+  border-radius: var(--dui-scrollbar-size);
+  background: var(--dui-scrollbar-thumb);
+  background-clip: padding-box;
+}
+
+.dui-control::-webkit-scrollbar-thumb:hover,
+.dui-control *::-webkit-scrollbar-thumb:hover {
+  background: var(--dui-scrollbar-thumb-hover);
+  background-clip: padding-box;
+}
+
+.dui-scrollable::-webkit-scrollbar-thumb:hover {
+  background: var(--dui-scrollbar-thumb-hover);
+  background-clip: padding-box;
+}

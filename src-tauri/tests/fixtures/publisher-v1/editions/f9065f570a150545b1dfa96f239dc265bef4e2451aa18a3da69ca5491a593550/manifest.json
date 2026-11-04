@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "editionId": "f9065f570a150545b1dfa96f239dc265bef4e2451aa18a3da69ca5491a593550",
+  "sourceId": "492a22a620c74d3d446e1bc10bd001fdb9a3ab045f4fdf7069be27ca06e24608",
+  "sourcePath": "objects/sha256/49/492a22a620c74d3d446e1bc10bd001fdb9a3ab045f4fdf7069be27ca06e24608",
+  "format": "fb2",
+  "publisherId": "canonical-typesetter",
+  "publisherVersion": 1,
+  "kind": "generated-layout",
+  "pageCount": 1,
+  "pages": [
+    {
+      "width": 800,
+      "height": 1120,
+      "dpi": null
+    }
+  ],
+  "pageFiles": [
+    {
+      "path": "pages/000001.rpg",
+      "sha256": "2bc52a67035b1738838848d02a18b37af27e02db7db1699d1d4fe3f5fe76df0c",
+      "bytes": 1199
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/fonts/OFL.txt",
+      "sha256": "ddf311c28ddf5a5ad9747649837346b67bed9d356789c3072bb27dbce49e514d",
+      "bytes": 4434
+    },
+    {
+      "path": "assets/fonts/NotoEmoji-OFL.txt",
+      "sha256": "500bb1ccf43df7bbb522112f9133a52b16e1c35e809632f5d8609b179152de5b",
+      "bytes": 4330
+    },
+    {
+      "path": "publication.json",
+      "sha256": "4f617f202646d62076c3f56585c846908ad74e5fd15d1298a6f8420a24248174",
+      "bytes": 1244
+    }
+  ],
+  "metadata": {
+    "title": "Publisher v1 compatibility",
+    "author": null
+  },
+  "profileId": "1754d4dfbd9d6fd5667cb82af8083d922a2c11f98cf2a6fa7807b85fa31f64b0",
+  "storageVersion": 2,
+  "sharedFonts": [
+    {
+      "path": "fonts/a4951fade06ff8f09b7673aa81ffb65a8cd409e24d3289a6dc670bc4dda2557a",
+      "sha256": "a4951fade06ff8f09b7673aa81ffb65a8cd409e24d3289a6dc670bc4dda2557a",
+      "bytes": 359048
+    },
+    {
+      "path": "fonts/f57e95ff9dc85691a3b2e193f2028db36f6663939a46c0fc4f286d618b80b7ce",
+      "sha256": "f57e95ff9dc85691a3b2e193f2028db36f6663939a46c0fc4f286d618b80b7ce",
+      "bytes": 375356
+    },
+    {
+      "path": "fonts/038ba7336bd7ea14f12ad155bed51a4345cac5153275d521dec3ba04021c526e",
+      "sha256": "038ba7336bd7ea14f12ad155bed51a4345cac5153275d521dec3ba04021c526e",
+      "bytes": 339996
+    },
+    {
+      "path": "fonts/f003788ba08981eb0988b3557a6f224a53dab49c20e283e8b74d5af3c466f8be",
+      "sha256": "f003788ba08981eb0988b3557a6f224a53dab49c20e283e8b74d5af3c466f8be",
+      "bytes": 337580
+    },
+    {
+      "path": "fonts/de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551",
+      "sha256": "de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551",
+      "bytes": 1982596
+    }
+  ]
+}

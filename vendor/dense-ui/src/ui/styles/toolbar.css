@@ -1,0 +1,23 @@
+.dui-toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--dui-gap-xs);
+  min-height: var(--dui-toolbar-height);
+  padding: 2px 4px;
+  border: 1px solid var(--dui-color-border);
+  background: var(--dui-color-surface-raised);
+  user-select: none;
+}
+
+.dui-toolbar-separator {
+  display: inline-block;
+  width: 1px;
+  height: calc(var(--dui-control-height) - 6px);
+  margin: 0 var(--dui-gap-xs);
+  background: var(--dui-color-border-strong);
+}
+
+.dui-toolbar-spacer {
+  flex: 1 1 auto;
+  min-width: var(--dui-gap-md);
+}

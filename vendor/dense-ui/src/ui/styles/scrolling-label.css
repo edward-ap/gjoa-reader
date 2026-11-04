@@ -1,0 +1,4 @@
+.dui-scrolling-label { display:block; width:100%; min-width:0; min-height:var(--dui-control-height); overflow:hidden; contain:layout paint; white-space:nowrap; color:var(--dui-color-text); user-select:none; }
+.dui-scrolling-label__track { display:inline-flex; align-items:center; min-height:var(--dui-control-height); white-space:pre; }
+.dui-scrolling-label__text { flex:none; }
+.dui-scrolling-label__text[hidden] { display:none; }

@@ -1,0 +1,29 @@
+/* Native subtree movement uses only the existing service gutter. */
+.dui-tree-grid__row > .dui-tree-grid__node-handle {
+  pointer-events: auto;
+  cursor: grab;
+  user-select: none;
+}
+.dui-tree-grid--node-dragging .dui-tree-grid__node-handle { cursor: grabbing; }
+.dui-tree-grid__row--node-dragging > .dui-tree-grid__node-handle { background: var(--dui-color-focus-bg); }
+.dui-tree-grid__row--node-drop-before > .dui-grid__cell,
+.dui-tree-grid__row--node-drop-before > .dui-grid__indicator-body { box-shadow: inset 0 2px var(--dui-color-focus-border); }
+.dui-tree-grid__row--node-drop-after > .dui-grid__cell,
+.dui-tree-grid__row--node-drop-after > .dui-grid__indicator-body { box-shadow: inset 0 -2px var(--dui-color-focus-border); }
+.dui-tree-grid__row--node-drop-inside,
+.dui-tree-grid__body--node-drop-root { outline: 2px solid var(--dui-color-focus-border); outline-offset: -2px; }
+.dui-tree-grid__row--node-drop-invalid,
+.dui-tree-grid__body--node-drop-invalid { outline: 1px dashed var(--dui-color-invalid-border); outline-offset: -1px; }
+.dui-tree-grid__node-drag-ghost {
+  position: fixed;
+  left: 12px;
+  top: 12px;
+  z-index: 10000;
+  pointer-events: none;
+  padding: 4px 8px;
+  font: var(--dui-font-size) / var(--dui-line-height) var(--dui-font-family);
+  color: var(--dui-color-text);
+  background: var(--dui-color-surface);
+  border: 1px solid var(--dui-color-focus-border);
+}
+.dui-tree-grid__node-drag-ghost--invalid { border-color: var(--dui-color-invalid-border); }

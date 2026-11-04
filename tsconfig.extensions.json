@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": false,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "dense-ui/foundation": [
+        "vendor/dense-ui/src/foundation/index.d.ts"
+      ]
+    }
+  },
+  "include": [
+    "tests/types/**/*.ts"
+  ]
+}

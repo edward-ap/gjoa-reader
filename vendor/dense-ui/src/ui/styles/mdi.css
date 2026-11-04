@@ -1,0 +1,199 @@
+.dui-mdi-workspace {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--dui-color-border-strong);
+  background-color: var(--dui-color-bg);
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--dui-color-border) 28%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--dui-color-border) 28%, transparent) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.dui-mdi-window {
+  position: absolute;
+  display: grid;
+  grid-template-rows: var(--dui-panel-header-height) minmax(0, 1fr);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--dui-window-border);
+  background: var(--dui-window-content-bg);
+  box-shadow: 1px 2px 6px rgb(0 0 0 / 14%);
+}
+
+.dui-mdi-window.dui-active {
+  z-index: var(--dui-z-active-window) !important;
+  border-color: var(--dui-window-border);
+  box-shadow: 1px 3px 9px rgb(0 0 0 / 20%);
+}
+
+.dui-mdi-window__header {
+  padding: 2px 3px 2px 6px;
+  cursor: default;
+}
+
+.dui-mdi-window.dui-active .dui-mdi-window__header {
+  background: var(--dui-window-header-bg);
+}
+
+.dui-mdi-window__content {
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--dui-window-content-bg);
+}
+
+.dui-mdi-window__content > .dui-control {
+  flex: 1 1 0%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.dui-mapper-window__body {
+  display: grid;
+  grid-template-columns: 12px minmax(0, 1fr) 12px;
+  grid-template-rows: minmax(0, 1fr) var(--dui-control-height);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.dui-mapper-window__ports {
+  grid-row: 1;
+  background: var(--dui-color-surface);
+}
+
+.dui-mapper-window__ports--left {
+  grid-column: 1;
+  border-right: 1px solid var(--dui-color-border);
+}
+
+.dui-mapper-window__ports--right {
+  grid-column: 3;
+  border-left: 1px solid var(--dui-color-border);
+}
+
+.dui-mapper-window__content {
+  display: flex;
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.dui-mapper-window__content > .dui-control {
+  flex: 1 1 0%;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.dui-mapper-window__status {
+  display: flex;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  align-items: center;
+  min-width: 0;
+  padding: 1px 5px;
+  overflow: hidden;
+  border-top: 1px solid var(--dui-color-border-strong);
+  background: var(--dui-color-surface-strong);
+  color: var(--dui-color-muted);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dui-mdi-window--collapsed {
+  grid-template-rows: var(--dui-panel-header-height);
+}
+
+.dui-mdi-window__resize {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  cursor: nwse-resize;
+}
+
+.dui-mdi-window__resize::before {
+  content: "";
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid var(--dui-color-border-strong);
+  border-bottom: 1px solid var(--dui-color-border-strong);
+}
+
+.dui-connector-layer,
+.dui-connector-port-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.dui-connector-layer {
+  z-index: var(--dui-z-workspace-overlay);
+}
+
+.dui-connector-port-layer {
+  z-index: var(--dui-z-workspace-ports);
+}
+
+.dui-connector-layer__connection {
+  fill: none;
+  /* Focus is indicated by the stroke, not the SVG path's bounding box. */
+  outline: none;
+  stroke: var(--dui-color-focus-border);
+  stroke-width: 1.6;
+  pointer-events: stroke;
+  cursor: default;
+}
+
+.dui-connector-layer__connection:hover,
+.dui-connector-layer__connection:focus-visible,
+.dui-connector-layer__connection.dui-selected {
+  stroke-width: 3;
+}
+
+.dui-connector-layer__port {
+  fill: var(--dui-color-bg);
+  stroke: var(--dui-color-focus-border);
+  stroke-width: 2;
+  pointer-events: all;
+  cursor: crosshair;
+}
+
+.dui-connector-layer__port.dui-connected {
+  fill: var(--dui-color-focus-border);
+}
+
+.dui-connector-layer__port:focus-visible {
+  stroke-width: 4;
+  outline: none;
+}
+
+.dui-connector-layer__port--aggregate {
+  stroke-width: 2.5;
+}
+
+.dui-connector-layer__draft {
+  fill: none;
+  stroke: var(--dui-color-focus-border);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 2;
+  pointer-events: none;
+}

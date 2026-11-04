@@ -1,0 +1,29 @@
+{
+  "name": "gjoa-reader",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dense:verify": "node scripts/vendor-dense-ui.mjs --verify",
+    "dense:fetch": "node scripts/vendor-dense-ui.mjs --fetch",
+    "build": "node scripts/build.mjs",
+    "dev": "tauri dev",
+    "desktop:build": "tauri build --no-bundle",
+    "test": "node scripts/build.mjs && node --experimental-loader ./scripts/dense-loader.mjs --test --test-concurrency=1 tests/*.test.mjs",
+    "test:unit": "node --experimental-loader ./scripts/dense-loader.mjs --test --test-concurrency=1 tests/*geometry.test.mjs tests/reader-state.test.mjs tests/reader-spread.test.mjs tests/raster-adapter.test.mjs tests/spread-renderer.test.mjs tests/page-window-cache.test.mjs",
+    "test:native": "node scripts/native-smoke.mjs",
+    "test:types": "tsc -p tsconfig.extensions.json",
+    "test:native:release": "node scripts/native-smoke.mjs --release"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@tauri-apps/cli": "2.11.4",
+    "esbuild": "0.28.2",
+    "typescript": "5.9.3"
+  },
+  "author": "Edward Aponasko"
+}

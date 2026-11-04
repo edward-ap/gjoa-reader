@@ -1,0 +1,1373 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-11-01T20:43:56.010Z",
+  "scope": "Licenses and accompanying notices for native/font/upstream assets and MIT project-owned artwork.",
+  "assetLicensesAreSeparate": true,
+  "fonts": [
+    {
+      "path": "src-tauri/assets/fonts/PT_Serif-Web-Regular.ttf",
+      "family": "PT Serif",
+      "bytes": 359048,
+      "sha256": "a4951fade06ff8f09b7673aa81ffb65a8cd409e24d3289a6dc670bc4dda2557a",
+      "license": "OFL-1.1",
+      "licensePath": "src-tauri/assets/fonts/OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/ptserif/PT_Serif-Web-Regular.ttf",
+      "provenanceVerifiedHash": true,
+      "recordedModification": false,
+      "reservedNamesRecorded": [
+        "PT Sans",
+        "PT Serif",
+        "ParaType"
+      ],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    },
+    {
+      "path": "src-tauri/assets/fonts/PT_Serif-Web-Italic.ttf",
+      "family": "PT Serif",
+      "bytes": 375356,
+      "sha256": "f57e95ff9dc85691a3b2e193f2028db36f6663939a46c0fc4f286d618b80b7ce",
+      "license": "OFL-1.1",
+      "licensePath": "src-tauri/assets/fonts/OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/ptserif/PT_Serif-Web-Italic.ttf",
+      "provenanceVerifiedHash": true,
+      "recordedModification": false,
+      "reservedNamesRecorded": [
+        "PT Sans",
+        "PT Serif",
+        "ParaType"
+      ],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    },
+    {
+      "path": "src-tauri/assets/fonts/PT_Serif-Web-Bold.ttf",
+      "family": "PT Serif",
+      "bytes": 339996,
+      "sha256": "038ba7336bd7ea14f12ad155bed51a4345cac5153275d521dec3ba04021c526e",
+      "license": "OFL-1.1",
+      "licensePath": "src-tauri/assets/fonts/OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/ptserif/PT_Serif-Web-Bold.ttf",
+      "provenanceVerifiedHash": true,
+      "recordedModification": false,
+      "reservedNamesRecorded": [
+        "PT Sans",
+        "PT Serif",
+        "ParaType"
+      ],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    },
+    {
+      "path": "src-tauri/assets/fonts/PT_Serif-Web-BoldItalic.ttf",
+      "family": "PT Serif",
+      "bytes": 337580,
+      "sha256": "f003788ba08981eb0988b3557a6f224a53dab49c20e283e8b74d5af3c466f8be",
+      "license": "OFL-1.1",
+      "licensePath": "src-tauri/assets/fonts/OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/ptserif/PT_Serif-Web-BoldItalic.ttf",
+      "provenanceVerifiedHash": true,
+      "recordedModification": false,
+      "reservedNamesRecorded": [
+        "PT Sans",
+        "PT Serif",
+        "ParaType"
+      ],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    },
+    {
+      "path": "src-tauri/assets/fonts/NotoEmoji.ttf",
+      "family": "Noto Emoji",
+      "bytes": 1982596,
+      "sha256": "de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551",
+      "license": "OFL-1.1",
+      "licensePath": "src-tauri/assets/fonts/NotoEmoji-OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/notoemoji/NotoEmoji%5Bwght%5D.ttf",
+      "provenanceVerifiedHash": true,
+      "recordedModification": false,
+      "reservedNamesRecorded": [],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    },
+    {
+      "path": "src-tauri/assets/fonts/NotoSansMono-Regular.ttf",
+      "family": "Noto Sans Mono",
+      "bytes": 405760,
+      "sha256": "3654e8dbed6f17fd94f46f22c5377a152c7ed52fd476254a9c87dca6a6c05248",
+      "license": "OFL-1.1",
+      "licensePath": "src-tauri/assets/fonts/NotoSansMono-OFL.txt",
+      "source": "https://github.com/google/fonts/blob/0cf764bb712367b6079cbb4fd2353e6f54ec6850/ofl/notosansmono/NotoSansMono%5Bwdth,wght%5D.ttf",
+      "provenanceVerifiedHash": true,
+      "recordedModification": "Static full-glyph instance wght400 wdth100 via fontTools4.64.0; source variable font SHA documented locally",
+      "reservedNamesRecorded": [],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    },
+    {
+      "path": "src-tauri/assets/fonts/NotoSerifJP-Regular.ttf",
+      "family": "Noto Serif JP",
+      "bytes": 8080028,
+      "sha256": "de3dd008fc5f50d9c5510fd080a50da1e3115e67e1c742085ff6143ef04b8c34",
+      "license": "OFL-1.1",
+      "licensePath": "src-tauri/assets/fonts/NotoSerifJP-OFL.txt",
+      "source": "https://github.com/google/fonts/tree/8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5/ofl/notoserifjp",
+      "provenanceVerifiedHash": true,
+      "recordedModification": "Static full-glyph instance wght400 via fontTools4.61.1; source variable font SHA documented locally",
+      "reservedNamesRecorded": [],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    },
+    {
+      "path": "src-tauri/assets/fonts/Literata-Bold.ttf",
+      "family": "Literata",
+      "bytes": 331304,
+      "sha256": "b6af95b3b443cdbce964aa06741596987f2f5c3ede46a2bc846e5addd99d061f",
+      "license": "OFL-1.1",
+      "licensePath": "src-tauri/assets/fonts/Literata-OFL.txt",
+      "source": "https://github.com/googlefonts/literata/blob/0c2761b727a1b3a7cffd313c37f0f5163dfc7a63/fonts/ttf/Literata-Bold.ttf",
+      "provenanceVerifiedHash": true,
+      "recordedModification": false,
+      "reservedNamesRecorded": [],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    },
+    {
+      "path": "src-tauri/assets/fonts/Literata-BoldItalic.ttf",
+      "family": "Literata",
+      "bytes": 318888,
+      "sha256": "1dade59381ad02f4679d7e993a7a406472e587ac332af7a6168d3ad9214a99dc",
+      "license": "OFL-1.1",
+      "licensePath": "src-tauri/assets/fonts/Literata-OFL.txt",
+      "source": "https://github.com/googlefonts/literata/blob/0c2761b727a1b3a7cffd313c37f0f5163dfc7a63/fonts/ttf/Literata-BoldItalic.ttf",
+      "provenanceVerifiedHash": true,
+      "recordedModification": false,
+      "reservedNamesRecorded": [],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    },
+    {
+      "path": "src-tauri/assets/fonts/Literata-Italic.ttf",
+      "family": "Literata",
+      "bytes": 304104,
+      "sha256": "198f70cc9a17bab578553fa274b81984d58c440efe26bc06f1d841c194b6691a",
+      "license": "OFL-1.1",
+      "licensePath": "src-tauri/assets/fonts/Literata-OFL.txt",
+      "source": "https://github.com/googlefonts/literata/blob/0c2761b727a1b3a7cffd313c37f0f5163dfc7a63/fonts/ttf/Literata-Italic.ttf",
+      "provenanceVerifiedHash": true,
+      "recordedModification": false,
+      "reservedNamesRecorded": [],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    },
+    {
+      "path": "src-tauri/assets/fonts/Literata-Regular.ttf",
+      "family": "Literata",
+      "bytes": 319964,
+      "sha256": "0390890de9bb9d5862a6ba4125b82c61792ccc3d66b63e73eee75c1a16fcd208",
+      "license": "OFL-1.1",
+      "licensePath": "src-tauri/assets/fonts/Literata-OFL.txt",
+      "source": "https://github.com/googlefonts/literata/blob/0c2761b727a1b3a7cffd313c37f0f5163dfc7a63/fonts/ttf/Literata-Regular.ttf",
+      "provenanceVerifiedHash": true,
+      "recordedModification": false,
+      "reservedNamesRecorded": [],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    },
+    {
+      "path": "vendor/dense-ui/src/ui/fonts/NotoSans-variable.woff2",
+      "family": "Noto Sans UI",
+      "bytes": 918168,
+      "sha256": "7ed77c38412a34312e975abcd5eb2b2848a596f1921393f925a53a27938eb116",
+      "license": "OFL-1.1",
+      "licensePath": "vendor/dense-ui/src/ui/fonts/NotoSans-OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosans/NotoSans%5Bwdth,wght%5D.ttf",
+      "provenanceVerifiedHash": true,
+      "recordedModification": "Container-only WOFF2 conversion documented by upstream; canonical TTF source commit not pinned in font README",
+      "reservedNamesRecorded": [],
+      "rfnScope": "No new RFN interpretation, naming decision, modification, or relicensing performed by this preparation"
+    }
+  ],
+  "pdfium": {
+    "version": "155.0.8044.0",
+    "provenancePath": "src-tauri/assets/pdfium/provenance.json",
+    "upstreamRelease": "https://github.com/bblanchon/pdfium-binaries/releases/tag/chromium/8044",
+    "archiveDigest": "sha256:78a17d9a5f14467631c26a3ac8741b27a0471ecc05bd6a119b523598160a0537",
+    "localDll": {
+      "path": "src-tauri/assets/pdfium/bin/pdfium.dll",
+      "bytes": 7370752,
+      "sha256": "04100c03e41cac1f979e36e5e26fb860bcb5a7461f53830d3c098716624a27a9",
+      "expectedSha256": "04100c03e41cac1f979e36e5e26fb860bcb5a7461f53830d3c098716624a27a9",
+      "expectedBytes": 7370752,
+      "verified": true
+    },
+    "verificationBoundary": "All local extraction-file SHA/size checked against recorded provenance; recorded archive digest independently matches immutable upstream metadata. Archive/DLL not downloaded during audit; no independent rebuild or signature attestation.",
+    "authenticode": "Authenticode NotSigned",
+    "notices": [
+      {
+        "path": "src-tauri/assets/pdfium/LICENSE",
+        "sha256": "8854f4388f1ca13b3ad9baa42e95f5546b4c0b17109c159256d3eca7be39b09b",
+        "component": "pdfium-binaries packaging/build project",
+        "license": "MIT",
+        "obligations": "Retain copyright and permission text; this license expressly delegates third-party components to licenses/",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/pdfium.txt",
+        "sha256": "961eacd9633fff6d051db7208b755e9210e30efac7adec3e6a6d52798f0ccf0e",
+        "component": "PDFium + appended Apache text",
+        "license": "BSD-3-Clause AND supplied Apache-2.0 text",
+        "obligations": "Retain full supplied notice; binary docs/materials must reproduce copyright/conditions/disclaimer; no endorsement",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/abseil.txt",
+        "sha256": "f54fff0b905df5b3464527c652a30e903b172d6dcab4d89b5e6f105d5e4a4603",
+        "component": "Abseil",
+        "license": "Apache-2.0",
+        "obligations": "Provide license; retain required attribution/NOTICE if applicable; identify modifications if any; patent/trademark terms remain",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/agg23.txt",
+        "sha256": "c110d3ea2ad77467ce0dcff7d3337e6c8be8049a5103f4b9bd5fd911a77972e5",
+        "component": "Anti-Grain Geometry2.3",
+        "license": "AGG-2.3 permissive notice",
+        "obligations": "Retain copyright in all copies; do not confuse with later GPL-licensed AGG releases",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/fast_float.txt",
+        "sha256": "bf1b57355feca8fce77ee95f48002f8d4789fb71b30ec7599c06cda4901fbb2b",
+        "component": "fast_float",
+        "license": "MIT",
+        "obligations": "Retain copyright/permission/disclaimer",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/freetype.txt",
+        "sha256": "f4b133e25df1f86ad3ffea453aa0e613f0474f34778dbbb3e437e7b2724937d8",
+        "component": "FreeType",
+        "license": "FTL (supplied permissive licensing route)",
+        "obligations": "Binary distribution docs acknowledge that software is based in part on the work of the FreeType Team; retain source license/change marking if distributing modified source. Do not substitute GPL alternative accidentally",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/icu.txt",
+        "sha256": "93679f4389d53b6835d89843f251844fb9bc455b35bab036d3c8e7abe497a47a",
+        "component": "ICU/Unicode data + bundled notices",
+        "license": "Unicode-3.0 + legacy ICU + BSD-3-Clause/MIT + IPADIC/ICOT terms; GPL build-script notices with explicit Autoconf distribution exceptions",
+        "obligations": "Retain entire supplied file, including dictionary-data/custom disclaimers. ICU notice contains pkg.m4 GPL-2.0-or-later and config.guess GPL-3.0-or-later texts with exceptions permitting same distribution terms when part of an Autoconf-configured program; these are identified build-script notices, not proof the PDFium DLL/application is GPL. Reassess if distributing/modifying those scripts independently.",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/lcms.txt",
+        "sha256": "7312b68c5b25e9bf2b828706fb4e29588f22705112f411fd42e1f7d84c3d139a",
+        "component": "Little CMS2.19",
+        "license": "MIT",
+        "obligations": "Retain copyright/permission/disclaimer",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/libjpeg_turbo.md",
+        "sha256": "be2b2b5ab168bce87bc3e31f2a5c5adba4b7f6e9e51d618e958d1d46972ebd95",
+        "component": "libjpeg-turbo roll-up/BSD text",
+        "license": "IJG AND BSD-3-Clause (plus zlib-derived source)",
+        "obligations": "Product docs state: This software is based in part on the work of the Independent JPEG Group. Retain supplied BSD text where applicable and full paired notices",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/libjpeg_turbo.ijg",
+        "sha256": "db16a04128171879c60708d171b88d97345a2dd20f9bfc173680a4497c73f704",
+        "component": "Independent JPEG Group notice",
+        "license": "IJG",
+        "obligations": "Keep README/legal text; acknowledgment for executable distribution; no author-name advertising; altered source plainly documented",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/libopenjpeg.txt",
+        "sha256": "c5ab0890a737c2dfa7ba675036554f6d17741d98629b0c2a145354d00617e6b2",
+        "component": "OpenJPEG",
+        "license": "BSD-2-Clause",
+        "obligations": "Retain copyright/conditions/disclaimer in source and binary materials; no patent rights granted by this copyright notice",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/libpng.txt",
+        "sha256": "452390433ba0f88aa3e2b122c647741b72a0c117cd6ed7a329b49785aecb5511",
+        "component": "libpng",
+        "license": "libpng-2.0 + historical notices",
+        "obligations": "Retain copyright notice in source; do not misrepresent origin or altered source; preserve complete supplied file",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/llvm-libc.txt",
+        "sha256": "3b6226c32e168c83b891d8d6f0d3c29c2116dc3ef93dc93c307b54f279ecf383",
+        "component": "LLVM libc",
+        "license": "Apache-2.0 WITH LLVM-exception plus legacy NCSA text",
+        "obligations": "Keep complete supplied notice; compiled-object exception is scoped and does not justify dropping all other component notices",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/simdutf.txt",
+        "sha256": "c172a0ba936ff31230febb5dad869e25cb7c1a07480c7a381be8cf011bb52719",
+        "component": "simdutf",
+        "license": "MIT",
+        "obligations": "Retain copyright/permission/disclaimer",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      },
+      {
+        "path": "src-tauri/assets/pdfium/licenses/zlib.txt",
+        "sha256": "33fd641c9f3b0e0be64bc78fea9e94807674cdd70c48477599226cb8956565fe",
+        "component": "zlib",
+        "license": "Zlib",
+        "obligations": "Do not misrepresent origin; mark altered source; do not remove source notice",
+        "sourceOffer": "No general corresponding-source offer found in this supplied permissive notice; full binary dependency completeness is not independently certified"
+      }
+    ]
+  },
+  "code": [
+    {
+      "component": "Dense UI",
+      "license": "MIT",
+      "notice": "vendor/dense-ui/LICENSE",
+      "noticeSha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3",
+      "source": "https://github.com/edward-ap/dense-ui/tree/7e4b2983bcac5c640de250bc7fa1b17d8e6d369e",
+      "obligations": "Include copyright and permission in copies/substantial portions; preserve upstream THIRD_PARTY_NOTICES, including separate UI-font OFL and color-math attribution"
+    },
+    {
+      "component": "Local viewport extension",
+      "license": "MIT",
+      "notice": "extensions/viewport/LICENSE",
+      "noticeSha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3",
+      "source": "Archived upstream sources identified by per-file hashes; modified local derivative",
+      "obligations": "Keep original MIT copyright/permission; retain provenance and distinguish local modifications. Application MIT grant would not replace original notice"
+    },
+    {
+      "component": "Local painter extension",
+      "license": "MIT",
+      "notice": "extensions/painter/LICENSE",
+      "noticeSha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3",
+      "source": "Archived upstream sources identified by per-file hashes; modified local derivative",
+      "obligations": "Keep original MIT copyright/permission; retain provenance and distinguish local modifications. Application MIT grant would not replace original notice"
+    }
+  ],
+  "schemas": {
+    "files": [
+      {
+        "path": "docs/specifications/fb2/FictionBook.xsd",
+        "bytes": 34541,
+        "sha256": "db2c0a239f4654db808d580b4d835fda9b41df09c169556116c4092ca47865b3"
+      },
+      {
+        "path": "docs/specifications/fb2/FictionBookGenres.xsd",
+        "bytes": 8216,
+        "sha256": "4e412d345b72c633a763e4c49f1e7c198e9f21b74b6be53d2d844d7b90133722"
+      },
+      {
+        "path": "docs/specifications/fb2/FictionBookLang.xsd",
+        "bytes": 480,
+        "sha256": "4873a0ec10a86a68c8e511ded5fdbb71f1cc8d7319bc71a791cd13575db51158"
+      },
+      {
+        "path": "docs/specifications/fb2/FictionBookLinks.xsd",
+        "bytes": 642,
+        "sha256": "f4697d9a42f191a9030b74f7611dd340b0298860b5eb30e67ea6560b52ff6af6"
+      }
+    ],
+    "source": "https://github.com/gribuser/fb2/tree/4d3740e319039911c30d291abb0c8b26ec99703b",
+    "license": "FictionBook.xsd contains BSD-2-Clause-style notice; companion schemas lack individual visible license headers",
+    "obligations": "Preserve complete schema notice and provenance; confirm repository-level grant covers companions rather than treating each headerless file as MIT"
+  },
+  "iconFamily": [
+    {
+      "path": "src-tauri/icons/128x128.png",
+      "bytes": 26658,
+      "sha256": "4c456b5c62149fc2e5c3a1dda6295290f329f6cda321fb3783ac2141dbbe6af3",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/128x128@2x.png",
+      "bytes": 79828,
+      "sha256": "48b26bd1ef4822cd5b71e51ec1b87e65de6069d770c0457f415d6b04f459c29f",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/32x32.png",
+      "bytes": 2944,
+      "sha256": "8221faf3fbd46d3d07705937023efe3bfea408909e1204f05af2f583fbcb350d",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/64x64.png",
+      "bytes": 8911,
+      "sha256": "4dd10b4d94dd108e1d2a276ef3e07a5e8ad9f4824f494e28cb525018241881dc",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-anydpi-v26/ic_launcher.xml",
+      "bytes": 261,
+      "sha256": "760d4b8a06bf7163dd010c33ad2cac9e4a75fa0177afaba042f83e311eef0c3e",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Generated launcher configuration, separate from source bitmap rights",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-hdpi/ic_launcher.png",
+      "bytes": 4635,
+      "sha256": "c3d4d282de07bc8677072290c9ce94e5c5c0859a326b44ac10f6f0078fbaceb2",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-hdpi/ic_launcher_foreground.png",
+      "bytes": 38586,
+      "sha256": "38b977d06ee2a450ed036e133574ad7f8a8246a75b1e46e6af66c7edceadf521",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-hdpi/ic_launcher_round.png",
+      "bytes": 4372,
+      "sha256": "03fe16df29493019a73bd5af3b2d159d4e4ccf5d4d8faa7d8b24b9b78c27c0bc",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-mdpi/ic_launcher.png",
+      "bytes": 4525,
+      "sha256": "0e4f9fab970cc8e70a9314c27e235f784b5c7ca2e40d78862783daa45c5e9857",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-mdpi/ic_launcher_foreground.png",
+      "bytes": 20456,
+      "sha256": "0701fc14f932099d7fa0fadbbcb535c7c97b09f1929e5ed3250817bf56a12b8d",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-mdpi/ic_launcher_round.png",
+      "bytes": 4185,
+      "sha256": "82a1feadf19ff71a0692498c48dbf51734120979d81a5a81bb319752c0c52405",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xhdpi/ic_launcher.png",
+      "bytes": 13684,
+      "sha256": "b04a24fc22d2f5028972de3c0b432c6bcb29ac06a7877c927d02455617555917",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_foreground.png",
+      "bytes": 61147,
+      "sha256": "7183a4a69f7988134d923d58c98b90917ef1f46f72b487edc159326c69341c53",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_round.png",
+      "bytes": 12737,
+      "sha256": "d794671db40a1db37a0b49f8d2f972f51416206cadb7a55eb54786fe28977cd6",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher.png",
+      "bytes": 25826,
+      "sha256": "f254a00b22f15b822cca3a4420a8c5b683a274f47cc10be064134413f1b55f42",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_foreground.png",
+      "bytes": 118180,
+      "sha256": "97a4338387556332ff96b620261c92ec50a3823b5a51b5ab8cf1dbb675a2b705",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_round.png",
+      "bytes": 24573,
+      "sha256": "28e09d528a985820f119a9d821c571c2c0dead41940528341a265f8bf4fe32eb",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher.png",
+      "bytes": 40606,
+      "sha256": "a386aad06e416f72f6acf1decf71ccab159ca22b3717b1933854923f69ebc0c1",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+      "bytes": 196443,
+      "sha256": "588ffd0bf8c80edbaf22cf2cfb0063093c5579180227d9fb12ff0b103db6ebc4",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_round.png",
+      "bytes": 38582,
+      "sha256": "48303d5cbea07213f9e934d1c610780d666eb09659eaaf20f1558ea20ce3cc46",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/android/values/ic_launcher_background.xml",
+      "bytes": 115,
+      "sha256": "0687336f0ccc6f7ee09c7c95110667c63b75931238df779a21af401fb864cd34",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Generated launcher configuration, separate from source bitmap rights",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/glass-transparent.ico",
+      "bytes": 100032,
+      "sha256": "72a6119d56ff96218984e5ddbcaf8a6a7fb52ba4efa4f1369178285871fa59a3",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/icon.icns",
+      "bytes": 1713038,
+      "sha256": "06dd301692c2f2ff33a52eddbdde29eacddbbe6ec8983b3a5e63fa79a88a9cf0",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/icon.ico",
+      "bytes": 100032,
+      "sha256": "72a6119d56ff96218984e5ddbcaf8a6a7fb52ba4efa4f1369178285871fa59a3",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/icon.png",
+      "bytes": 265494,
+      "sha256": "17d4e54e9a0f13ada84de4be4f7b3c7e2c572a9639d5f460357e1f3848e90bde",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-20x20@1x.png",
+      "bytes": 1282,
+      "sha256": "baec505128c8b5737613dcfb8222a6fec3bc5e4da4206b938daa207f06b93d77",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-20x20@2x-1.png",
+      "bytes": 3938,
+      "sha256": "4bb4a69054b0b54a2974d0beb4b0352b8f51cef9ba686a9c0ef4f60ed4c97f3e",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-20x20@2x.png",
+      "bytes": 3938,
+      "sha256": "4bb4a69054b0b54a2974d0beb4b0352b8f51cef9ba686a9c0ef4f60ed4c97f3e",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-20x20@3x.png",
+      "bytes": 7743,
+      "sha256": "eac8e01b580395d4b77b6e04a48ebc3604d2edcaf7454f37d8d1b64037b449dc",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-29x29@1x.png",
+      "bytes": 2403,
+      "sha256": "cb237e1d6c241884d358ea253e0a4194c9fa8c1fbddf2dc05d3329de78b731ca",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-29x29@2x-1.png",
+      "bytes": 7358,
+      "sha256": "250d704f93f0911d84e84509681731b633d3964bf692a55fbf2d41468603a88a",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-29x29@2x.png",
+      "bytes": 7358,
+      "sha256": "250d704f93f0911d84e84509681731b633d3964bf692a55fbf2d41468603a88a",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-29x29@3x.png",
+      "bytes": 14224,
+      "sha256": "a1c9964bed714c5f318e7544db5f09d902fa62468ccd6ccab8af0ba8b184b236",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-40x40@1x.png",
+      "bytes": 3938,
+      "sha256": "4bb4a69054b0b54a2974d0beb4b0352b8f51cef9ba686a9c0ef4f60ed4c97f3e",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-40x40@2x-1.png",
+      "bytes": 12302,
+      "sha256": "551368ce60a95629d36b602157dee6ba91c7fcb2bda5977cd4d9ae296e921d92",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-40x40@2x.png",
+      "bytes": 12302,
+      "sha256": "551368ce60a95629d36b602157dee6ba91c7fcb2bda5977cd4d9ae296e921d92",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-40x40@3x.png",
+      "bytes": 23694,
+      "sha256": "d49cd396a53903c79337d6fdbac9a8cc35ae869f4363da38b9931fdae91f7373",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-512@2x.png",
+      "bytes": 963038,
+      "sha256": "893abfd1b1e4824f3ddabcdb764d7123269b051a8485e51b88f28d5466c77b86",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-60x60@2x.png",
+      "bytes": 23694,
+      "sha256": "d49cd396a53903c79337d6fdbac9a8cc35ae869f4363da38b9931fdae91f7373",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-60x60@3x.png",
+      "bytes": 45051,
+      "sha256": "a16b531c1ad02cf9e6d1c88ef217e14e96e00334ed000577937d87916f991898",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-76x76@1x.png",
+      "bytes": 11303,
+      "sha256": "f3904271fd976c601e32b22e8000cb8b62605f9a114cfffb95be30373a845d1c",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-76x76@2x.png",
+      "bytes": 34440,
+      "sha256": "91d804854ed31a9d19522cde280689e65d2b8ab51e1ea8e66bd850dc79bf8670",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
+      "bytes": 39927,
+      "sha256": "7733419fa2f8b0105f41ab887ff46ebc28a89ef541955d4df53f88da557da951",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/source.png",
+      "bytes": 1481721,
+      "sha256": "02b3cba5a4da612f92ab6d63bb0fb4eb42d4f6beaae0b1fa6cad699d4fd6d630",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/source.svg",
+      "bytes": 361,
+      "sha256": "1b3a3d19c2d924fbe01e4382f3ba1d0fe5188149e6f2faa527a60fcbe7d63ea7",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Unused legacy icon",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/Square107x107Logo.png",
+      "bytes": 20132,
+      "sha256": "1f6beb1a8c7cda51ff4324d2f049b7ba485d0d858076cd388981d8a0603e6bdb",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/Square142x142Logo.png",
+      "bytes": 31502,
+      "sha256": "e65f196911a07d8f09f888c98b467dc8c78ed7a15e46e5d633b9ae925e14880f",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/Square150x150Logo.png",
+      "bytes": 34380,
+      "sha256": "fecc85c835089bdd4102262669c5c4ce4ae5f9139895c03caeb40586ec44aa92",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/Square284x284Logo.png",
+      "bytes": 94443,
+      "sha256": "9681c78d6a26aab78437076b65f082b83815669f9ebd26c7e51f3d7a7b913235",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/Square30x30Logo.png",
+      "bytes": 2603,
+      "sha256": "5e86307fb4e3babf76485b87d017f7b00ef5d125a80b08a37d3f00adf298d6fc",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/Square310x310Logo.png",
+      "bytes": 109663,
+      "sha256": "5aabfcecb6c8620ebfcb00b8b23604a1eb0f54f472df9103a2b590c2554f5f28",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/Square44x44Logo.png",
+      "bytes": 4763,
+      "sha256": "d17bfaa4e7014111fe1490833bf52fcaa0e43afd8eeb819399bbabdd72fc8caf",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/Square71x71Logo.png",
+      "bytes": 10434,
+      "sha256": "6ceb4237e10ddfc2a99e1921980332f9cdddfdfd5772732717f6ff6ea7b4db27",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/Square89x89Logo.png",
+      "bytes": 15271,
+      "sha256": "b4d1f10c2746b849708996115f6c9a46738402bd0a9a936d0604402e5911d2d0",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    },
+    {
+      "path": "src-tauri/icons/StoreLogo.png",
+      "bytes": 5908,
+      "sha256": "c5d757762554dc20bf9b5038e20adf6217d18879eef296ef427997434be6eedb",
+      "licenseStatus": "MIT-project-owned-artwork",
+      "apparentRole": "Native icon artwork",
+      "license": "MIT"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "fb2-companion-schemas",
+      "paths": [
+        "docs/specifications/fb2/FictionBookGenres.xsd",
+        "docs/specifications/fb2/FictionBookLang.xsd",
+        "docs/specifications/fb2/FictionBookLinks.xsd"
+      ],
+      "status": "scope-confirmation-needed",
+      "needed": "Confirm repository-level permission covering the companion schemas that lack individual visible headers. Preserve the BSD-2-Clause-style notice in FictionBook.xsd and upstream pinned provenance; do not infer the companion files are MIT.",
+      "source": "https://github.com/gribuser/fb2/tree/4d3740e319039911c30d291abb0c8b26ec99703b"
+    }
+  ],
+  "binaryDistributionPlan": {
+    "status": "Notice mapping prepared; this manifest is not itself a public release package or a license grant for unresolved assets",
+    "documentPath": "licenses/ASSETS.md",
+    "manifestPath": "licenses/asset-license-manifest.json",
+    "requiredCreditText": [
+      "This software is based in part on the work of the FreeType Team.",
+      "This software is based in part on the work of the Independent JPEG Group."
+    ],
+    "files": [
+      {
+        "sourcePath": "src-tauri/assets/fonts/OFL.txt",
+        "distributionPath": "licenses/assets/fonts/OFL.txt",
+        "purpose": "Complete font copyright and OFL-1.1 text",
+        "bytes": 4434,
+        "sha256": "ddf311c28ddf5a5ad9747649837346b67bed9d356789c3072bb27dbce49e514d"
+      },
+      {
+        "sourcePath": "src-tauri/assets/fonts/NotoEmoji-OFL.txt",
+        "distributionPath": "licenses/assets/fonts/NotoEmoji-OFL.txt",
+        "purpose": "Complete font copyright and OFL-1.1 text",
+        "bytes": 4330,
+        "sha256": "500bb1ccf43df7bbb522112f9133a52b16e1c35e809632f5d8609b179152de5b"
+      },
+      {
+        "sourcePath": "src-tauri/assets/fonts/NotoSansMono-OFL.txt",
+        "distributionPath": "licenses/assets/fonts/NotoSansMono-OFL.txt",
+        "purpose": "Complete font copyright and OFL-1.1 text",
+        "bytes": 4396,
+        "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+      },
+      {
+        "sourcePath": "src-tauri/assets/fonts/NotoSerifJP-OFL.txt",
+        "distributionPath": "licenses/assets/fonts/NotoSerifJP-OFL.txt",
+        "purpose": "Complete font copyright and OFL-1.1 text",
+        "bytes": 4350,
+        "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+      },
+      {
+        "sourcePath": "src-tauri/assets/fonts/Literata-OFL.txt",
+        "distributionPath": "licenses/assets/fonts/Literata-OFL.txt",
+        "purpose": "Complete font copyright and OFL-1.1 text",
+        "bytes": 4389,
+        "sha256": "8742963604cd89dc81437811a850018fc03b2bfad686d7422c8235967c87614e"
+      },
+      {
+        "sourcePath": "vendor/dense-ui/src/ui/fonts/NotoSans-OFL.txt",
+        "distributionPath": "licenses/assets/ui-fonts/NotoSans-OFL.txt",
+        "purpose": "Complete font copyright and OFL-1.1 text",
+        "bytes": 4396,
+        "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/LICENSE",
+        "distributionPath": "licenses/pdfium/LICENSE",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 1184,
+        "sha256": "8854f4388f1ca13b3ad9baa42e95f5546b4c0b17109c159256d3eca7be39b09b"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/pdfium.txt",
+        "distributionPath": "licenses/pdfium/licenses/pdfium.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 12818,
+        "sha256": "961eacd9633fff6d051db7208b755e9210e30efac7adec3e6a6d52798f0ccf0e"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/abseil.txt",
+        "distributionPath": "licenses/pdfium/licenses/abseil.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 11564,
+        "sha256": "f54fff0b905df5b3464527c652a30e903b172d6dcab4d89b5e6f105d5e4a4603"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/agg23.txt",
+        "distributionPath": "licenses/pdfium/licenses/agg23.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 725,
+        "sha256": "c110d3ea2ad77467ce0dcff7d3337e6c8be8049a5103f4b9bd5fd911a77972e5"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/fast_float.txt",
+        "distributionPath": "licenses/pdfium/licenses/fast_float.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 1106,
+        "sha256": "bf1b57355feca8fce77ee95f48002f8d4789fb71b30ec7599c06cda4901fbb2b"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/freetype.txt",
+        "distributionPath": "licenses/pdfium/licenses/freetype.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 6741,
+        "sha256": "f4b133e25df1f86ad3ffea453aa0e613f0474f34778dbbb3e437e7b2724937d8"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/icu.txt",
+        "distributionPath": "licenses/pdfium/licenses/icu.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 28286,
+        "sha256": "93679f4389d53b6835d89843f251844fb9bc455b35bab036d3c8e7abe497a47a"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/lcms.txt",
+        "distributionPath": "licenses/pdfium/licenses/lcms.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 1353,
+        "sha256": "7312b68c5b25e9bf2b828706fb4e29588f22705112f411fd42e1f7d84c3d139a"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/libjpeg_turbo.md",
+        "distributionPath": "licenses/pdfium/licenses/libjpeg_turbo.md",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 5755,
+        "sha256": "be2b2b5ab168bce87bc3e31f2a5c5adba4b7f6e9e51d618e958d1d46972ebd95"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/libjpeg_turbo.ijg",
+        "distributionPath": "licenses/pdfium/licenses/libjpeg_turbo.ijg",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 13059,
+        "sha256": "db16a04128171879c60708d171b88d97345a2dd20f9bfc173680a4497c73f704"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/libopenjpeg.txt",
+        "distributionPath": "licenses/pdfium/licenses/libopenjpeg.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 1794,
+        "sha256": "c5ab0890a737c2dfa7ba675036554f6d17741d98629b0c2a145354d00617e6b2"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/libpng.txt",
+        "distributionPath": "licenses/pdfium/licenses/libpng.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 5479,
+        "sha256": "452390433ba0f88aa3e2b122c647741b72a0c117cd6ed7a329b49785aecb5511"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/llvm-libc.txt",
+        "distributionPath": "licenses/pdfium/licenses/llvm-libc.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 15418,
+        "sha256": "3b6226c32e168c83b891d8d6f0d3c29c2116dc3ef93dc93c307b54f279ecf383"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/simdutf.txt",
+        "distributionPath": "licenses/pdfium/licenses/simdutf.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 1077,
+        "sha256": "c172a0ba936ff31230febb5dad869e25cb7c1a07480c7a381be8cf011bb52719"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/licenses/zlib.txt",
+        "distributionPath": "licenses/pdfium/licenses/zlib.txt",
+        "purpose": "Complete supplied PDFium/package/component notice",
+        "bytes": 1332,
+        "sha256": "33fd641c9f3b0e0be64bc78fea9e94807674cdd70c48477599226cb8956565fe"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/VERSION",
+        "distributionPath": "licenses/pdfium/VERSION",
+        "purpose": "Pinned native-binary provenance metadata, not a replacement for legal notices",
+        "bytes": 37,
+        "sha256": "bef414bc84af4df6a24f158563eb840ae1a17d1967fa101a7b0aed5421184de5"
+      },
+      {
+        "sourcePath": "src-tauri/assets/pdfium/provenance.json",
+        "distributionPath": "licenses/pdfium/provenance.json",
+        "purpose": "Pinned native-binary provenance metadata, not a replacement for legal notices",
+        "bytes": 2949,
+        "sha256": "739c3242f3957695d61d91f6e5527999dcc7a29610cf435a4a176d0988939646"
+      },
+      {
+        "sourcePath": "vendor/dense-ui/LICENSE",
+        "distributionPath": "licenses/dense-ui/LICENSE",
+        "purpose": "Original MIT copyright/permission/disclaimer",
+        "bytes": 1072,
+        "sha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3"
+      },
+      {
+        "sourcePath": "extensions/viewport/LICENSE",
+        "distributionPath": "licenses/extensions/viewport/LICENSE",
+        "purpose": "Original MIT copyright/permission/disclaimer",
+        "bytes": 1072,
+        "sha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3"
+      },
+      {
+        "sourcePath": "extensions/painter/LICENSE",
+        "distributionPath": "licenses/extensions/painter/LICENSE",
+        "purpose": "Original MIT copyright/permission/disclaimer",
+        "bytes": 1072,
+        "sha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3"
+      },
+      {
+        "sourcePath": "vendor/dense-ui/THIRD_PARTY_NOTICES.md",
+        "distributionPath": "licenses/dense-ui/THIRD_PARTY_NOTICES.md",
+        "purpose": "Upstream attribution inventory and separate UI font/color-math notices",
+        "bytes": 2794,
+        "sha256": "9597fa51abfc594d8da7161c46abbc94faaf21e8a3969fe1d84fbf8cad41ccf5"
+      }
+    ],
+    "additionalRequiredScope": "Merge the separately prepared Rust/native license inventory and notices. Preserve no-endorsement/trademark/change-marking/patent terms as applicable. Do not ship build/test tools unless their separate redistribution terms are fulfilled.",
+    "notSourceOffers": "No blanket application/DLL corresponding-source offer is asserted from these asset notices. ICU aggregate contains identified build-tool GPL texts with explicit Autoconf distribution exceptions; do not infer linked application GPL or discard the full file."
+  },
+  "artwork": {
+    "license": "MIT",
+    "notice": "LICENSE",
+    "copyright": "2026 Edward Aponasko",
+    "ownership": "project-owned artwork",
+    "groups": [
+      {
+        "id": "ship",
+        "paths": [
+          "frontend/assets/ship.png"
+        ],
+        "license": "MIT",
+        "ownership": "project-owned artwork",
+        "files": [
+          {
+            "path": "frontend/assets/ship.png",
+            "sha256": "8a33a6f84f5485f50b0132987dffa8167539c7632c816c823b756fab62cda7ec"
+          }
+        ]
+      },
+      {
+        "id": "native-icons",
+        "paths": [
+          "src-tauri/icons/128x128.png",
+          "src-tauri/icons/128x128@2x.png",
+          "src-tauri/icons/32x32.png",
+          "src-tauri/icons/64x64.png",
+          "src-tauri/icons/android/mipmap-hdpi/ic_launcher.png",
+          "src-tauri/icons/android/mipmap-hdpi/ic_launcher_foreground.png",
+          "src-tauri/icons/android/mipmap-hdpi/ic_launcher_round.png",
+          "src-tauri/icons/android/mipmap-mdpi/ic_launcher.png",
+          "src-tauri/icons/android/mipmap-mdpi/ic_launcher_foreground.png",
+          "src-tauri/icons/android/mipmap-mdpi/ic_launcher_round.png",
+          "src-tauri/icons/android/mipmap-xhdpi/ic_launcher.png",
+          "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_foreground.png",
+          "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_round.png",
+          "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher.png",
+          "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_foreground.png",
+          "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_round.png",
+          "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher.png",
+          "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+          "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_round.png",
+          "src-tauri/icons/glass-transparent.ico",
+          "src-tauri/icons/icon.icns",
+          "src-tauri/icons/icon.ico",
+          "src-tauri/icons/icon.png",
+          "src-tauri/icons/ios/AppIcon-20x20@1x.png",
+          "src-tauri/icons/ios/AppIcon-20x20@2x-1.png",
+          "src-tauri/icons/ios/AppIcon-20x20@2x.png",
+          "src-tauri/icons/ios/AppIcon-20x20@3x.png",
+          "src-tauri/icons/ios/AppIcon-29x29@1x.png",
+          "src-tauri/icons/ios/AppIcon-29x29@2x-1.png",
+          "src-tauri/icons/ios/AppIcon-29x29@2x.png",
+          "src-tauri/icons/ios/AppIcon-29x29@3x.png",
+          "src-tauri/icons/ios/AppIcon-40x40@1x.png",
+          "src-tauri/icons/ios/AppIcon-40x40@2x-1.png",
+          "src-tauri/icons/ios/AppIcon-40x40@2x.png",
+          "src-tauri/icons/ios/AppIcon-40x40@3x.png",
+          "src-tauri/icons/ios/AppIcon-512@2x.png",
+          "src-tauri/icons/ios/AppIcon-60x60@2x.png",
+          "src-tauri/icons/ios/AppIcon-60x60@3x.png",
+          "src-tauri/icons/ios/AppIcon-76x76@1x.png",
+          "src-tauri/icons/ios/AppIcon-76x76@2x.png",
+          "src-tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
+          "src-tauri/icons/source.png",
+          "src-tauri/icons/source.svg",
+          "src-tauri/icons/Square107x107Logo.png",
+          "src-tauri/icons/Square142x142Logo.png",
+          "src-tauri/icons/Square150x150Logo.png",
+          "src-tauri/icons/Square284x284Logo.png",
+          "src-tauri/icons/Square30x30Logo.png",
+          "src-tauri/icons/Square310x310Logo.png",
+          "src-tauri/icons/Square44x44Logo.png",
+          "src-tauri/icons/Square71x71Logo.png",
+          "src-tauri/icons/Square89x89Logo.png",
+          "src-tauri/icons/StoreLogo.png"
+        ],
+        "license": "MIT",
+        "ownership": "project-owned artwork",
+        "files": [
+          {
+            "path": "src-tauri/icons/128x128.png",
+            "sha256": "4c456b5c62149fc2e5c3a1dda6295290f329f6cda321fb3783ac2141dbbe6af3"
+          },
+          {
+            "path": "src-tauri/icons/128x128@2x.png",
+            "sha256": "48b26bd1ef4822cd5b71e51ec1b87e65de6069d770c0457f415d6b04f459c29f"
+          },
+          {
+            "path": "src-tauri/icons/32x32.png",
+            "sha256": "8221faf3fbd46d3d07705937023efe3bfea408909e1204f05af2f583fbcb350d"
+          },
+          {
+            "path": "src-tauri/icons/64x64.png",
+            "sha256": "4dd10b4d94dd108e1d2a276ef3e07a5e8ad9f4824f494e28cb525018241881dc"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-hdpi/ic_launcher.png",
+            "sha256": "c3d4d282de07bc8677072290c9ce94e5c5c0859a326b44ac10f6f0078fbaceb2"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-hdpi/ic_launcher_foreground.png",
+            "sha256": "38b977d06ee2a450ed036e133574ad7f8a8246a75b1e46e6af66c7edceadf521"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-hdpi/ic_launcher_round.png",
+            "sha256": "03fe16df29493019a73bd5af3b2d159d4e4ccf5d4d8faa7d8b24b9b78c27c0bc"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-mdpi/ic_launcher.png",
+            "sha256": "0e4f9fab970cc8e70a9314c27e235f784b5c7ca2e40d78862783daa45c5e9857"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-mdpi/ic_launcher_foreground.png",
+            "sha256": "0701fc14f932099d7fa0fadbbcb535c7c97b09f1929e5ed3250817bf56a12b8d"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-mdpi/ic_launcher_round.png",
+            "sha256": "82a1feadf19ff71a0692498c48dbf51734120979d81a5a81bb319752c0c52405"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-xhdpi/ic_launcher.png",
+            "sha256": "b04a24fc22d2f5028972de3c0b432c6bcb29ac06a7877c927d02455617555917"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_foreground.png",
+            "sha256": "7183a4a69f7988134d923d58c98b90917ef1f46f72b487edc159326c69341c53"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_round.png",
+            "sha256": "d794671db40a1db37a0b49f8d2f972f51416206cadb7a55eb54786fe28977cd6"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher.png",
+            "sha256": "f254a00b22f15b822cca3a4420a8c5b683a274f47cc10be064134413f1b55f42"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_foreground.png",
+            "sha256": "97a4338387556332ff96b620261c92ec50a3823b5a51b5ab8cf1dbb675a2b705"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_round.png",
+            "sha256": "28e09d528a985820f119a9d821c571c2c0dead41940528341a265f8bf4fe32eb"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher.png",
+            "sha256": "a386aad06e416f72f6acf1decf71ccab159ca22b3717b1933854923f69ebc0c1"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+            "sha256": "588ffd0bf8c80edbaf22cf2cfb0063093c5579180227d9fb12ff0b103db6ebc4"
+          },
+          {
+            "path": "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_round.png",
+            "sha256": "48303d5cbea07213f9e934d1c610780d666eb09659eaaf20f1558ea20ce3cc46"
+          },
+          {
+            "path": "src-tauri/icons/glass-transparent.ico",
+            "sha256": "72a6119d56ff96218984e5ddbcaf8a6a7fb52ba4efa4f1369178285871fa59a3"
+          },
+          {
+            "path": "src-tauri/icons/icon.icns",
+            "sha256": "06dd301692c2f2ff33a52eddbdde29eacddbbe6ec8983b3a5e63fa79a88a9cf0"
+          },
+          {
+            "path": "src-tauri/icons/icon.ico",
+            "sha256": "72a6119d56ff96218984e5ddbcaf8a6a7fb52ba4efa4f1369178285871fa59a3"
+          },
+          {
+            "path": "src-tauri/icons/icon.png",
+            "sha256": "17d4e54e9a0f13ada84de4be4f7b3c7e2c572a9639d5f460357e1f3848e90bde"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-20x20@1x.png",
+            "sha256": "baec505128c8b5737613dcfb8222a6fec3bc5e4da4206b938daa207f06b93d77"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-20x20@2x-1.png",
+            "sha256": "4bb4a69054b0b54a2974d0beb4b0352b8f51cef9ba686a9c0ef4f60ed4c97f3e"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-20x20@2x.png",
+            "sha256": "4bb4a69054b0b54a2974d0beb4b0352b8f51cef9ba686a9c0ef4f60ed4c97f3e"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-20x20@3x.png",
+            "sha256": "eac8e01b580395d4b77b6e04a48ebc3604d2edcaf7454f37d8d1b64037b449dc"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-29x29@1x.png",
+            "sha256": "cb237e1d6c241884d358ea253e0a4194c9fa8c1fbddf2dc05d3329de78b731ca"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-29x29@2x-1.png",
+            "sha256": "250d704f93f0911d84e84509681731b633d3964bf692a55fbf2d41468603a88a"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-29x29@2x.png",
+            "sha256": "250d704f93f0911d84e84509681731b633d3964bf692a55fbf2d41468603a88a"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-29x29@3x.png",
+            "sha256": "a1c9964bed714c5f318e7544db5f09d902fa62468ccd6ccab8af0ba8b184b236"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-40x40@1x.png",
+            "sha256": "4bb4a69054b0b54a2974d0beb4b0352b8f51cef9ba686a9c0ef4f60ed4c97f3e"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-40x40@2x-1.png",
+            "sha256": "551368ce60a95629d36b602157dee6ba91c7fcb2bda5977cd4d9ae296e921d92"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-40x40@2x.png",
+            "sha256": "551368ce60a95629d36b602157dee6ba91c7fcb2bda5977cd4d9ae296e921d92"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-40x40@3x.png",
+            "sha256": "d49cd396a53903c79337d6fdbac9a8cc35ae869f4363da38b9931fdae91f7373"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-512@2x.png",
+            "sha256": "893abfd1b1e4824f3ddabcdb764d7123269b051a8485e51b88f28d5466c77b86"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-60x60@2x.png",
+            "sha256": "d49cd396a53903c79337d6fdbac9a8cc35ae869f4363da38b9931fdae91f7373"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-60x60@3x.png",
+            "sha256": "a16b531c1ad02cf9e6d1c88ef217e14e96e00334ed000577937d87916f991898"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-76x76@1x.png",
+            "sha256": "f3904271fd976c601e32b22e8000cb8b62605f9a114cfffb95be30373a845d1c"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-76x76@2x.png",
+            "sha256": "91d804854ed31a9d19522cde280689e65d2b8ab51e1ea8e66bd850dc79bf8670"
+          },
+          {
+            "path": "src-tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
+            "sha256": "7733419fa2f8b0105f41ab887ff46ebc28a89ef541955d4df53f88da557da951"
+          },
+          {
+            "path": "src-tauri/icons/source.png",
+            "sha256": "02b3cba5a4da612f92ab6d63bb0fb4eb42d4f6beaae0b1fa6cad699d4fd6d630"
+          },
+          {
+            "path": "src-tauri/icons/source.svg",
+            "sha256": "1b3a3d19c2d924fbe01e4382f3ba1d0fe5188149e6f2faa527a60fcbe7d63ea7"
+          },
+          {
+            "path": "src-tauri/icons/Square107x107Logo.png",
+            "sha256": "1f6beb1a8c7cda51ff4324d2f049b7ba485d0d858076cd388981d8a0603e6bdb"
+          },
+          {
+            "path": "src-tauri/icons/Square142x142Logo.png",
+            "sha256": "e65f196911a07d8f09f888c98b467dc8c78ed7a15e46e5d633b9ae925e14880f"
+          },
+          {
+            "path": "src-tauri/icons/Square150x150Logo.png",
+            "sha256": "fecc85c835089bdd4102262669c5c4ce4ae5f9139895c03caeb40586ec44aa92"
+          },
+          {
+            "path": "src-tauri/icons/Square284x284Logo.png",
+            "sha256": "9681c78d6a26aab78437076b65f082b83815669f9ebd26c7e51f3d7a7b913235"
+          },
+          {
+            "path": "src-tauri/icons/Square30x30Logo.png",
+            "sha256": "5e86307fb4e3babf76485b87d017f7b00ef5d125a80b08a37d3f00adf298d6fc"
+          },
+          {
+            "path": "src-tauri/icons/Square310x310Logo.png",
+            "sha256": "5aabfcecb6c8620ebfcb00b8b23604a1eb0f54f472df9103a2b590c2554f5f28"
+          },
+          {
+            "path": "src-tauri/icons/Square44x44Logo.png",
+            "sha256": "d17bfaa4e7014111fe1490833bf52fcaa0e43afd8eeb819399bbabdd72fc8caf"
+          },
+          {
+            "path": "src-tauri/icons/Square71x71Logo.png",
+            "sha256": "6ceb4237e10ddfc2a99e1921980332f9cdddfdfd5772732717f6ff6ea7b4db27"
+          },
+          {
+            "path": "src-tauri/icons/Square89x89Logo.png",
+            "sha256": "b4d1f10c2746b849708996115f6c9a46738402bd0a9a936d0604402e5911d2d0"
+          },
+          {
+            "path": "src-tauri/icons/StoreLogo.png",
+            "sha256": "c5d757762554dc20bf9b5038e20adf6217d18879eef296ef427997434be6eedb"
+          }
+        ]
+      },
+      {
+        "id": "publisher-mark",
+        "paths": [
+          "src-tauri/assets/branding/publisher-ae.png",
+          "src-tauri/assets/branding/publisher-ae.json"
+        ],
+        "license": "MIT",
+        "ownership": "project-owned artwork",
+        "files": [
+          {
+            "path": "src-tauri/assets/branding/publisher-ae.png",
+            "sha256": "33e6e0d0c88cc77529b803ad7bb2e75dcf1758b7828a47ec618d18644bcf6cf0"
+          },
+          {
+            "path": "src-tauri/assets/branding/publisher-ae.json",
+            "sha256": "eec0a6d646a516b4d2a648f9e0d5b1a3684c37e5279072e4c64f53758c28b6e9"
+          }
+        ]
+      }
+    ],
+    "provenance": "licenses/artwork-provenance.json"
+  },
+  "fontUsage": {
+    "body": {
+      "family": "Literata",
+      "provenance": "src-tauri/assets/fonts/Literata.provenance.json",
+      "license": "OFL-1.1",
+      "evidence": "src-tauri/src/publication/typography.rs:73"
+    },
+    "ui": {
+      "family": "Noto Sans",
+      "file": "vendor/dense-ui/src/ui/fonts/NotoSans-variable.woff2",
+      "license": "OFL-1.1",
+      "evidence": "vendor/dense-ui/src/ui/styles/fonts.css:2"
+    },
+    "emblem": {
+      "file": "src-tauri/assets/branding/publisher-ae.png",
+      "metrics": "src-tauri/assets/branding/publisher-ae.json",
+      "representation": "Static PNG artwork",
+      "runtimeMetricsFields": [
+        "width",
+        "height",
+        "baseline"
+      ],
+      "runtimeFontRequired": false,
+      "evidence": [
+        "src-tauri/src/publication/typography/running_header.rs:7",
+        "src-tauri/src/publication/typography/running_header.rs:226"
+      ]
+    }
+  }
+}

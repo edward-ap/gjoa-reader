@@ -1,0 +1,175 @@
+html, body, #app { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+.reader-statusbar { position: relative; height: 100%; padding: 5px 26px; gap: 5px; justify-content: center; border-top: 1px solid var(--dui-color-border, #d7dbe0); background: var(--dui-color-surface, #f6f6f6); }
+.reader-statusbar > * { flex-shrink: 0; }
+.reader-statusbar .dui-icon-button { width: 30px; height: 30px; padding: 4px; }
+.reader-statusbar .dui-icon-button .dui-icon { width: 18px; height: 18px; }
+.reader-statusbar .reader-import-empty { animation: reader-import-pulse 2s ease-in-out infinite; }
+@keyframes reader-import-pulse {
+  0%, 100% { background-color: #e0f4e4; }
+  50% { background-color: #66ce83; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reader-statusbar .reader-import-empty { animation: none; background-color: #9cdeaE; }
+}
+.reader-statusbar .dui-icon-button[aria-pressed=true] { background: color-mix(in srgb, var(--dui-color-focus-border) 12%, var(--dui-color-surface)); box-shadow: inset 0 -2px var(--dui-color-focus-border); }
+.reader-page-count { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.reader-status { min-width: 0; max-width: 240px; flex: 0 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; }
+.reader-status:empty { display: none; }
+.reader-render-light { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); }
+.reader-render-light .dui-icon-button:disabled { opacity: 1; cursor: default; }
+.reader-statusbar .reader-render-light .dui-icon-button[aria-pressed] { background: transparent; box-shadow: none; }
+/* Theme-colored side rails also inset both overlay panel anchors. */
+.reader-body { position: relative; overflow: hidden; box-sizing: border-box; border-inline: 2px solid var(--dui-color-surface, #f6f6f6); }
+.reader-left-dock { display: flex; flex-direction: column; gap: 8px; padding: 8px; background: var(--dui-color-surface, #f6f6f6); }
+.reader-left-dock .dui-field-group { margin: 0; min-width: 0; padding: 6px; border: 0; }
+.recent-group { flex: 0 0 auto; }
+.tree-group { flex: 1; min-height: 0; display: flex !important; flex-direction: column; }
+.tree-group .dui-tree-explorer { flex: 1; min-height: 0; }
+.book-row { display: flex; align-items: center; gap: 8px; min-width: 0; width: 100%; overflow: hidden; }
+.book-row > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.book-progress { display: block; appearance: none; width: 100%; height: 8px; border: 0; border-radius: 4px; overflow: hidden; background: #e1e5eb; }
+.book-progress::-webkit-progress-bar { background: #e1e5eb; border-radius: 4px; box-shadow: inset 0 0 0 1px #c2cad5; }
+.book-progress::-webkit-progress-value { background: #528fe0; border-radius: 4px; }
+.book-thumbnail { width: 11px; height: 15px; object-fit: contain; background: #e6e6e6; flex: 0 0 11px; }
+.recent-group .book-thumbnail { width: 16px; height: 22px; flex-basis: 16px; }
+.library-message { white-space: normal; font-size: 12px; }
+.import-content { display: flex; flex-direction: column; height: min(220px, calc(100vh - 160px)); min-height: 0; }
+.import-books-dialog .dui-dialog__body { min-height: 0; }
+.import-books-dialog { max-width: calc(100vw - 32px); }
+.import-books-dialog .dui-file-upload__status:not([hidden]) { display: block; }
+/* Queue progress has no label; the default editor label column overflows into Cancel. */
+.import-books-dialog .dui-file-upload__row .dui-progress-bar { grid-template-columns: minmax(0, 1fr); min-height: 8px; }
+.import-books-dialog .dui-file-upload__row .dui-progress-bar__label { display: none; }
+.import-books-dialog .dui-progress-bar__track { height: 8px; border: 0; border-radius: 4px; background: #e1e5eb; box-shadow: inset 0 0 0 1px #c2cad5; }
+.import-books-dialog .dui-progress-bar__fill { background: #528fe0; border-radius: 4px; }
+.import-content > .dui-file-upload { flex: 1; }
+.import-warnings { flex: 0 0 auto; max-height: 72px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; color: #805400; font-size: 12px; }
+.reader-workspace, .reader-view-host { position: relative; overflow: hidden; min-width: 0; min-height: 0; }
+.reader-view-host { background: var(--reader-workspace-background, #484c50); }
+.reader-empty-artwork { position: absolute; inset: 10%; pointer-events: none; color: var(--reader-pencil-color, #d4d8dc); }
+.reader-empty-artwork[hidden] { display: none; }
+.reader-empty-artwork svg { display: block; width: 100%; height: 100%; }
+.reader-edge-hint { display: block; width: 24px; height: 36px; color: #78a5e4; opacity: .65; pointer-events: none; }
+.reader-workspace .dui-edge-action-layer__zone--left > .dui-edge-action-layer__indicator { left: 20px; }
+.reader-workspace .dui-edge-action-layer__zone--right > .dui-edge-action-layer__indicator { right: 20px; }
+.reader-edge-hint svg { display: block; width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 0 1px #fff); }
+.reader-workspace [data-hover-edge=left] .dui-edge-action-layer__zone--left:not(.dui-edge-action-layer__zone--inactive) .dui-edge-action-layer__indicator,
+.reader-workspace [data-hover-edge=right] .dui-edge-action-layer__zone--right:not(.dui-edge-action-layer__zone--inactive) .dui-edge-action-layer__indicator { opacity: 1; }
+/* Symmetric stable gutters keep pages centered and prevent Fit Width resize feedback. */
+.reader-scroll { position: absolute; inset: 0; overflow: auto; scrollbar-gutter: stable both-edges; overscroll-behavior: contain; overflow-anchor: none; }
+.reader-scroll-plane { pointer-events: none; }
+.reader-surface { position: absolute; left: 0; top: 0; overflow: hidden; }
+.reader-continuous { position: absolute; inset: 0; overflow: hidden; }
+.reader-continuous .reader-scroll { scrollbar-width: none; scrollbar-gutter: auto; }
+.reader-continuous .reader-scroll::-webkit-scrollbar { display: none; }
+.reader-continuous .reader-surface { cursor: grab; }
+.reader-viewport { background: var(--reader-workspace-background, #484c50); border: 0; }
+/* Reading surfaces keep keyboard focus without framing the whole page area. */
+.reader-view-host .reader-viewport:focus-visible,
+.reader-view-host .reader-scroll:focus-visible { outline: none; }
+.reading-dock { grid-template-rows: minmax(0, 1fr); border: 0; }
+.reading-dock > .dui-dock-panel__header { display: none; }
+@media (max-width: 800px) { .reader-statusbar { gap: 2px; padding: 5px 26px; } }
+.library-dialog-content { display: flex; flex-direction: column; gap: 12px; padding: 6px; }
+.library-dialog-content .dui-readonly-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+[data-dui-control-id="libraryTree"] .dui-grid__row:has([data-cut-pending="true"]) { opacity: .42; }
+
+/* First-library walkthrough and real per-file publication stages. */
+.reader-guide-drop .dui-file-upload__drop,
+.reader-guide-close .dui-dialog__footer button { animation: reader-import-pulse 2s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .reader-guide-drop .dui-file-upload__drop,
+  .reader-guide-close .dui-dialog__footer button { animation: none; background-color: #9cdeae; }
+}
+
+.reader-statusbar .reader-navigation-guide { animation: reader-import-pulse 2s ease-in-out infinite; }
+.reader-navigation-guide .dui-edge-action-layer__zone--left,
+.reader-navigation-guide .dui-edge-action-layer__zone--right { animation: reader-navigation-area-pulse 2s ease-in-out infinite; }
+.reader-workspace .reader-navigation-guide .dui-edge-action-layer__indicator { opacity: 1; }
+.reader-navigation-guide .reader-edge-hint { color: #43bc70; }
+@keyframes reader-navigation-area-pulse {
+  0%, 100% { background-color: rgba(70, 190, 110, .03); }
+  50% { background-color: rgba(70, 190, 110, .17); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reader-statusbar .reader-navigation-guide { animation: none; background-color: #9cdeae; }
+  .reader-navigation-guide .dui-edge-action-layer__zone--left,
+  .reader-navigation-guide .dui-edge-action-layer__zone--right { animation: none; background-color: rgba(70, 190, 110, .1); }
+}
+
+
+.reader-settings { position: absolute; left: 4px; top: 50%; transform: translateY(-50%); }
+.reader-statusbar { padding-left: 38px; padding-right: 38px; }
+
+
+.dui-theme-dark-blue .reader-statusbar .reader-navigation-guide,
+.dui-theme-dark-blue .reader-statusbar .reader-import-empty { color: #183723; }
+.dui-theme-dark-blue .book-progress,
+.dui-theme-dark-blue .book-progress::-webkit-progress-bar,
+.dui-theme-dark-blue .import-books-dialog .dui-progress-bar__track { background: var(--dui-color-surface-strong); box-shadow: inset 0 0 0 1px var(--dui-color-border-strong); }
+
+.settings-restart-note { font-size: 11px; color: var(--dui-color-text-muted); margin-top: -4px; margin-left: calc(155px + var(--dui-gap-sm)); padding-left: 0; padding-right: 0; background: transparent; }
+
+/* Recent is quick access; TreeExplorer owns the primary filled selection. */
+.recent-group .dui-list__item.dui-selected { background: var(--dui-color-surface); color: var(--dui-color-text); }
+.recent-group .dui-list__item:hover { background: var(--dui-color-surface-strong); }
+.recent-group .dui-list__item.dui-active { outline: none; }
+.recent-group .dui-list:focus-visible .dui-list__item.dui-active { outline: 1px solid var(--dui-color-focus-border); outline-offset: -2px; }
+.settings-dialog .dui-dialog__footer > :first-child { margin-right: auto; }
+.settings-dialog .dui-dialog__footer { gap: 6px; }
+.settings-dialog .dui-readonly-text { background: transparent; }
+.settings-restart-note { color: var(--dui-color-muted); min-height: 16px; line-height: 16px; }
+.tree-group { padding: 0 6px 6px; }
+
+/* Keep the Library toggle reachable when its panel is removed from window width. */
+.reader-statusbar { justify-content: safe center; overflow-x: auto; overflow-y: hidden; }
+
+.settings-theme-row { display:flex; flex-direction:row; gap:6px; align-items:center; }
+.settings-theme-row > .dui-control:first-child { flex:1; min-width:0; }
+.settings-theme-row > button { flex:none; }
+.reader-theme-designer-dialog .dui-dialog__body { padding:8px; }
+
+/* Native HTML progress is Reader-specific; Dense UI parts use ThemeApplicator. */
+.reader-custom-theme .book-progress,
+.reader-custom-theme .book-progress::-webkit-progress-bar {
+  background: var(--dui-button-bg);
+  box-shadow: inset 0 0 0 1px var(--dui-color-border-strong);
+}
+.reader-custom-theme .book-progress::-webkit-progress-value {
+  background: var(--dui-color-focus-border);
+}
+/* Reader-owned movable right-edge drawing palette. No reserved workspace strip. */
+.reader-annotation-rail { position: absolute; right: 0; z-index: 10003; width: 0; height: 0; }
+.reader-annotation-rail[hidden], .reader-annotation-tools[hidden], .reader-annotation-secondary[hidden] { display: none; }
+.reader-annotation-tab { position: absolute; right: 0; top: -22px; width: 22px; height: 44px; border: 1px solid var(--dui-color-border-strong); border-right: 0; border-radius: 40px 0 0 40px; background: var(--dui-color-surface); color: var(--dui-color-text); cursor: grab; touch-action: none; padding: 0; box-shadow: -2px 3px 9px #0005, inset 0 1px 1px #fff3; }
+.reader-annotation-tab:active { cursor: grabbing; }
+.reader-annotation-tab:focus-visible { outline: 2px solid var(--dui-color-focus-border); outline-offset: 2px; }
+.reader-annotation-indicator { position: absolute; right: 0; top: 7px; width: 15px; height: 30px; box-sizing: border-box; border-radius: 32px 0 0 32px; background: var(--annotation-color); border: 1px solid var(--dui-color-border-strong); border-right: 0; pointer-events: none; }
+.reader-annotation-tools { position: absolute; right: 0; top: 0; width: 0; height: 0; z-index: 2; }
+.reader-annotation-tools > * { position: absolute; }
+.reader-annotation-tools > :nth-child(1) { right: 2px; top: -87px; }
+.reader-annotation-tools > :nth-child(2) { right: 38px; top: -61px; }
+.reader-annotation-tools > :nth-child(3) { right: 51px; top: -19px; }
+.reader-annotation-tools > :nth-child(4) { right: 38px; top: 23px; }
+.reader-annotation-tools > :nth-child(5) { right: 2px; top: 49px; }
+.reader-annotation-secondary { position: absolute; z-index: 1; }
+.reader-annotation-secondary > * { position: absolute; z-index: 1; }
+.reader-annotation-secondary::after { content: ''; position: absolute; z-index: 0; inset: 0; }
+.reader-annotation-tools .dui-icon-button,
+.reader-annotation-tools .dui-color-picker__button,
+.reader-annotation-secondary .dui-icon-button,
+.reader-annotation-secondary .dui-color-picker__button { width: 38px; height: 38px; min-width: 38px; padding: 7px; border-radius: 50%; box-sizing: border-box; background: var(--dui-color-surface); box-shadow: 0 3px 8px #0005, inset 0 1px 1px #fff3; }
+.reader-annotation-rail .dui-icon-button[aria-pressed="true"] { background: var(--dui-color-accent-bg); color: var(--dui-color-accent-text); }
+.reader-annotation-rail .dui-color-picker { width: 38px; min-width: 0; border-radius: 50%; }
+.reader-annotation-rail .dui-color-picker__label,
+.reader-annotation-rail .dui-color-picker__value { display: none; }
+.reader-annotation-rail .dui-color-picker__swatch { width: 22px; height: 22px; margin: 0; flex: 0 0 22px; border-radius: 50%; }
+.reader-annotation-color-active .dui-color-picker__button { outline: 2px solid var(--dui-color-accent-bg); outline-offset: 1px; }
+
+/* App-owned stage node inserted by the isolated FileUpload DOM adapter.
+   It occupies its own grid row immediately above the semantic progressbar. */
+.import-books-dialog .import-stage { display:block; grid-column:1; font-size:11px; line-height:16px; min-width:0; white-space:nowrap; text-align:right; }
+
+/* Reserve enough state-column width for the RU stage plus unchanged Cancel/Remove.
+   Redistribute existing row width; do not expand the dialog or duplicate progress. */
+.import-books-dialog [role=listitem][data-file-id] { grid-template-columns:minmax(0,1fr) minmax(200px,40%); }

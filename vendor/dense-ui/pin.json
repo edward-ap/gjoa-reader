@@ -1,0 +1,1217 @@
+{
+  "repository": "https://github.com/edward-ap/dense-ui",
+  "version": "0.6.0-rc.1",
+  "tag": "v0.6.0-rc.1",
+  "commit": "7e4b2983bcac5c640de250bc7fa1b17d8e6d369e",
+  "archive": "https://codeload.github.com/edward-ap/dense-ui/tar.gz/7e4b2983bcac5c640de250bc7fa1b17d8e6d369e",
+  "files": {
+    "LICENSE": {
+      "bytes": 1072,
+      "sha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3"
+    },
+    "package.json": {
+      "bytes": 3775,
+      "sha256": "3f12e65d9ea098fb7542c765847e78d363585724fbdeb5ba377328fcf4d341c0"
+    },
+    "src/advanced/index.d.ts": {
+      "bytes": 1009,
+      "sha256": "a8add16c981d0fdaa5a31f8d49750f4edaeffc5f9325cbedb429565e40b96b89"
+    },
+    "src/advanced/index.js": {
+      "bytes": 782,
+      "sha256": "d7fed23782af8f5a9b3053155af6c019cb4c75646ebdcc4c19abdb2e15915988"
+    },
+    "src/components/index.d.ts": {
+      "bytes": 1439,
+      "sha256": "abc8e53aac5410e8010cebe4b1ed826cbb7d4c5566ca4c736013a0cf2ce67600"
+    },
+    "src/components/index.js": {
+      "bytes": 1201,
+      "sha256": "3901bb79e7d5a83a11cf4eba8fe3c8dc6e8b224ff9198187ed3ad28a92878ec6"
+    },
+    "src/core/BaseControl.d.ts": {
+      "bytes": 5369,
+      "sha256": "8f54bd74947f97aad1f1b6b0af5c26ed7f2b63bdd5576d0df31315c551a44541"
+    },
+    "src/core/BaseControl.js": {
+      "bytes": 19055,
+      "sha256": "d7d6519708c0549c1adcbfd860de6cfefe720fa23d84b1367ce8dc160e04befb"
+    },
+    "src/core/CharacterRangeSelectionModel.d.ts": {
+      "bytes": 1512,
+      "sha256": "95748b862b918f98a9ddbbcf5db97bef664256c448f6be94b13be8879a957417"
+    },
+    "src/core/CharacterRangeSelectionModel.js": {
+      "bytes": 5725,
+      "sha256": "cd3b68368d139d6d66128e9c49289199f9b467ed8aa1a4a3ba010c1944dc903f"
+    },
+    "src/core/CommandRegistry.d.ts": {
+      "bytes": 2594,
+      "sha256": "aa667fd7f9562f7d7c51bd11a30ce19c40489030993c70fb65717cdf89a87d41"
+    },
+    "src/core/CommandRegistry.js": {
+      "bytes": 9460,
+      "sha256": "3103a3f8d3889f631bfabb1c5700a1bd1ad638559e0cbeed32fbeeec102bdf5f"
+    },
+    "src/core/contracts.d.ts": {
+      "bytes": 1026,
+      "sha256": "2ad8c14b949986103dcbe2ad5d7dcd4d17e269dcb8775d27f5c40b3e87895ccb"
+    },
+    "src/core/DataStore.d.ts": {
+      "bytes": 4481,
+      "sha256": "736a34bc54c2bf5335777d2d91448eb831e887927505e921a7c2b78a1f7b87e0"
+    },
+    "src/core/DataStore.js": {
+      "bytes": 17399,
+      "sha256": "9db259a5e6629aae8f50e6c2a51d7967cd7058fd5b79f7314db6b6e304faad54"
+    },
+    "src/core/DataView.d.ts": {
+      "bytes": 3264,
+      "sha256": "134337190fd956035c7939712ddbd0e52fbc28a6acbf81790e77d79a681f4a8d"
+    },
+    "src/core/DataView.js": {
+      "bytes": 13579,
+      "sha256": "fe20f6898665cce4e971d68fc32cf087c9d00b68f41434d139f135d9cf18769d"
+    },
+    "src/core/DisposableBag.d.ts": {
+      "bytes": 1063,
+      "sha256": "ad095b53ba094debed0b2b184e3391df3e9790695fcad60b93e5f054c8d694c5"
+    },
+    "src/core/DisposableBag.js": {
+      "bytes": 1243,
+      "sha256": "b338f3357a358e7beee48d88f8ed4f6308bb0044967a5784dc2d3432088ec15c"
+    },
+    "src/core/DocumentState.js": {
+      "bytes": 2156,
+      "sha256": "344027326eda7111b3103b725511f0f08d7ca635eecaeb8094b20582ca3d9b1f"
+    },
+    "src/core/EventBus.d.ts": {
+      "bytes": 1000,
+      "sha256": "fba91fa2f2712b8937aa467e434ad08920feb0d1b7871581ed7130a31bcb8421"
+    },
+    "src/core/EventBus.js": {
+      "bytes": 2644,
+      "sha256": "b5525193b297284b49d4e489fc4d4b319f9f5c505ac59650f4c866d74544e6b5"
+    },
+    "src/core/GridColumnModel.d.ts": {
+      "bytes": 2553,
+      "sha256": "43eb338c4a4d3ce219aacc78ed77ea438034138f8e3708b4309443f8f4398108"
+    },
+    "src/core/GridColumnModel.js": {
+      "bytes": 4359,
+      "sha256": "a2751e8fb7074a2786fa7280efd50003798ab8b0442abee44e01b6de5551c641"
+    },
+    "src/core/GridDataProvider.d.ts": {
+      "bytes": 1813,
+      "sha256": "7533d9bd5e51d048234ebea6847056761c878ac2c17f99902f0ca3ced1d7e537"
+    },
+    "src/core/GridDataProvider.js": {
+      "bytes": 2029,
+      "sha256": "2e68dc16491c576c2814b0cebdb88e6d2cd686f84681ca484cb91dbea6ae298f"
+    },
+    "src/core/GridFilterModel.d.ts": {
+      "bytes": 3940,
+      "sha256": "12c5dad5287c96d8ac74345c2ce53b8dddc016a6412b13427b25f23de15d4b4b"
+    },
+    "src/core/GridFilterModel.js": {
+      "bytes": 12011,
+      "sha256": "5dd4a969783669577b82d9b49a7a8a05477ac7e268adfea5a8b9760ccd3f3644"
+    },
+    "src/core/GridGroupModel.d.ts": {
+      "bytes": 2752,
+      "sha256": "c723efbcf4b5d4e749b6c9109585cabe6044583e033ea3c0a6e2a1c7fdffc24f"
+    },
+    "src/core/GridGroupModel.js": {
+      "bytes": 4217,
+      "sha256": "f39c309995ae3d0d173539f446953abc47a7986407f5774c8d5f00663026ab81"
+    },
+    "src/core/GridSearchModel.d.ts": {
+      "bytes": 1702,
+      "sha256": "a9a39631e992426a5d97ef195d8e97d027a1fedce9e350bcab8a2bb83c3fc0c8"
+    },
+    "src/core/GridSearchModel.js": {
+      "bytes": 3733,
+      "sha256": "13bd03aea152dca652c6376df101d8871ecc39a6b2b87dfc611495fd62a573e0"
+    },
+    "src/core/IconRegistry.d.ts": {
+      "bytes": 801,
+      "sha256": "6d07a1bf3a640ac30b156aed33fad6b3624f3145197630f61b7059a1ccd4d9a2"
+    },
+    "src/core/IconRegistry.js": {
+      "bytes": 3900,
+      "sha256": "6a74a4679027dfa30594a72cb5bdc5b454d504b691127d39d763ef431c6cd8db"
+    },
+    "src/core/index.d.ts": {
+      "bytes": 3290,
+      "sha256": "cb2939ede0f91b504548b028028916e01b7d1fdb91edbaa3f6d45382c6d109d7"
+    },
+    "src/core/index.js": {
+      "bytes": 999,
+      "sha256": "4c438a6de20fb5c7a6060193c67745bb73130d51cbd67e0290b76183f7f39afd"
+    },
+    "src/core/LifecycleError.d.ts": {
+      "bytes": 323,
+      "sha256": "354568dd5fec8944f967436d4488eac7e6c078063bcb87465206aba570ae1d74"
+    },
+    "src/core/LifecycleError.js": {
+      "bytes": 259,
+      "sha256": "ba12a50e804b7faba4c37a105af7b0c45e19198f2d81fd16a94aeab774e4c37c"
+    },
+    "src/core/mutationOptions.d.ts": {
+      "bytes": 298,
+      "sha256": "af8b7994a588d565406a9c64be5000ecd5110ae5aa6badd74b5bde73fe8ec1b7"
+    },
+    "src/core/mutationOptions.js": {
+      "bytes": 837,
+      "sha256": "3bef70ef7888de72aeffa11f0225ecc7fda3224767058799ed569b6e68279bc1"
+    },
+    "src/core/OverlayManager.d.ts": {
+      "bytes": 1371,
+      "sha256": "d12466ae12cf7514e0d42e9e0ac4e5a20023cf226cb66250b6329cacd07dd633"
+    },
+    "src/core/OverlayManager.js": {
+      "bytes": 6234,
+      "sha256": "35b72b3b35470182631e599188e2cf68c3598520539dea8ad69f06b8e0cc568a"
+    },
+    "src/core/pointerTracking.js": {
+      "bytes": 815,
+      "sha256": "6df51f81297818a67fa4cb51ab3a01381b857a0de9e093697f0a7657475c8745"
+    },
+    "src/core/projectionBuild.js": {
+      "bytes": 1913,
+      "sha256": "25207e7d19c89197f9c2c00f255df618fc858b6ec20b715a54813c623e557943"
+    },
+    "src/core/projectionDependencies.js": {
+      "bytes": 988,
+      "sha256": "9c076bd893d237946a273b566f7df15c0759871ce29d7f6c2539c61f889585fe"
+    },
+    "src/core/RangeSelectionModel.d.ts": {
+      "bytes": 2104,
+      "sha256": "1090cc18d75227a2b81ca5cbbfe3d800603ed4ce7d84c85d5d850fed3bdc8a6c"
+    },
+    "src/core/RangeSelectionModel.js": {
+      "bytes": 3715,
+      "sha256": "da54ab10cf226f3003f0d5e808e281ed12f7907944d3592ff57b68bc6c0fae8a"
+    },
+    "src/core/SelectionModel.d.ts": {
+      "bytes": 1022,
+      "sha256": "1b5957d1d14a62d356c21dce26eb5cf85f6222769729cf7d798d0f73fc7e2675"
+    },
+    "src/core/SelectionModel.js": {
+      "bytes": 3155,
+      "sha256": "b7e9a76c02a4fb039e8d1e4f603bd1a91c441459937d203e5a6f18e68b2082a7"
+    },
+    "src/core/selectionMutationGuard.js": {
+      "bytes": 236,
+      "sha256": "bb391f9e6f49242feeac3ee057f6126128bbd9f410bf64f102f061f971834c15"
+    },
+    "src/core/ShortcutManager.d.ts": {
+      "bytes": 1441,
+      "sha256": "583e4f177f6a35892fee0fa7836cb30e60ab54e9a1ba9093a6935211ad15d3f3"
+    },
+    "src/core/ShortcutManager.js": {
+      "bytes": 8845,
+      "sha256": "9326b594161fa6b43a3635b1dde5e7b3d116f292bedd61985da6f17d21795d65"
+    },
+    "src/core/StaticContextProvider.js": {
+      "bytes": 1686,
+      "sha256": "80871151c288bdb2f09751df6d8cac80dec223838757af121938e753439c211e"
+    },
+    "src/core/TreeDataView.d.ts": {
+      "bytes": 3480,
+      "sha256": "9129327c433b98d55924b67d1ca3f8ecce8e16c818b8bc2a582d04b27acadfc5"
+    },
+    "src/core/TreeDataView.js": {
+      "bytes": 17066,
+      "sha256": "453a4aaf2913a4db526a9ba85bfe3584ea09b5cd9b8596f5d1c086939fdf08d5"
+    },
+    "src/core/validators.d.ts": {
+      "bytes": 423,
+      "sha256": "66a9ea2dbf4dd1bf6641de74e60c7b95b4a39afac27dd778a0f9e61ed63550ce"
+    },
+    "src/core/validators.js": {
+      "bytes": 1204,
+      "sha256": "6066c6f237c47a475500e40f3edd70ff5e77d7af31056b4fd33fc413c7065172"
+    },
+    "src/core/viewFilterBinding.js": {
+      "bytes": 2043,
+      "sha256": "4fbd110213955e693e890ad56e73f60fc10bd10d41570dd1590621d4d28c6a32"
+    },
+    "src/core/viewSortBinding.js": {
+      "bytes": 641,
+      "sha256": "c16c7dbd5b49179b4eaa0d0c91539e0dddc4cce5a43149a93d042c0bef4e4b1d"
+    },
+    "src/foundation/index.d.ts": {
+      "bytes": 930,
+      "sha256": "5d316e9ef68a78e6e82a498b8f8df979381d2e2eb2156fc1e12e53fbeb60d73f"
+    },
+    "src/foundation/index.js": {
+      "bytes": 539,
+      "sha256": "c474f23e50058a50ebdc0d17c446143cb935a0f9edbc158d92d09e7e2e21339b"
+    },
+    "src/ui/Accordion.js": {
+      "bytes": 7335,
+      "sha256": "c8a04d6d92888ae99a84589fa7e2a156c0e7439e9a28a19b469362ceb7af35a6"
+    },
+    "src/ui/advanced-contracts.d.ts": {
+      "bytes": 7441,
+      "sha256": "659fb17c939ba481ea4e341ca74d9697a945c218821dd8196053bc0ffcb78cf9"
+    },
+    "src/ui/all.d.ts": {
+      "bytes": 63,
+      "sha256": "ff4c4db35015d85e3bbb6063f877f5d49b862db6fce7a3ef4c5d763a420dc39c"
+    },
+    "src/ui/all.js": {
+      "bytes": 63,
+      "sha256": "ff4c4db35015d85e3bbb6063f877f5d49b862db6fce7a3ef4c5d763a420dc39c"
+    },
+    "src/ui/application-contracts.d.ts": {
+      "bytes": 18682,
+      "sha256": "30ec1cf9acae2ff97cdfdd3c5d09cf76a7489d8eef1d38e5878ebe2ba92c4e9c"
+    },
+    "src/ui/Button.js": {
+      "bytes": 5787,
+      "sha256": "77c3b39c699d6089aa23015145158815d3ada3f52f77ec238cffb8fe9b9a98c7"
+    },
+    "src/ui/channelColorPicker.js": {
+      "bytes": 4932,
+      "sha256": "215dea78ffd9d44c2cb50ddde6100d4579aa522350070e464eccbe0f00b2e131"
+    },
+    "src/ui/Chart.d.ts": {
+      "bytes": 2595,
+      "sha256": "5a1c201c6001f9ffe4c4c28fa7b4fff9c3eb00dbe83c6107c7e0110b9716fa9c"
+    },
+    "src/ui/Chart.js": {
+      "bytes": 14386,
+      "sha256": "b0f58a31932d159878d05ef9307bfd69d5fe1b8dfcadf3ac50c789366829e6d6"
+    },
+    "src/ui/chartGeometry.js": {
+      "bytes": 5733,
+      "sha256": "681006c1cb49b4b414d86f0f84c15cc9d949f2634e86af7f591d048d87242b86"
+    },
+    "src/ui/CheckBox.d.ts": {
+      "bytes": 883,
+      "sha256": "e93059191360539561919d5d6a2a4ebf349952e8c032fc3c1fcc57a4d075c5e0"
+    },
+    "src/ui/CheckBox.js": {
+      "bytes": 3318,
+      "sha256": "17f47421c4e5f36c849d0de738aa217fba6a6cb802b579ee7e7e79c3da9cf263"
+    },
+    "src/ui/CheckButton.js": {
+      "bytes": 10170,
+      "sha256": "ad5b00696a170aaf6bd036123bc1f167b5612f6672e5aa010ab778377b635f82"
+    },
+    "src/ui/CheckLetter.d.ts": {
+      "bytes": 1053,
+      "sha256": "5e30cee04e4677be899351cb7a1cc593e0e5d6659231477634171f2ffdc71caf"
+    },
+    "src/ui/CheckLetter.js": {
+      "bytes": 2070,
+      "sha256": "da99ae62958dbc67379df9f7994d0b255a06782d5ee0cd5eb3bb1080d67ac122"
+    },
+    "src/ui/CircularSlider.d.ts": {
+      "bytes": 645,
+      "sha256": "c17692c124b3846d63d09d77ff33448671f7f990d92b90f17c1b68b5b5758484"
+    },
+    "src/ui/CircularSlider.js": {
+      "bytes": 3317,
+      "sha256": "342db1c152d357f11a3620537d3ac5af2dfb5734596f55f9dd5d0851a46a136b"
+    },
+    "src/ui/CMYKColorPicker.d.ts": {
+      "bytes": 495,
+      "sha256": "9e61f0ea133d222b3e26b7082854fe9500e9eb2e47916afecb891075bc123be8"
+    },
+    "src/ui/CMYKColorPicker.js": {
+      "bytes": 530,
+      "sha256": "db71e4648c4522638ec3f2fe44e2cd4c378c065f21278e9bbf78d6ea0bb5b158"
+    },
+    "src/ui/CodeBlock.js": {
+      "bytes": 4324,
+      "sha256": "761a56726b8dfc29edb179d073f243e50f1fc9ee611c2fd11a3a4abf101505b1"
+    },
+    "src/ui/collection-contracts.d.ts": {
+      "bytes": 12843,
+      "sha256": "a7d9d3515c60bc73ae7b02fb247acb6181c44301fc2fb7086037ffa249eafc8b"
+    },
+    "src/ui/CollectionPortProvider.js": {
+      "bytes": 2562,
+      "sha256": "cd748875d5f8d2231c07ccb2e7a9ca433b419fd8d59c548d68b05bfec81f6d3c"
+    },
+    "src/ui/ColorPicker.d.ts": {
+      "bytes": 2166,
+      "sha256": "5d9c1f5918ad572df4ebb22280d4164384c56ac1b6ec934fd781d74302296201"
+    },
+    "src/ui/ColorPicker.js": {
+      "bytes": 17302,
+      "sha256": "3992669a6bd42bcfc3bc56bae8eed476acc855a71b052f86051c3c2561fcc89f"
+    },
+    "src/ui/ConnectorLayer.js": {
+      "bytes": 18323,
+      "sha256": "768b1ddb262a6e9b8021bca6133f744b8916e794649cb1be657719a734914ef1"
+    },
+    "src/ui/ConnectorModel.js": {
+      "bytes": 2392,
+      "sha256": "edb85418927e491947569e09dec37b7a4f3a16d5e40dce6121145c88407b1ddd"
+    },
+    "src/ui/container-contracts.d.ts": {
+      "bytes": 11185,
+      "sha256": "3b5b1376112de0d20b90044184035d26649aa01d929ddd9f90befc5d5a6e1e57"
+    },
+    "src/ui/DateTimeInput.d.ts": {
+      "bytes": 3355,
+      "sha256": "f031916bbc2b20803d9d51d4157694b904ea9795c53066ce7c4458d2d817936d"
+    },
+    "src/ui/DateTimeInput.js": {
+      "bytes": 43524,
+      "sha256": "afdd850fcfd1803cf7ab9dc044bf756aff8a2ec658d2d69773075df547126bb3"
+    },
+    "src/ui/definitionEditors.js": {
+      "bytes": 3552,
+      "sha256": "6479531e63f032b5e73762dc63f95979181f2bca665fafcde91cc8431530085f"
+    },
+    "src/ui/definitionValidation.js": {
+      "bytes": 3647,
+      "sha256": "779cbee30da1f82e69412e85cfae87761df6a6469b85694d35c059d363c80245"
+    },
+    "src/ui/dense.css": {
+      "bytes": 1329,
+      "sha256": "f788990a089f19b5933f218d6c7944e2e399dac0dec44707b45d80f7a8162c30"
+    },
+    "src/ui/Dialog.js": {
+      "bytes": 9038,
+      "sha256": "7c99b209cb70cbc84df2692b189ab7f7b40bb5b05b59de8021d08890d478ad6d"
+    },
+    "src/ui/display-contracts.d.ts": {
+      "bytes": 12819,
+      "sha256": "1495fdd719aea48f68c5af87b0f43a9ddcfdfe7d30c834c4f4e69417f306dc6e"
+    },
+    "src/ui/DockGroup.js": {
+      "bytes": 8117,
+      "sha256": "15dbdda0fdc33d761be9e9b999ed58eb8e3a2c1bf2086cf96d9ae5e2a883a8c1"
+    },
+    "src/ui/DockLayout.js": {
+      "bytes": 51908,
+      "sha256": "ea6586a2fc7aa69d08d7db0fad4eed9a7c335c7f451732eec40f760e4a46a7c2"
+    },
+    "src/ui/DockPanel.js": {
+      "bytes": 7321,
+      "sha256": "4f3f82d13a09bb6017d4f1b21f884a7115e7057a290a6f1e48ad72b721090b5e"
+    },
+    "src/ui/DropDownList.d.ts": {
+      "bytes": 376,
+      "sha256": "e7c44619c2c27c1560db1223bbf380f1d7af40fe3ff2a79125c2b922968f5787"
+    },
+    "src/ui/DropDownList.js": {
+      "bytes": 240,
+      "sha256": "60ff59c0c67a4344b2b350872441e829e1bbdd31a7c006c0dd99e74bc866f915"
+    },
+    "src/ui/EdgeActionLayer.d.ts": {
+      "bytes": 2004,
+      "sha256": "743e2b0a05cd4609a54b48de97b3920be2c2830b4898b95a9e7fcf1552e49d6e"
+    },
+    "src/ui/EdgeActionLayer.js": {
+      "bytes": 14166,
+      "sha256": "375b5d70d703736b7696316f35d8023d916aef30ab0666a5cd4e56ec38d74a36"
+    },
+    "src/ui/EditorControl.d.ts": {
+      "bytes": 5060,
+      "sha256": "1bde67929bd076da76425437db61bf6f3c5b9ab66ca0c221c9ee454f7151c740"
+    },
+    "src/ui/EditorControl.js": {
+      "bytes": 12937,
+      "sha256": "41574080f2a0b0760909c324d654f0cdec27510b8735357a33a38e4b8a641386"
+    },
+    "src/ui/experimental.d.ts": {
+      "bytes": 11790,
+      "sha256": "22ef6dd2055826525c03ce2e108ad5d6da50da296dfba9e63a487bf3cac0cbed"
+    },
+    "src/ui/experimental.js": {
+      "bytes": 3360,
+      "sha256": "1bdf183fc8a21baba41bc81493ac96c4db75820ed8d51f0f2de760bf1c692669"
+    },
+    "src/ui/FieldGroup.js": {
+      "bytes": 1660,
+      "sha256": "cabb5adba75d54de74dc1e73e5dcea3c9beadcef98ac492fde45657e3c701495"
+    },
+    "src/ui/FilePicker.d.ts": {
+      "bytes": 2611,
+      "sha256": "0ba46765ed1c890dd7f2544ee27af7eea469527bcf5881a9c21310d98e7d6bac"
+    },
+    "src/ui/FilePicker.js": {
+      "bytes": 9759,
+      "sha256": "b6ef2e4a7a39f0bb666c440f7f2ab3f87a8bcf3550ab18a9af7b142ded92710f"
+    },
+    "src/ui/FileUpload.d.ts": {
+      "bytes": 2424,
+      "sha256": "282844b0dc40696a7d4e5833b0339a847c1cbc795c4ba2f181db423d6312b521"
+    },
+    "src/ui/FileUpload.js": {
+      "bytes": 13910,
+      "sha256": "b77d39edfe9ad8c4c5d1867e656806df3d931ac273f4a1517a3349c257c38d6a"
+    },
+    "src/ui/fileUploadQueue.js": {
+      "bytes": 9529,
+      "sha256": "92e298c70fa8fc307e8070873e4bd58e3ae72de0ef44e226e7b14712a703455c"
+    },
+    "src/ui/fonts/NotoSans-OFL.txt": {
+      "bytes": 4396,
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+    },
+    "src/ui/fonts/NotoSans-variable.woff2": {
+      "bytes": 918168,
+      "sha256": "7ed77c38412a34312e975abcd5eb2b2848a596f1921393f925a53a27938eb116"
+    },
+    "src/ui/fonts/README.md": {
+      "bytes": 1453,
+      "sha256": "7ce8d109148d4bac628b5e6413a2738629cd574c88372cf6395622aee12e875e"
+    },
+    "src/ui/Form.js": {
+      "bytes": 27131,
+      "sha256": "2d2afa3eac9d481298fdfa3578c17ee1e415c37bbbb3155c1db57f247835816b"
+    },
+    "src/ui/FormDefinition.d.ts": {
+      "bytes": 1139,
+      "sha256": "87e19a64472030f00c77a8a43a77355b6c9b9093848bb1fed4f1fcc7e7106adb"
+    },
+    "src/ui/FormDefinition.js": {
+      "bytes": 4518,
+      "sha256": "0d5538b227392a551d6baa7cb0f28069611e1d5c6605b4014eadc21c04bc4353"
+    },
+    "src/ui/Gauge.d.ts": {
+      "bytes": 484,
+      "sha256": "b39810306e6759f4284e35ef1ee1125a7ab4f0f098245bffbc8e067e34f5afa4"
+    },
+    "src/ui/Gauge.js": {
+      "bytes": 2419,
+      "sha256": "473c076267b2da4218316a5674bffe70371e641a2f3af0c01c0b294e74d95b70"
+    },
+    "src/ui/grid-api.d.ts": {
+      "bytes": 1468,
+      "sha256": "f84203207e2cd58cf38f155e28c618d2110cab77cd4f4cfa8320450e8c8d6528"
+    },
+    "src/ui/grid-api.js": {
+      "bytes": 1211,
+      "sha256": "e81e6a2d0683110975aff7a6b6c90eb77f8bc5faefdcc2168c23cb14120878d3"
+    },
+    "src/ui/grid-columns.d.ts": {
+      "bytes": 3084,
+      "sha256": "9ab4be82bef2ba8bcc64e110684a361a3c75d631d4a036ce84e7164f6ed8aaf7"
+    },
+    "src/ui/grid-controllers.d.ts": {
+      "bytes": 3730,
+      "sha256": "d5a3a8b594cf1c52d5584d400ca4134f58109cb60b4190ac385d51b9d8cd084b"
+    },
+    "src/ui/grid-editor-contracts.d.ts": {
+      "bytes": 6454,
+      "sha256": "997577e61823ef127b700d7a5355e4d8ddc5f6f75d261157bad1567813f56dd4"
+    },
+    "src/ui/grid-editor-options.d.ts": {
+      "bytes": 6883,
+      "sha256": "248269880ba7b41fbe9aac2c529883f08c6723eb8c2238d4302eee2ad22561ab"
+    },
+    "src/ui/grid-events.d.ts": {
+      "bytes": 8556,
+      "sha256": "0989ad858b3f6fcdbdb68b917ea98fc9a5205eb130015e9efc5032601b844fc7"
+    },
+    "src/ui/grid-options.d.ts": {
+      "bytes": 7568,
+      "sha256": "e3cc34d3252af5cf33a38883fc4092590610d824d210438ec123cc9ec912bf13"
+    },
+    "src/ui/Grid.d.ts": {
+      "bytes": 7424,
+      "sha256": "070b55a7969dd8dfd6724d96b307d445cbd1a530a75a4edf89388c464418e329"
+    },
+    "src/ui/Grid.js": {
+      "bytes": 171513,
+      "sha256": "5d95c4de9e818c8fd8afa0d1414d93dd2e243f45a9da699817aeef20abdad62a"
+    },
+    "src/ui/GridColumnReorderController.js": {
+      "bytes": 4758,
+      "sha256": "2c5eade62f5e93a7d9c7a27e6b948077cec1b84e9f7a6fdd23b9baf057832677"
+    },
+    "src/ui/GridColumnResizer.js": {
+      "bytes": 4885,
+      "sha256": "603a1ae606f842ca8016acafec4d80b3cd2ee85d2911281b1e286a2a58d9b693"
+    },
+    "src/ui/GridCore.d.ts": {
+      "bytes": 2396,
+      "sha256": "fe2cc9870b9ab583618755998baf4450fea3118a5b6ad5e2ea5d1c8a03b44631"
+    },
+    "src/ui/GridCore.js": {
+      "bytes": 28565,
+      "sha256": "34cff7bdf050a2b913f257ee3287a9388247c30b9d496ea5da11515b27538658"
+    },
+    "src/ui/GridDefinition.d.ts": {
+      "bytes": 2514,
+      "sha256": "09e3ede6fd6c140b600891ec1f0702cb8f95ccdefb518f5e925a1cb452a10f3c"
+    },
+    "src/ui/GridDefinition.js": {
+      "bytes": 4796,
+      "sha256": "dbdc1aeabb509a8d53701f82f890bd825b81779db70a31e7b518488d8674f3c2"
+    },
+    "src/ui/gridEditorFactory.js": {
+      "bytes": 349,
+      "sha256": "babfe58949983e8a5311a59e577f95c4c66d13e22a258f41a1906ceadd3a97a1"
+    },
+    "src/ui/gridEditorLifecycle.js": {
+      "bytes": 10245,
+      "sha256": "ebea1a8d259b3857307ece7a8ce4578c1aa5cd2159a40d371e25fd5929b7698a"
+    },
+    "src/ui/GridEditors.d.ts": {
+      "bytes": 5063,
+      "sha256": "5caee5c609f7835baf8a12e75fed14cf4fd2839fea9c75a7b4ba8624f741243c"
+    },
+    "src/ui/GridEditors.js": {
+      "bytes": 10895,
+      "sha256": "ea6f8abc0d488a742c1eae48f1d5640ed101244f321328ec702bce2b16b096f0"
+    },
+    "src/ui/GridExporters.d.ts": {
+      "bytes": 1720,
+      "sha256": "de6254a2eb4e1d847fa17fc970eaaeedd657cf27aa513545080ea52a8eec3cb2"
+    },
+    "src/ui/GridExporters.js": {
+      "bytes": 1870,
+      "sha256": "bcd8c7cfb85c42c63f7aa06643656882bdf1ec5002a29dc3c3be96fb1733556c"
+    },
+    "src/ui/gridIntrinsicWidth.js": {
+      "bytes": 1570,
+      "sha256": "af6ede1e4bc2922b8a4d6b9bcd9d4ea9ab36148d7e59ffaf0ee1bd4c44dc60bb"
+    },
+    "src/ui/GridKeyboardController.js": {
+      "bytes": 1985,
+      "sha256": "4bf4f3221caecfbae2c13989f1b74352754a1731fe2ef0c82bbc1b6d0702f8bd"
+    },
+    "src/ui/GridPortProvider.js": {
+      "bytes": 3680,
+      "sha256": "9ff560dc92909b5bd8bc5aeef6f3b7decc951f1a791eebdeebc98cf367b471f8"
+    },
+    "src/ui/GridPrimitives.js": {
+      "bytes": 2578,
+      "sha256": "984f2764a955a31154d63e8e2684448e45c0eebcd5d324d8df2cca37bcfe6d9c"
+    },
+    "src/ui/GridRowReorderController.js": {
+      "bytes": 5542,
+      "sha256": "dfb289d6824b2538ba98fae598a80aed5e6aecf5732231c31123506c6134bf42"
+    },
+    "src/ui/GridRowTransferController.js": {
+      "bytes": 9571,
+      "sha256": "8c7f81379492176804323531e07c62fabd35647222a8304ed5adc77a22bc3f07"
+    },
+    "src/ui/GridSelectionController.js": {
+      "bytes": 3326,
+      "sha256": "6222148377cdf828f6a62a3d990eb451d682fbe915c3ecc86d3e9317e5afdc67"
+    },
+    "src/ui/gridSelectionState.js": {
+      "bytes": 3511,
+      "sha256": "a7e3ad53ad6e4b9329c3f3d3ab5a787e7db0143de1908f670b1489e273be03b1"
+    },
+    "src/ui/gridStringCompare.js": {
+      "bytes": 373,
+      "sha256": "8ae6c19bdb406d6982360289a7ce09834b8f59d69f1a14e868a6ef6deeb4aa47"
+    },
+    "src/ui/GridTreeMove.js": {
+      "bytes": 16471,
+      "sha256": "91a120e346ce84a9fb310c1f3ff9a27e26aee4c828feecff0127441a9b02c61d"
+    },
+    "src/ui/GridVirtualRenderer.js": {
+      "bytes": 1849,
+      "sha256": "96d853915ff937fa6d45b74516a21657fd288b0fb70d720d8ce47bd47eac5a21"
+    },
+    "src/ui/gridWindowGeometry.js": {
+      "bytes": 2660,
+      "sha256": "48ef984c67dc8af60c12ce04ce507abbb18bff8011f23eda3b7827845cd588ec"
+    },
+    "src/ui/GridWindowRenderer.js": {
+      "bytes": 16995,
+      "sha256": "79e482be490ef07d1be207120f6c6492afbfe2e751bb34994cefdfcf9bfda896"
+    },
+    "src/ui/HeaderAction.js": {
+      "bytes": 1784,
+      "sha256": "79e3eb63f4440d2982798a3dce9afa68e373cd967bc29087f3ec71ca30b8324f"
+    },
+    "src/ui/HidingSidePanel.d.ts": {
+      "bytes": 1603,
+      "sha256": "22335e2d04f4a99f59915c4430d5d9127558bf8da5c9a517c5832b64dcda11c6"
+    },
+    "src/ui/HidingSidePanel.js": {
+      "bytes": 11305,
+      "sha256": "df248bf658680ed77732b098879e21cde72a34c8c3a01f4fcc8e3ae4660052e9"
+    },
+    "src/ui/Icon.js": {
+      "bytes": 1882,
+      "sha256": "a67420fdc7c3b398674f638bf92dc1d702e9e15a1dd89e0a686a76bdcfd5dac0"
+    },
+    "src/ui/IconButton.js": {
+      "bytes": 1183,
+      "sha256": "80d1625da5e818cf7aa2cf72b60e94a20dd911f7ef6fcdf843a2860d7f1e9b66"
+    },
+    "src/ui/icons/core-icons.js": {
+      "bytes": 4516,
+      "sha256": "179647311d66d89d3a5bb198465dc722d824e8c193215501f1521c1d7ac00d95"
+    },
+    "src/ui/index.d.ts": {
+      "bytes": 8118,
+      "sha256": "9922e3f73fc2dca5d7057ea4af5cf8e1b7820860229eb6442eb50e6d30c6c877"
+    },
+    "src/ui/index.js": {
+      "bytes": 1563,
+      "sha256": "3e8650caa18ff905843990c1c661048a3251fee20975e34f009edf149ac201ae"
+    },
+    "src/ui/input-choice-contracts.d.ts": {
+      "bytes": 535,
+      "sha256": "4ce266af5729d7962076c8ec8988bc4b888b002af4fc28805be25bd8e800a670"
+    },
+    "src/ui/inputs.d.ts": {
+      "bytes": 3808,
+      "sha256": "8127b2eb53821b0494b0400bb965c3c0f826f244cbc178d28921086d604166f2"
+    },
+    "src/ui/inputs.js": {
+      "bytes": 1115,
+      "sha256": "da131eadee6d68ccbb7cb40fd3b3d42c653f1aaa9e76ed750e6fb8f164eddb81"
+    },
+    "src/ui/itemGeometry.js": {
+      "bytes": 2029,
+      "sha256": "5bfb3614971c4555c0c994842dd99da59ee765b8e53ba7f203ddd5d067ae8d01"
+    },
+    "src/ui/LabelText.js": {
+      "bytes": 2835,
+      "sha256": "8e3db5c4c6c76e1aa5c78bcf6f16659d49b6c71d720e96a0d74f9ef0b48840ae"
+    },
+    "src/ui/Layout.js": {
+      "bytes": 20973,
+      "sha256": "e7b2ed53dfaec3e11613e9c9e72e5082bdd134fec3b7332ac4244af79b20d294"
+    },
+    "src/ui/List.d.ts": {
+      "bytes": 2825,
+      "sha256": "42e929b8febfef8de09df45404f3dd3ee7160b0575f7916cd6c2963cedc50a73"
+    },
+    "src/ui/List.js": {
+      "bytes": 15090,
+      "sha256": "fa8babcfb6c99cc5ed6658887e2d95692bf494228602beec3a0fc5e24d4fb795"
+    },
+    "src/ui/ListPortProvider.js": {
+      "bytes": 1399,
+      "sha256": "9d425edb5b82f7a60a90ea66fabd0865eb8a6b53016a573b127d970351090aec"
+    },
+    "src/ui/localize.js": {
+      "bytes": 322,
+      "sha256": "c73cd9e2f18262974973b4cbf5418044c495fb3593962875a989c41e634258aa"
+    },
+    "src/ui/LogPanel.js": {
+      "bytes": 1127,
+      "sha256": "05d7ce4ba3ecc13e7bd89855df59a9d2bd924dc9aa425615da31ac45194a7567"
+    },
+    "src/ui/MapperWindow.js": {
+      "bytes": 3656,
+      "sha256": "b94d8d0ce00c96d1b0eb773f264ab87d433170adf03b5aba6f44ef6c9e8a2fcd"
+    },
+    "src/ui/MdiWindow.js": {
+      "bytes": 9221,
+      "sha256": "7caf656c8b31f9a393a041d8381b2122bc7d9c8b9c5d6b4a9938c3d86c81387b"
+    },
+    "src/ui/MdiWorkspace.js": {
+      "bytes": 4290,
+      "sha256": "fae3ace800cb6ff004ebd137a2cff11368cb1b26a0ec043479d760402f6d0ec9"
+    },
+    "src/ui/Menu.js": {
+      "bytes": 23321,
+      "sha256": "44a4422154aebab22a6404943ea2fd103610b028e2e0f5e07d13bac172158071"
+    },
+    "src/ui/MessageBox.js": {
+      "bytes": 1025,
+      "sha256": "f9c8a97d561c543f1e8dd23e72acac53ac6cdd22df5aba4dbe3d7094801d971c"
+    },
+    "src/ui/MultiSelectDropDown.d.ts": {
+      "bytes": 4006,
+      "sha256": "b0ddca7932b19d8b6030db4a2551fadee8797c1ec4df07e7e718a215521fd614"
+    },
+    "src/ui/MultiSelectDropDown.js": {
+      "bytes": 6886,
+      "sha256": "7c8918dbea1e33a8b80117c85d71a32d81972afbc8e3a5ea81e59b5a42814453"
+    },
+    "src/ui/NumberInput.d.ts": {
+      "bytes": 2167,
+      "sha256": "0f9184d5a4b9a485bba46b7b79f655a670791fa74049696a27211c0446b69cf2"
+    },
+    "src/ui/NumberInput.js": {
+      "bytes": 5928,
+      "sha256": "7c06529129dbf3c0ec401ac119126082c6058a25b1830ddb3625f3aba3f47f8f"
+    },
+    "src/ui/OptionList.d.ts": {
+      "bytes": 1491,
+      "sha256": "bf1f2459bd154c5b1953d4e37a8840392840b131e62087f6660acec022ad2773"
+    },
+    "src/ui/OptionList.js": {
+      "bytes": 5353,
+      "sha256": "28787c8dc973df24ab73d3e95bee29949ea0ba970f750abfc594b2e2a08a9a06"
+    },
+    "src/ui/overlayGeometry.js": {
+      "bytes": 536,
+      "sha256": "a1a284c1490b547602ee23e27331d78c8f280bc5f4d2c8da8ec6c039850f24bd"
+    },
+    "src/ui/Panel.js": {
+      "bytes": 10370,
+      "sha256": "c0f02e61d1a87da8c433fdbc7c7faf38f67769e3dc9fa86b8029ad68b83e9235"
+    },
+    "src/ui/Popup.js": {
+      "bytes": 7336,
+      "sha256": "75e13874508281bdcf6c33aae22c4eba5e2a6802694f3f827ab2eba4c6bc02c9"
+    },
+    "src/ui/ProgressBar.d.ts": {
+      "bytes": 1686,
+      "sha256": "8b50fce5eda50c7eebd283e5b6415fac414e9da407d0c1b717cbfe4b4cd60067"
+    },
+    "src/ui/ProgressBar.js": {
+      "bytes": 6436,
+      "sha256": "91f25653dfb3dd6281461703a5bd55bfef05fce1f83a83dbc2653bfb47e52a49"
+    },
+    "src/ui/PropertyDescription.js": {
+      "bytes": 3133,
+      "sha256": "016c199503ec0cb31abdcdc64fb64253517547d54676d3c192cf92dd468b203b"
+    },
+    "src/ui/PropertyGrid.js": {
+      "bytes": 35169,
+      "sha256": "b1e0b1b9030b95569f259c03defd23162af32a1cf06b750e0ba324ee3233016b"
+    },
+    "src/ui/PropertyGridDefinition.d.ts": {
+      "bytes": 972,
+      "sha256": "47d881b513dae2a92a7e4f3d3c9178fa6405c7a984f61fcd840a282cb8d2841d"
+    },
+    "src/ui/PropertyGridDefinition.js": {
+      "bytes": 3454,
+      "sha256": "338d248c019fb760cde93bd039bc3ab6f38cb48cda0e46d05bca3335d0d0348f"
+    },
+    "src/ui/PropertyInspector.js": {
+      "bytes": 2925,
+      "sha256": "c9d685569a1bda6c7f4006669f7d61697bf0fa1a9129da780e1bead75b0f3e2e"
+    },
+    "src/ui/RadioGroup.d.ts": {
+      "bytes": 2277,
+      "sha256": "baab6d5fe53796690d80d99cafa3eac2776f42e7bacb3f7d97b51256f5aced70"
+    },
+    "src/ui/RadioGroup.js": {
+      "bytes": 13980,
+      "sha256": "434620449e434c2bcd3a8ac75530b292f6d624645cdbea800a003c6ae5bd203b"
+    },
+    "src/ui/RadioLetter.d.ts": {
+      "bytes": 588,
+      "sha256": "3d42a94cc8b68665e43febda53910b45bed8d63deec53ad258e1f1f2cf56f862"
+    },
+    "src/ui/RadioLetter.js": {
+      "bytes": 658,
+      "sha256": "5517530234926411b5ca74f99d6b40ce34d3558317d12a4f4a131d119a756cdc"
+    },
+    "src/ui/ReadonlyText.js": {
+      "bytes": 667,
+      "sha256": "0d850c9b8ef3127eb2f86f24540b50ee5b966a58d9d744172922399110a71591"
+    },
+    "src/ui/resourceModel.js": {
+      "bytes": 4638,
+      "sha256": "081e0c5ca0cce4aea43f4873de2ff0aba360c4b83f85fcd49f075a9f880d2c43"
+    },
+    "src/ui/RGBColorPicker.d.ts": {
+      "bytes": 203,
+      "sha256": "ed5abaa06f64c761db5bfb1c7b44182612f95f1addc218fb9a0bf63e06e65255"
+    },
+    "src/ui/RGBColorPicker.js": {
+      "bytes": 258,
+      "sha256": "8b0b1dd1414e85caaf50e833bc30c19b2a6f1d0eccfcf54649058577d174789c"
+    },
+    "src/ui/ScrollingLabel.d.ts": {
+      "bytes": 743,
+      "sha256": "6cdb5ec9db044cf47a5d5db18af61b58b85f0bd8541ddd98517051e02e397d15"
+    },
+    "src/ui/ScrollingLabel.js": {
+      "bytes": 4754,
+      "sha256": "0bba3bd05e05190c7ad04046d66c6c377e71b33c10ea5a9733f0e50f46d853ad"
+    },
+    "src/ui/SelectInput.d.ts": {
+      "bytes": 4874,
+      "sha256": "fc09bd501330effa8fd16eaf3fedcb594a8e968e98d23f8d5960da0bfbdec743"
+    },
+    "src/ui/SelectInput.js": {
+      "bytes": 28808,
+      "sha256": "6e78e0d1fc8d0d14591140afc0878f297f2637bdf527fdb63a96794475d885e2"
+    },
+    "src/ui/StaticPortProvider.js": {
+      "bytes": 5119,
+      "sha256": "e4884c66955808143fdc66141ce4e9921bb80cab3d40a1044d81ee0a85bf3ead"
+    },
+    "src/ui/StatusText.js": {
+      "bytes": 603,
+      "sha256": "ea88c7412415ec738f8a249db9dc9531b3ab8cadd9fad1928ab735a376059c51"
+    },
+    "src/ui/StepProgressBar.d.ts": {
+      "bytes": 4533,
+      "sha256": "74b857aa52d7dfb52277479f2c0ebdee90374d50853466f6fe4b401593fe1bcb"
+    },
+    "src/ui/StepProgressBar.js": {
+      "bytes": 21868,
+      "sha256": "62965b2e397aab0114f12866b2ce9229dd51c56feea012dbe9a5ca7e288003b5"
+    },
+    "src/ui/styles/accordion.css": {
+      "bytes": 1297,
+      "sha256": "342ba27b5d6320d1b3f10a697810b2098e174da3fc210a0b378d0a5fcbd92fc0"
+    },
+    "src/ui/styles/base.css": {
+      "bytes": 1238,
+      "sha256": "76d1136d91a1d596752181c572f0307ba10a0ba54ab112050d901c9a79bbbfe2"
+    },
+    "src/ui/styles/buttons.css": {
+      "bytes": 6093,
+      "sha256": "7c5d995f518f62bee007ccba9713e777a95cb9b0bf785bc35376f8be8f315345"
+    },
+    "src/ui/styles/charts.css": {
+      "bytes": 3290,
+      "sha256": "e528a8264e2b2d7f62468f32338156f1324bb48c72a41e2114d20224b7629f7a"
+    },
+    "src/ui/styles/choice-letter.css": {
+      "bytes": 1872,
+      "sha256": "85165220f0817d58a75ff819405be2b6d6c292312d856580008ba5c233dec19e"
+    },
+    "src/ui/styles/circular-slider.css": {
+      "bytes": 1300,
+      "sha256": "6489eee227b3e982358be498ed3509eb1b216e6eaf54515c2f317809f4faf3b2"
+    },
+    "src/ui/styles/code-block.css": {
+      "bytes": 1586,
+      "sha256": "b36b9be48fd76666b5722bdff443f5755b43e2c0a2ff448f6b768dbbe31a15ab"
+    },
+    "src/ui/styles/color-picker.css": {
+      "bytes": 6863,
+      "sha256": "9d1240a8beb6be7a5ca2d8b489c2f7ae32a7afa976140689d09a809147bac866"
+    },
+    "src/ui/styles/display.css": {
+      "bytes": 734,
+      "sha256": "03382c9dcabc067403269821d85c5b4cb50ee2413f3bf214200e7680d2fd75e1"
+    },
+    "src/ui/styles/dock.css": {
+      "bytes": 8086,
+      "sha256": "c929898a3da4f56fe410cf54e2c01cd8f29832e92b520f2ab793ac31f2567b24"
+    },
+    "src/ui/styles/edge-action-layer.css": {
+      "bytes": 1798,
+      "sha256": "bc58ca83a7cf0e270a96d30ddc14b22edcbba832a7f4c5982e36827b29b77c86"
+    },
+    "src/ui/styles/editors.css": {
+      "bytes": 48672,
+      "sha256": "677c7cf0fd2bcfc14b4c1904b8611e61706703169009d4380b30dd4f494fe4cc"
+    },
+    "src/ui/styles/file-upload.css": {
+      "bytes": 2829,
+      "sha256": "1624bfb6d4b461031a60c4f8f1fff311a62904946b36e738d748f8726eba2a4b"
+    },
+    "src/ui/styles/fonts.css": {
+      "bytes": 230,
+      "sha256": "0938fd03dc1f614724ee72aa6baada86d2cba88322c6d531e485094d4ee7def2"
+    },
+    "src/ui/styles/form.css": {
+      "bytes": 2029,
+      "sha256": "e01f2a28aced802c785ecf48e3397550e6bccd8ef05ba98cde4023a22e6e430b"
+    },
+    "src/ui/styles/grid.css": {
+      "bytes": 26629,
+      "sha256": "0506562c6ad1934fe185bb7abbe1c51d2a97f41cdb9fc6bcd83c318b5262bb9a"
+    },
+    "src/ui/styles/header-actions.css": {
+      "bytes": 1794,
+      "sha256": "0d8bb97636e9bb720dbb42b34fdfa59cdf9dad9734213d5b9f689b78723674e1"
+    },
+    "src/ui/styles/hiding-side-panel.css": {
+      "bytes": 3427,
+      "sha256": "b2cc621df1208166c6cd4045aa90c6cc496aff160d3d53113df6ead88803cb45"
+    },
+    "src/ui/styles/icons.css": {
+      "bytes": 158,
+      "sha256": "5f379029122b514d9e0c7d617ee68bdb525c47b4c23f17aeb4be3384caf6911e"
+    },
+    "src/ui/styles/layout.css": {
+      "bytes": 2858,
+      "sha256": "b098fde260ba15f9dc59b6ffaf6452b10650cf079c9faec795856ca2202fa0d6"
+    },
+    "src/ui/styles/lists.css": {
+      "bytes": 5792,
+      "sha256": "0ab35f408e72ddcd354b9aa55ee3df5f0f016d1744fd2dbaec2c69ee5be93143"
+    },
+    "src/ui/styles/mdi.css": {
+      "bytes": 4273,
+      "sha256": "9a6671cc3cc6319d938ef2fdedf5f1e4efd2c1197ad7d18ffad390f099c4e8b2"
+    },
+    "src/ui/styles/menu.css": {
+      "bytes": 2619,
+      "sha256": "57c7e37519a6bc69b86c9be5902d0e53944bda3400adebc29e0aa4a4e0814a3a"
+    },
+    "src/ui/styles/overlay.css": {
+      "bytes": 2265,
+      "sha256": "cfd4c6ba7e096904032162f3da71d727192e2164e062d27c83301f74266c609f"
+    },
+    "src/ui/styles/property-grid.css": {
+      "bytes": 6934,
+      "sha256": "314f65a731d56f36e5941bb13bd0c962580101a08d76396b90a3e1d458ea9ece"
+    },
+    "src/ui/styles/scrollbars.css": {
+      "bytes": 1731,
+      "sha256": "178497209c996dd4e4df3fe0ab857959a2308e3f8aac412082ab8b08dfe3a7cf"
+    },
+    "src/ui/styles/scrolling-label.css": {
+      "bytes": 432,
+      "sha256": "fdfda0ee3a6317e55b6425c06c700f92e3d6c252f4129798209b59d3e7d7fdae"
+    },
+    "src/ui/styles/tabs.css": {
+      "bytes": 7211,
+      "sha256": "9460149f174ad7647d169e197593e1567266e83fb2593a4ca1e5e4374dcb1e86"
+    },
+    "src/ui/styles/text-layout.css": {
+      "bytes": 3689,
+      "sha256": "468b20fb336a10c2853ff49aaad869659b45a7596c66e59f960d45bb5e9735da"
+    },
+    "src/ui/styles/tokens.css": {
+      "bytes": 9190,
+      "sha256": "39f3a5b078348155b800d273ce8d739e37f08a50697957ba3b21cea9ed25241f"
+    },
+    "src/ui/styles/toolbar.css": {
+      "bytes": 525,
+      "sha256": "b93837f07ee531098ee990f81dee4d0854e0c77eb3df5147b07221dc4e34d1df"
+    },
+    "src/ui/styles/trackbar-presentation.css": {
+      "bytes": 4111,
+      "sha256": "cf2fe6eaaf2b99c1a3880b99a80dc2f5aeb6f27c94e079b1973e2471372f0526"
+    },
+    "src/ui/styles/tree-explorer.css": {
+      "bytes": 1527,
+      "sha256": "063a3bf322bfc1c8ff806a02854ed6f14edd165392942467d1ae36ce3a19a4ec"
+    },
+    "src/ui/styles/tree-grid.css": {
+      "bytes": 1483,
+      "sha256": "9617c8eee60fcf61e0940c3123544b41517452c1646d0637162bf4409eb9b9d0"
+    },
+    "src/ui/svg.js": {
+      "bytes": 298,
+      "sha256": "7aeb424815702ca65619c53bbe88adc929448e9783cf0f6bd47bd80dddef210f"
+    },
+    "src/ui/Switch.d.ts": {
+      "bytes": 1493,
+      "sha256": "d7b10627f4fd1a54ab642208d3ddff108903884b232422744159cc921ecc5326"
+    },
+    "src/ui/Switch.js": {
+      "bytes": 6846,
+      "sha256": "32bb11e2fb6b0792beb05283520e569ddc6c5ff7e3dc0382d1f0013686b857a1"
+    },
+    "src/ui/TabBar.js": {
+      "bytes": 23803,
+      "sha256": "a017b6aa045499aab2c20d18958d00bf58bbeac15616b3c366511ae362ead610"
+    },
+    "src/ui/TextArea.d.ts": {
+      "bytes": 2864,
+      "sha256": "693cf695c4f486b4b098db632a31b20c9379445d166f8408d2d31f3bca969abd"
+    },
+    "src/ui/TextArea.js": {
+      "bytes": 9176,
+      "sha256": "7514fa1249bc83dbf122c7c0420617752506374dadf48150d74fe1bc3415ee16"
+    },
+    "src/ui/TextField.js": {
+      "bytes": 9657,
+      "sha256": "d6dec2f8cfed85a05f7f70d9fa7ccb75059f8762a54a166e3550422881118f49"
+    },
+    "src/ui/TextInput.d.ts": {
+      "bytes": 1663,
+      "sha256": "934e54f21ae7051155a55ca4a617fa6198a54ed70de0ff263a5f00578f68dad4"
+    },
+    "src/ui/TextInput.js": {
+      "bytes": 89,
+      "sha256": "b307aafbe004a50155d2804cc357eb306c67d0a9bc56382f3e7c5e1ae1041cb5"
+    },
+    "src/ui/TextLayout.js": {
+      "bytes": 11835,
+      "sha256": "ea93a268e374aaf3b1e9b0b0c1edc961baf0d3019e893c6160436e64341e273d"
+    },
+    "src/ui/theme-designer/base-color.js": {
+      "bytes": 1629,
+      "sha256": "8c7c2698ac1f07a26efb97604ecf22abca83a64ac1b7dabfa53d4965fb1be61f"
+    },
+    "src/ui/theme-designer/color-math.js": {
+      "bytes": 2168,
+      "sha256": "a4f54f2b10cb7448e51aa289091bb6af549878d1b76863ff4f96a6aea2f01a37"
+    },
+    "src/ui/theme-designer/editor-model.js": {
+      "bytes": 1359,
+      "sha256": "5336d3679e326b2fdab7e8cb68e6a4abfe49da7ff7915c127abceeb2c6383974"
+    },
+    "src/ui/theme-designer/editor.js": {
+      "bytes": 13579,
+      "sha256": "61cb532606b4ce4721b3e28e6f9b8084d58ebbfe4c0bb6cb1e7316e41dca64b9"
+    },
+    "src/ui/theme-designer/foreground-resolver.js": {
+      "bytes": 5421,
+      "sha256": "4e1397539f32916f18d8a4a4177eaa212655aec71260ee400bf94b87e15c4897"
+    },
+    "src/ui/theme-designer/harmony.js": {
+      "bytes": 1145,
+      "sha256": "a5d4866f32423bbf821c6dce00da54f47d50ac7ed3e18275ac8ad05f020e6c27"
+    },
+    "src/ui/theme-designer/host-api.js": {
+      "bytes": 574,
+      "sha256": "f09d7b119d58214860a7b01bf4c4261b0d32e3b74f4720179695e0b5ec0bf33a"
+    },
+    "src/ui/theme-designer/notice.js": {
+      "bytes": 3960,
+      "sha256": "979a89b8b6e0b92684b9c30eab2312c7985623b56ed1e7120012a9e68532801e"
+    },
+    "src/ui/theme-designer/preset-toolbar.js": {
+      "bytes": 5337,
+      "sha256": "7b4682383075f5910bcd9c6434214e9aec583a8d09f1263d3e36232fb317da8c"
+    },
+    "src/ui/theme-designer/preview.js": {
+      "bytes": 7721,
+      "sha256": "37561b5c7c6531fd8c4309c0e46288d33f01ce3c9f557327ae1d4d7ab74e8d84"
+    },
+    "src/ui/theme-designer/reference-tokens.js": {
+      "bytes": 5962,
+      "sha256": "86f305ebd05bda1b99d0e57a02597b05aa6fd91a67bb69a309a66ca9b5a0515a"
+    },
+    "src/ui/theme-designer/role-distribution.js": {
+      "bytes": 1141,
+      "sha256": "f708c11d1c47c74e11ecb4c76208efa54f49200dec2cc718e48cad3fc27bb882"
+    },
+    "src/ui/theme-designer/scope-model.js": {
+      "bytes": 4934,
+      "sha256": "190d3d99cfc0b5a212dce4c76a87424c09def76e87d4a3f433488d270f758452"
+    },
+    "src/ui/theme-designer/serialization.js": {
+      "bytes": 3764,
+      "sha256": "ac84e476be9a4efcaa80a16984dac13c513d28fdbe4fc4eed4d2ae40254a13be"
+    },
+    "src/ui/theme-designer/stack-model.js": {
+      "bytes": 1029,
+      "sha256": "2c18701ed37c30b3cc7e281f0d202fea885b6db2067e9770d24b71f05e28f023"
+    },
+    "src/ui/theme-designer/stack.js": {
+      "bytes": 4584,
+      "sha256": "36eefc08e4575c9bb0585b88a08684983c9a651ce944b3c7db770fb3403881a3"
+    },
+    "src/ui/theme-designer/template.js": {
+      "bytes": 16350,
+      "sha256": "228b0109ae2a04251f509803a53897b36e91ee842b3be73df0cc01c9ded90c72"
+    },
+    "src/ui/theme-designer/theme-generator.js": {
+      "bytes": 10673,
+      "sha256": "f725c7ab4290a4cc3082878f63ae5ed3834a24d04dd7fd2c0cb7f45d5abedd85"
+    },
+    "src/ui/theme-designer/theme-presets.js": {
+      "bytes": 1132,
+      "sha256": "5b7752c3e31ae37a1e54ab44765b6dbfb3130aea5fe3e01a4bd8ecac8d5e2624"
+    },
+    "src/ui/theme-designer/theme-scopes.js": {
+      "bytes": 6344,
+      "sha256": "030d694bfba6431b8bee6bf0920d0b8ef364491aa05f946eccd9e574a8486e38"
+    },
+    "src/ui/theme-designer/wheel-geometry.js": {
+      "bytes": 1117,
+      "sha256": "c9c15b75cc44ca5be4a081c71b90e11f1b867e34a120eb8cf4e6e4c7ef3ae20d"
+    },
+    "src/ui/theme-designer/wheel-spectrum.js": {
+      "bytes": 1617,
+      "sha256": "1bd7fdf88c7f7a53e9d104880955b79cb141af3f9da43e7d3ec066c100ce29b1"
+    },
+    "src/ui/theme-designer/wheel.js": {
+      "bytes": 4927,
+      "sha256": "8a4cb11ca69aeefe433887020cd494a329ea4f546c946ae904b1e9cf83d3cb99"
+    },
+    "src/ui/ThemeApplicator.d.ts": {
+      "bytes": 847,
+      "sha256": "646edb6acffea4e05aab0b465d5f620876559f0adc32ad411d91f8716e52a567"
+    },
+    "src/ui/ThemeApplicator.js": {
+      "bytes": 4290,
+      "sha256": "166ee81c7cdc01bfb7af8b38836cf97df2b903eab7630b7ba0cb6d92de12364f"
+    },
+    "src/ui/ThemeDesigner.d.ts": {
+      "bytes": 2499,
+      "sha256": "d7dae9d0d3da5573403926983e53535753de1f1b55dd6c9b222558b6c644dc87"
+    },
+    "src/ui/ThemeDesigner.js": {
+      "bytes": 4065,
+      "sha256": "143a38744c5f56d08bdb03c737f33a993a508507c2fe476da464edd1a6f783b6"
+    },
+    "src/ui/ToggleIconButton.js": {
+      "bytes": 1035,
+      "sha256": "5a29028f97bebd1fd546a6dd661589387a35afd9e2ddae890a108a13d97d79a6"
+    },
+    "src/ui/Toolbar.js": {
+      "bytes": 3649,
+      "sha256": "9ef4087014d9a17584ff8a233f14f982ead07c6968ca38aee409987e312cfaac"
+    },
+    "src/ui/ToolButton.js": {
+      "bytes": 2994,
+      "sha256": "242b353336d6653f1e7ce016838ce69ee2b325b10b9b27568bfc51f5949fd472"
+    },
+    "src/ui/Tooltip.js": {
+      "bytes": 4366,
+      "sha256": "f54c95d667950fe9c1821f3e7e9a7c001c97c0549112073dc4894113f76ea933"
+    },
+    "src/ui/TrackBar.d.ts": {
+      "bytes": 2294,
+      "sha256": "545fa8356a9e20449d1f18552b1fa06ca2d345ff439f663cd1afcfc6583c060c"
+    },
+    "src/ui/TrackBar.js": {
+      "bytes": 12863,
+      "sha256": "824c0d8860efb1cf7d6dffd5671ba9d2a7df566751a1bc88aee3a0361d924ca8"
+    },
+    "src/ui/TreeDefinition.d.ts": {
+      "bytes": 872,
+      "sha256": "9175de9fe5927712cac7839f5d8767a44f518497101b1a64548cfed1f32190de"
+    },
+    "src/ui/TreeDefinition.js": {
+      "bytes": 926,
+      "sha256": "828819833bd2a476edd08499478545c8ce632d84a5f15357413ce85697de271d"
+    },
+    "src/ui/treeDefinitionSupport.js": {
+      "bytes": 3017,
+      "sha256": "d4b9396db409de2e927e3df8cbf3a34a49d861ff28b4de9dc55bf6b6da5756d6"
+    },
+    "src/ui/treeExpansion.js": {
+      "bytes": 2120,
+      "sha256": "fc6b725df33774cbcfc79ec77227f730d56093930f9be50bd9e4db322d5ba019"
+    },
+    "src/ui/TreeExplorer.d.ts": {
+      "bytes": 3275,
+      "sha256": "15c4edf311b41e34104c32891b23813fc6acbf76e4165bf8387a4b58a9c93d90"
+    },
+    "src/ui/TreeExplorer.js": {
+      "bytes": 18984,
+      "sha256": "e6a1198f0ddf2d1eeea0302d1563aeeed1784f5d2ff31c72742c3c0cec719296"
+    },
+    "src/ui/TreeGrid.d.ts": {
+      "bytes": 3766,
+      "sha256": "09e444b3affd4fd2920cd34786d5003927770ea3555e9ec45eca3b79a4a086dc"
+    },
+    "src/ui/TreeGrid.js": {
+      "bytes": 61369,
+      "sha256": "55de67f1f0fad4bd83e7cac85d087a3b6a2b4f681c2d00950982c89c5bb4b47d"
+    },
+    "src/ui/TreeGridDefinition.d.ts": {
+      "bytes": 867,
+      "sha256": "2ab1f06448037e37b180345e053fe17d7e1f35bd1f8885c064a92c2d7b60b939"
+    },
+    "src/ui/TreeGridDefinition.js": {
+      "bytes": 1591,
+      "sha256": "39c012c8d066aa2043008d1e1d20beceb79c6098b0c494c830b418f3d50b420d"
+    },
+    "src/ui/TreeList.js": {
+      "bytes": 18140,
+      "sha256": "14dc7e920ca50a30f9d57f5b7ed07ec4977c67010c1c1c7d2f0c9e4655413ef5"
+    },
+    "src/ui/TreeListPortProvider.js": {
+      "bytes": 279,
+      "sha256": "7912062608fc294c90e0ca994d0da889a815f446dc48a0a925d84ce663f24eec"
+    },
+    "src/ui/TreeNodeDragController.js": {
+      "bytes": 17362,
+      "sha256": "d1b14c9b09180fbbc8eaf01fd10536bfee6fd2fa6252531550706477a663a754"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 2794,
+      "sha256": "9597fa51abfc594d8da7161c46abbc94faaf21e8a3969fe1d84fbf8cad41ccf5"
+    }
+  }
+}

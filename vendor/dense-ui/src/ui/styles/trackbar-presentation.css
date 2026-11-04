@@ -1,0 +1,32 @@
+/* Values are positioned relative to the track, independently of its orientation. */
+.dui-trackbar .dui-trackbar__content { display:grid; grid-template-columns:minmax(0,1fr); grid-template-rows:auto; align-items:center; justify-items:stretch; gap:var(--dui-gap-sm); }
+.dui-trackbar .dui-trackbar__scale { grid-column:1; grid-row:1; }
+.dui-trackbar .dui-trackbar__value { min-width:0; text-align:center; justify-self:center; align-self:center; }
+.dui-trackbar--show-value[data-value-position=right] .dui-trackbar__content { grid-template-columns:minmax(0,1fr) auto; }
+.dui-trackbar--show-value[data-value-position=right] .dui-trackbar__value { grid-column:2; grid-row:1; }
+.dui-trackbar--show-value[data-value-position=left] .dui-trackbar__content { grid-template-columns:auto minmax(0,1fr); }
+.dui-trackbar--show-value[data-value-position=left] .dui-trackbar__value { grid-column:1; grid-row:1; }
+.dui-trackbar--show-value[data-value-position=left] .dui-trackbar__scale { grid-column:2; }
+.dui-trackbar--show-value[data-value-position=top] .dui-trackbar__value { grid-column:1; grid-row:1; }
+.dui-trackbar--show-value[data-value-position=top] .dui-trackbar__scale { grid-row:2; }
+.dui-trackbar--show-value[data-value-position=bottom] .dui-trackbar__value { grid-column:1; grid-row:2; }
+.dui-trackbar { --dui-thumb-width:var(--dui-trackbar-thumb-size); --dui-thumb-height:var(--dui-trackbar-thumb-size); --dui-thumb-radius:50%; --dui-thumb-background:var(--dui-color-focus-border); }
+.dui-trackbar[data-thumb-shape=ring] { --dui-thumb-background:var(--dui-color-bg); }
+.dui-trackbar[data-thumb-shape=grip] { --dui-thumb-width:22px; --dui-thumb-height:16px; --dui-thumb-radius:2px; --dui-thumb-background:repeating-linear-gradient(90deg,transparent 0 3px,var(--dui-color-text) 3px 4px) center / 12px 8px no-repeat var(--dui-color-surface); }
+.dui-trackbar--vertical[data-thumb-shape=grip] { --dui-thumb-width:16px; --dui-thumb-height:22px; --dui-thumb-background:repeating-linear-gradient(0deg,transparent 0 3px,var(--dui-color-text) 3px 4px) center / 8px 12px no-repeat var(--dui-color-surface); }
+.dui-trackbar[data-thumb-shape=line] { --dui-thumb-width:4px; --dui-thumb-height:20px; --dui-thumb-radius:0; }
+.dui-trackbar--vertical[data-thumb-shape=line] { --dui-thumb-width:20px; --dui-thumb-height:4px; }
+.dui-trackbar .dui-trackbar__input::-webkit-slider-thumb { box-sizing:border-box; width:var(--dui-thumb-width); height:var(--dui-thumb-height); border-radius:var(--dui-thumb-radius); background:var(--dui-thumb-background); margin-top:calc((var(--dui-trackbar-track-size) - var(--dui-thumb-height)) / 2 - 1px); }
+.dui-trackbar .dui-trackbar__input::-moz-range-thumb { box-sizing:border-box; width:var(--dui-thumb-width); height:var(--dui-thumb-height); border-radius:var(--dui-thumb-radius); background:var(--dui-thumb-background); }
+.dui-trackbar--vertical .dui-trackbar__input::-webkit-slider-thumb { margin-top:0; margin-left:calc((var(--dui-trackbar-track-size) - var(--dui-thumb-width)) / 2 - 1px); }
+.dui-trackbar--vertical .dui-trackbar__input::-moz-range-track,
+.dui-trackbar--vertical .dui-trackbar__input::-moz-range-progress { width:var(--dui-trackbar-track-size); height:100%; }
+.dui-trackbar[data-thumb-shape=ring] .dui-trackbar__input::-webkit-slider-thumb { border:2px solid var(--dui-color-focus-border); }
+.dui-trackbar[data-thumb-shape=ring] .dui-trackbar__input::-moz-range-thumb { border:2px solid var(--dui-color-focus-border); }
+/* Keep the track in the middle column even when endpoint labels are absent. */
+.dui-trackbar--horizontal .dui-trackbar__slider { grid-column:2; grid-row:1; }
+.dui-trackbar--horizontal .dui-trackbar__range-label--min { grid-column:1; grid-row:1; }
+.dui-trackbar--horizontal .dui-trackbar__range-label--max { grid-column:3; grid-row:1; }
+.dui-trackbar--horizontal.dui-trackbar--scale-none .dui-trackbar__scale { grid-template-columns:minmax(0,1fr); }
+.dui-trackbar--horizontal.dui-trackbar--scale-none .dui-trackbar__slider { grid-column:1; }
+.dui-trackbar.dui-disabled,.dui-trackbar.dui-readonly { --dui-thumb-background:var(--dui-button-bg-disabled); }

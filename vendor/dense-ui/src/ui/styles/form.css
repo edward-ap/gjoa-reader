@@ -1,0 +1,107 @@
+.dui-lab-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--dui-gap-sm);
+  margin-bottom: var(--dui-gap-md);
+}
+
+.dui-form {
+  box-sizing: border-box;
+  padding-inline-start: var(--dui-form-field-indent, 0px);
+}
+
+.dui-profile-compact .dui-form {
+  width: var(--dui-form-width);
+}
+
+.dui-form--property {
+  display: grid;
+  row-gap: var(--dui-gap-xs);
+}
+
+.dui-form__rows {
+  display: grid;
+  row-gap: var(--dui-gap-md);
+  min-width: 0;
+}
+
+.dui-form__cols {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--dui-gap-sm);
+  min-width: 0;
+}
+
+.dui-form__columns {
+  display: grid;
+  grid-template-columns: repeat(var(--dui-form-column-count, 2), minmax(0, 1fr));
+  align-items: start;
+  gap: var(--dui-gap-md);
+  min-width: 0;
+}
+
+.dui-form__column {
+  display: grid;
+  row-gap: var(--dui-gap-xs);
+  min-width: 0;
+}
+
+.dui-form__item {
+  min-width: 0;
+}
+
+.dui-form__rows > .dui-form__item--fill,
+.dui-form__column > .dui-form__item--fill {
+  width: 100%;
+}
+
+.dui-form__cols > .dui-form__item--fill {
+  flex: 1 1 0;
+}
+
+.dui-form__cols > .dui-form__item:not(.dui-form__item--fill) {
+  flex: 0 0 auto;
+}
+
+.dui-form__column > .dui-field-group,
+.dui-form__rows > .dui-field-group {
+  width: 100%;
+}
+
+.dui-form__cols > .dui-field-group {
+  flex: 1 1 0;
+}
+
+.dui-form--labels-top .dui-editor:not(.dui-editor--label-left) {
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  row-gap: var(--dui-gap-xs);
+}
+
+.dui-form--labels-top .dui-editor:not(.dui-editor--label-left) > .dui-text-field__message {
+  left: 0;
+}
+
+.dui-form--labels-top .dui-editor:not(.dui-editor--label-left) > .dui-text-area__label {
+  padding-top: 0;
+}
+
+.dui-field-group {
+  min-inline-size: 0;
+  min-width: 0;
+  margin: 0;
+  padding: var(--dui-gap-sm);
+  border: 1px solid var(--dui-color-border-strong);
+  background: var(--dui-color-bg);
+}
+
+.dui-field-group__title {
+  max-width: 100%;
+  padding: 0 4px;
+  color: var(--dui-color-text);
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

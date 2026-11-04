@@ -1,0 +1,86 @@
+{
+  "component": "Local Painter extension",
+  "license": "MIT",
+  "copyright": "2026 Edward Aponasko",
+  "origin": "Dense UI 0.5.0-rc.1 archived implementation (working-tree snapshot)",
+  "foundation": {
+    "repository": "https://github.com/edward-ap/dense-ui",
+    "tag": "v0.6.0-rc.1",
+    "commit": "7e4b2983bcac5c640de250bc7fa1b17d8e6d369e"
+  },
+  "originalFiles": [
+    {
+      "file": "src/ui/Painter.js",
+      "sha256": "d3337aadf399a48b25ce8563f33d285b5a9f68d86f0ed2955ede4cf8c4b3a1a8"
+    },
+    {
+      "file": "src/ui/painterGeometry.js",
+      "sha256": "410868fce6b4a2d5773a0daec7bd4d29552ae00117b20fe180c321e8987d2c8b"
+    },
+    {
+      "file": "src/ui/Painter.d.ts",
+      "sha256": "a2bbd93bb1830173aa4a216a122e47cd38433d84be52492ca64a55bb0e4920ea"
+    },
+    {
+      "file": "src/ui/styles/painter.css",
+      "sha256": "e6133cf21f3dd82219c03970afc81e2557c1e2716aba10ab9bacab7021aa5e33"
+    },
+    {
+      "file": "src/ui/svg.js",
+      "sha256": "6a823319ab90f3ae38327b89d4a58c14de707343f963e239469b18089dc0105d"
+    },
+    {
+      "file": "test/painter.test.js",
+      "sha256": "64ee07678d64939d3661b5a0a07a82fcaff6543c1d8d29f42c1a744bcca080c5"
+    },
+    {
+      "file": "browser-tests/painter.spec.js",
+      "sha256": "3f8a7b5083d3029c7c69f4e0620a3792a32f1ed5722c6f92c980308e4bba0652"
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3"
+    }
+  ],
+  "adaptations": [
+    "Import BaseControl only from public dense-ui/foundation",
+    "Local SVG helper; no private framework source imports",
+    "Own mutation/teardown guard and public enable/disable overrides replace private baseline hooks",
+    "Document logical coordinates, detached v1 changes, gesture/history and ownership invariants",
+    "Normalize local extension files to LF for reproducible source transport; original hashes retain archived bytes"
+  ],
+  "deliveredFiles": [
+    {
+      "file": "Painter.js",
+      "sha256": "c80884ae0705a605a14826a4bbf8b2d6b8c021b6f68fa11c173e3df0b5011749"
+    },
+    {
+      "file": "painterGeometry.js",
+      "sha256": "78b174c5059a92c27fea1f7fbe03b4deecedc98807cba86e51214a46d0988c10"
+    },
+    {
+      "file": "svg.js",
+      "sha256": "7aeb424815702ca65619c53bbe88adc929448e9783cf0f6bd47bd80dddef210f"
+    },
+    {
+      "file": "styles.css",
+      "sha256": "7632ab4cca29fc27aac98194a1b8160f275752175ed9e3d98a78ee84a4c5b895"
+    },
+    {
+      "file": "index.js",
+      "sha256": "c57868a79f59b48586318904415d9e0ba22d93059ed4787b2a8a48d613e64e57"
+    },
+    {
+      "file": "index.d.ts",
+      "sha256": "be0175ceeeb0152272544ba7b4b27f97539bd18547aa99702711ff804c995bd6"
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "93d85e8c06fd098e2bf1b31c546021754952e76bf0f9772246e3968900bf97b3"
+    },
+    {
+      "file": "Painter.d.ts",
+      "sha256": "447cd5a32859bda4c90cee93396bd644ab97011705ff453feb5ba0dda6c7f2ee"
+    }
+  ]
+}

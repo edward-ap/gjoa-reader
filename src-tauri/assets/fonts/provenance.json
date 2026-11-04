@@ -1,0 +1,35 @@
+{
+  "commit": "80327115aa6e63ea8947558e5fb676f5287878ba",
+  "files": [
+    {
+      "file": "PT_Serif-Web-Regular.ttf",
+      "source": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/ptserif/PT_Serif-Web-Regular.ttf",
+      "sha256": "a4951fade06ff8f09b7673aa81ffb65a8cd409e24d3289a6dc670bc4dda2557a",
+      "bytes": 359048
+    },
+    {
+      "file": "PT_Serif-Web-Italic.ttf",
+      "source": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/ptserif/PT_Serif-Web-Italic.ttf",
+      "sha256": "f57e95ff9dc85691a3b2e193f2028db36f6663939a46c0fc4f286d618b80b7ce",
+      "bytes": 375356
+    },
+    {
+      "file": "PT_Serif-Web-Bold.ttf",
+      "source": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/ptserif/PT_Serif-Web-Bold.ttf",
+      "sha256": "038ba7336bd7ea14f12ad155bed51a4345cac5153275d521dec3ba04021c526e",
+      "bytes": 339996
+    },
+    {
+      "file": "PT_Serif-Web-BoldItalic.ttf",
+      "source": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/ptserif/PT_Serif-Web-BoldItalic.ttf",
+      "sha256": "f003788ba08981eb0988b3557a6f224a53dab49c20e283e8b74d5af3c466f8be",
+      "bytes": 337580
+    },
+    {
+      "file": "OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/ptserif/OFL.txt",
+      "sha256": "ddf311c28ddf5a5ad9747649837346b67bed9d356789c3072bb27dbce49e514d",
+      "bytes": 4434
+    }
+  ]
+}

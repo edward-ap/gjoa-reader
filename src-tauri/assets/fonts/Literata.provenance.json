@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/googlefonts/literata",
+  "commit": "0c2761b727a1b3a7cffd313c37f0f5163dfc7a63",
+  "path": "fonts/ttf",
+  "license": "SIL OFL 1.1",
+  "modifications": "None; upstream static default optical-size faces",
+  "files": [
+    {
+      "file": "Literata-Bold.ttf",
+      "bytes": 331304,
+      "sha256": "b6af95b3b443cdbce964aa06741596987f2f5c3ede46a2bc846e5addd99d061f"
+    },
+    {
+      "file": "Literata-BoldItalic.ttf",
+      "bytes": 318888,
+      "sha256": "1dade59381ad02f4679d7e993a7a406472e587ac332af7a6168d3ad9214a99dc"
+    },
+    {
+      "file": "Literata-Italic.ttf",
+      "bytes": 304104,
+      "sha256": "198f70cc9a17bab578553fa274b81984d58c440efe26bc06f1d841c194b6691a"
+    },
+    {
+      "file": "Literata-Regular.ttf",
+      "bytes": 319964,
+      "sha256": "0390890de9bb9d5862a6ba4125b82c61792ccc3d66b63e73eee75c1a16fcd208"
+    }
+  ]
+}

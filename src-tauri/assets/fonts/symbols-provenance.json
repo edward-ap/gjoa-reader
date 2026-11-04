@@ -1,0 +1,14 @@
+[
+  {
+    "file": "NotoEmoji.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/notoemoji/NotoEmoji%5Bwght%5D.ttf",
+    "sha256": "de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551",
+    "bytes": 1982596
+  },
+  {
+    "file": "NotoEmoji-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/80327115aa6e63ea8947558e5fb676f5287878ba/ofl/notoemoji/OFL.txt",
+    "sha256": "500bb1ccf43df7bbb522112f9133a52b16e1c35e809632f5d8609b179152de5b",
+    "bytes": 4330
+  }
+]

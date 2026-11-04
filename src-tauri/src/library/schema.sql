@@ -1,0 +1,10 @@
+BEGIN IMMEDIATE;
+CREATE TABLE sources(id TEXT PRIMARY KEY,format_id TEXT NOT NULL,byte_length INTEGER NOT NULL CHECK(byte_length>0 AND byte_length<=536870912),original_name TEXT NOT NULL,object_path TEXT NOT NULL UNIQUE,imported_at INTEGER NOT NULL);
+CREATE TABLE editions(id TEXT PRIMARY KEY,source_id TEXT NOT NULL REFERENCES sources(id),publisher_id TEXT NOT NULL,publisher_version INTEGER NOT NULL,format_id TEXT NOT NULL,manifest_path TEXT NOT NULL UNIQUE,page_count INTEGER NOT NULL CHECK(page_count>0),created_at INTEGER NOT NULL);
+CREATE TABLE folders(id INTEGER PRIMARY KEY,parent_id INTEGER REFERENCES folders(id),name TEXT NOT NULL,name_key TEXT NOT NULL,created_at INTEGER NOT NULL);
+CREATE UNIQUE INDEX folder_siblings ON folders(COALESCE(parent_id,0),name_key);
+CREATE TABLE library_items(id INTEGER PRIMARY KEY,edition_id TEXT NOT NULL UNIQUE REFERENCES editions(id),title TEXT,author TEXT,inbox INTEGER NOT NULL CHECK(inbox IN(0,1)),folder_id INTEGER REFERENCES folders(id),added_at INTEGER NOT NULL,CHECK(inbox=0 OR folder_id IS NULL));
+CREATE INDEX items_folder ON library_items(folder_id);
+CREATE TABLE progress(item_id INTEGER PRIMARY KEY REFERENCES library_items(id),page_index INTEGER NOT NULL CHECK(page_index>=0),updated_at INTEGER NOT NULL);
+PRAGMA user_version=1;
+COMMIT;

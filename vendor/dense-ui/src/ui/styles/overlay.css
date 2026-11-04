@@ -1,0 +1,113 @@
+.dui-overlay-root {
+  position: fixed;
+  inset: 0;
+  z-index: var(--dui-z-transient-overlay);
+  pointer-events: none;
+  font-family: var(--dui-font-family);
+  font-size: var(--dui-font-size);
+  line-height: var(--dui-line-height);
+}
+
+.dui-overlay-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: auto;
+  background: rgb(0 0 0 / 28%);
+}
+
+.dui-popup {
+  position: fixed;
+  box-sizing: border-box;
+  max-width: calc(100vw - 8px);
+  max-height: calc(100vh - 8px);
+  overflow: auto;
+  border: 1px solid var(--dui-color-border-strong);
+  border-radius: 3px;
+  padding: var(--dui-gap-sm);
+  pointer-events: auto;
+  background: var(--dui-color-bg);
+  color: var(--dui-color-text);
+  box-shadow: var(--dui-shadow-floating);
+}
+
+.dui-popup[hidden] {
+  display: none;
+}
+
+.dui-popup:focus {
+  outline: 1px solid var(--dui-color-focus-border);
+  outline-offset: -1px;
+}
+
+.dui-dialog {
+  display: grid;
+  grid-template-rows: var(--dui-dialog-header-height) minmax(72px, auto) var(--dui-dialog-footer-height);
+  min-width: 320px;
+  max-width: min(560px, calc(100vw - 24px));
+  overflow: hidden;
+  border-color: var(--dui-window-border);
+  border-radius: 0;
+  padding: 0;
+}
+
+.dui-dialog__header {
+  padding-left: var(--dui-gap-md);
+}
+
+.dui-dialog__header--draggable {
+  cursor: move;
+  touch-action: none;
+  user-select: none;
+}
+
+.dui-dialog--dragging {
+  box-shadow: var(--dui-shadow-drag-title);
+}
+
+.dui-dialog__close {
+  cursor: default;
+  margin: 0 3px;
+}
+
+.dui-dialog__title {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dui-dialog__body {
+  min-width: 0;
+  padding: var(--dui-gap-lg);
+  background: var(--dui-window-content-bg);
+}
+
+.dui-dialog__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--dui-gap-sm);
+  border-top: 1px solid var(--dui-color-border);
+  padding: 0 var(--dui-gap-md);
+  background: var(--dui-window-footer-bg);
+}
+
+.dui-dialog__button--primary {
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 18%);
+}
+
+.dui-dialog__footer .dui-button {
+  min-width: 72px;
+}
+
+.dui-lab24-panel {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  align-content: start;
+  gap: var(--dui-gap-md);
+  padding: var(--dui-gap-lg);
+}
+
+.dui-lab24-log {
+  grid-column: 1 / -1;
+  width: 420px;
+  height: 180px;
+}

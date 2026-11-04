@@ -1,0 +1,41 @@
+.dui-chart {
+  --dui-chart-series-1: var(--dui-color-accent-bg);
+  --dui-chart-series-2: #d77c26;
+  --dui-chart-series-3: #299986;
+  --dui-chart-series-4: #a16ac4;
+  --dui-chart-series-5: #ce526c;
+  --dui-chart-series-6: #7e9435;
+  display: flex; flex-direction: column; min-width: 0; min-height: 180px;
+  background: var(--dui-color-bg); color: var(--dui-color-text);
+  border: 1px solid var(--dui-color-border); padding: 8px; box-sizing: border-box;
+}
+.dui-chart__plot { flex: 1; min-height: 0; min-width: 0; }
+.dui-chart__plot > svg { display: block; width: 100%; height: 100%; overflow: hidden; }
+.dui-chart text, .dui-gauge svg text { fill: var(--dui-color-text); font: 12px var(--dui-font-family, sans-serif); }
+.dui-chart__axes line { stroke: var(--dui-color-row-border, #ddd); stroke-width: 1; }
+.dui-chart__axes .dui-chart__zero { stroke: var(--dui-color-border-strong); }
+.dui-chart__line { fill: none; stroke-width: 2; pointer-events: none; }
+.dui-chart__area { fill-opacity: .2; stroke: none; pointer-events: none; }
+.dui-chart__financial { --dui-financial-color: var(--dui-chart-neutral, var(--dui-color-text)); }
+.dui-chart__financial[data-direction=up] { --dui-financial-color: var(--dui-chart-up, #21966c); }
+.dui-chart__financial[data-direction=down] { --dui-financial-color: var(--dui-chart-down, #d65563); }
+.dui-chart__financial > line, .dui-chart__financial > path, .dui-chart__candle-body { stroke: var(--dui-financial-color); stroke-width: 1.5; fill: var(--dui-financial-color); }
+.dui-chart__financial .dui-chart__financial-hit { fill: transparent; stroke: none; }
+.dui-chart__financial:hover .dui-chart__financial-hit, .dui-chart__financial:focus .dui-chart__financial-hit { stroke: var(--dui-color-text); stroke-width: 1; }
+.dui-chart__mark { fill: var(--dui-chart-color); cursor: pointer; }
+.dui-chart__point--hit { fill: transparent; }
+.dui-chart__mark:hover, .dui-chart__mark:focus { fill: var(--dui-chart-color); stroke: var(--dui-color-text); stroke-width: 2; outline: none; }
+.dui-chart__legend { display: flex; justify-content: center; flex-wrap: wrap; gap: 4px 16px; }
+.dui-chart__legend[hidden] { display: none; }
+.dui-chart__legend button { background: transparent; border: 0; color: inherit; font: inherit; padding: 4px; cursor: pointer; }
+.dui-chart__legend button::before { content: ''; display: inline-block; width: 14px; height: 3px; margin-right: 6px; background: var(--dui-chart-color); vertical-align: middle; }
+.dui-chart__legend button[aria-pressed=false] { opacity: .55; text-decoration: line-through; }
+.dui-chart__legend button:focus-visible { outline: 1px solid var(--dui-color-focus-border); }
+.dui-gauge .dui-progress-bar__track { height: auto; aspect-ratio: 240 / 150; border: 0; background: transparent; }
+.dui-gauge .dui-progress-bar__track > svg { width: 100%; height: 100%; }
+.dui-gauge__track, .dui-gauge__fill { fill: none; stroke-width: 14; }
+.dui-gauge__track { stroke: var(--dui-color-surface-strong); }
+.dui-gauge__fill { stroke: var(--dui-gauge-color, var(--dui-color-accent-bg)); }
+.dui-gauge__needle { stroke: var(--dui-color-text); stroke-width: 2; }
+.dui-gauge__hub { fill: var(--dui-color-text); }
+.dui-gauge .dui-progress-bar__text { clip-path: none; color: var(--dui-color-text); inset: 42% 0 auto; font-size: 1.3em; }

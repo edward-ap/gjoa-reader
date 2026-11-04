@@ -1,0 +1,26 @@
+.dui-file-upload { display:flex; flex-direction:column; height:360px; min-width:0; min-height:0; overflow:hidden; border:1px solid var(--dui-color-border); background:var(--dui-color-surface-raised); box-sizing:border-box; }
+.dui-file-upload__toolbar { display:flex; flex-shrink:0; flex-wrap:wrap; align-items:center; gap:4px; padding:6px; border-bottom:1px solid var(--dui-color-border); background:var(--dui-color-surface); }
+.dui-file-upload__toolbar > :last-child { margin-left:auto; }
+.dui-file-upload__picker .dui-file-picker__display,
+.dui-file-upload__picker .dui-file-picker__label { display:none; }
+.dui-file-upload__drop { flex:1; min-height:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; padding:16px; text-align:center; font-size:16px; color:var(--dui-color-muted); background:var(--dui-color-surface); }
+.dui-file-upload__drop[hidden],.dui-file-upload__list[hidden] { display:none; }
+.dui-file-upload__empty-icon { width:56px; height:56px; opacity:.5; }
+.dui-file-upload--dragover { outline:2px solid var(--dui-color-focus-border); outline-offset:-2px; }
+.dui-file-upload--dragover .dui-file-upload__drop { color:var(--dui-color-text); }
+.dui-file-upload__list { flex:1; overflow-y:auto; overflow-x:hidden; min-height:0; scrollbar-gutter:stable; }
+.dui-file-upload__row { display:grid; grid-template-columns:minmax(0,1fr) minmax(160px,35%); align-items:center; gap:12px; padding:10px; min-height:60px; box-sizing:border-box; border-bottom:1px solid var(--dui-color-border); }
+.dui-file-upload__row:hover,.dui-file-upload__row:focus-within { background:var(--dui-color-surface); }
+.dui-file-upload__info { display:flex; align-items:center; gap:10px; min-width:0; }
+.dui-file-upload__file-icon { width:30px; height:36px; flex-shrink:0; color:var(--dui-color-focus-border); }
+.dui-file-upload__details { min-width:0; display:flex; flex-direction:column; gap:3px; }
+.dui-file-upload__name { font-weight:600; }
+.dui-file-upload__name,.dui-file-upload__size,.dui-file-upload__status { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.dui-file-upload__size { color:var(--dui-color-muted); }
+.dui-file-upload__state { display:flex; align-items:center; justify-content:flex-end; gap:6px; min-width:0; }
+.dui-file-upload__indicator { flex:1; min-width:0; text-align:right; }
+.dui-file-upload__complete { margin-left:auto; width:24px; height:24px; color:var(--dui-file-upload-success, var(--dui-color-success-border)); vertical-align:middle; }
+.dui-file-upload__row[data-status=error] .dui-file-upload__status { color:var(--dui-color-invalid-border); }
+.dui-file-upload__row .dui-progress-bar { width:100%; min-width:0; }
+.dui-file-upload__message { flex-shrink:0; color:var(--dui-color-muted); padding:4px 8px; }
+.dui-file-upload__message:empty { display:none; }

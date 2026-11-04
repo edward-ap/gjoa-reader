@@ -1,0 +1,4 @@
+Upstream: https://github.com/gribuser/fb2
+Commit: 4d3740e319039911c30d291abb0c8b26ec99703b
+Retrieved: 2026-09-10
+Unmodified schema files; license notices are inside each upstream file.

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "scope": "Exact unmodified MPL-covered crate source distributions from the audited Windows graph; not a binary link map",
+  "licenseText": "licenses/rust/cssparser-0.36.0/LICENSE",
+  "packages": [
+    {
+      "name": "cssparser",
+      "version": "0.36.0",
+      "license": "MPL-2.0",
+      "sourceArchive": "licenses/rust/mpl-sources/cssparser-0.36.0.crate",
+      "bytes": 56357,
+      "sha256": "dae61cf9c0abb83bd659dab65b7e4e38d8236824c85f0f804f173567bda257d2",
+      "downloadUrl": "https://static.crates.io/crates/cssparser/cssparser-0.36.0.crate",
+      "repository": "https://github.com/servo/rust-cssparser",
+      "upstreamCommit": "9339ddd71443463dfb85d1185ad50cd98b34bc8f",
+      "upstreamPath": "",
+      "sourceArchivePreservesUpstreamNotices": true,
+      "modified": false,
+      "scope": {
+        "windowsNormalEdgeReachable": true,
+        "windowsBuildGraphReachable": true,
+        "procMacro": false
+      },
+      "archiveEntryCount": 24
+    },
+    {
+      "name": "cssparser-macros",
+      "version": "0.6.1",
+      "license": "MPL-2.0",
+      "sourceArchive": "licenses/rust/mpl-sources/cssparser-macros-0.6.1.crate",
+      "bytes": 7914,
+      "sha256": "13b588ba4ac1a99f7f2964d24b3d896ddc6bf847ee3855dbd4366f058cfcd331",
+      "downloadUrl": "https://static.crates.io/crates/cssparser-macros/cssparser-macros-0.6.1.crate",
+      "repository": "https://github.com/servo/rust-cssparser",
+      "upstreamCommit": "0ebd17bcd13808f087b083f34d2f816e380b5155",
+      "upstreamPath": "macros",
+      "sourceArchivePreservesUpstreamNotices": true,
+      "modified": false,
+      "scope": {
+        "windowsNormalEdgeReachable": true,
+        "windowsBuildGraphReachable": true,
+        "procMacro": true
+      },
+      "archiveEntryCount": 5
+    },
+    {
+      "name": "dtoa-short",
+      "version": "0.3.5",
+      "license": "MPL-2.0",
+      "sourceArchive": "licenses/rust/mpl-sources/dtoa-short-0.3.5.crate",
+      "bytes": 8287,
+      "sha256": "cd1511a7b6a56299bd043a9c167a6d2bfb37bf84a6dfceaba651168adfb43c87",
+      "downloadUrl": "https://static.crates.io/crates/dtoa-short/dtoa-short-0.3.5.crate",
+      "repository": "https://github.com/upsuper/dtoa-short",
+      "upstreamCommit": "2d905cdb8b2e08163dc0d015f529877fe657b4ef",
+      "upstreamPath": "",
+      "sourceArchivePreservesUpstreamNotices": true,
+      "modified": false,
+      "scope": {
+        "windowsNormalEdgeReachable": true,
+        "windowsBuildGraphReachable": true,
+        "procMacro": false
+      },
+      "archiveEntryCount": 6
+    },
+    {
+      "name": "option-ext",
+      "version": "0.2.0",
+      "license": "MPL-2.0",
+      "sourceArchive": "licenses/rust/mpl-sources/option-ext-0.2.0.crate",
+      "bytes": 7345,
+      "sha256": "04744f49eae99ab78e0d5c0b603ab218f515ea8cfe5a456d7629ad883a3b6e7d",
+      "downloadUrl": "https://static.crates.io/crates/option-ext/option-ext-0.2.0.crate",
+      "repository": "https://github.com/soc/option-ext.git",
+      "upstreamCommit": "272f22fc9ea1ac6b08f01704af52c4ac338df4e2",
+      "upstreamPath": "",
+      "sourceArchivePreservesUpstreamNotices": true,
+      "modified": false,
+      "scope": {
+        "windowsNormalEdgeReachable": true,
+        "windowsBuildGraphReachable": true,
+        "procMacro": false
+      },
+      "archiveEntryCount": 8
+    },
+    {
+      "name": "selectors",
+      "version": "0.36.1",
+      "license": "MPL-2.0",
+      "sourceArchive": "licenses/rust/mpl-sources/selectors-0.36.1.crate",
+      "bytes": 69832,
+      "sha256": "c5d9c0c92a92d33f08817311cf3f2c29a3538a8240e94a6a3c622ce652d7e00c",
+      "downloadUrl": "https://static.crates.io/crates/selectors/selectors-0.36.1.crate",
+      "repository": "https://github.com/servo/stylo",
+      "upstreamCommit": "635e1a19d02960588a00e189bd4bd5bdb150ec3d",
+      "upstreamPath": "selectors",
+      "sourceArchivePreservesUpstreamNotices": true,
+      "modified": false,
+      "scope": {
+        "windowsNormalEdgeReachable": true,
+        "windowsBuildGraphReachable": true,
+        "procMacro": false
+      },
+      "archiveEntryCount": 22
+    }
+  ]
+}

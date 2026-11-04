@@ -1,0 +1,244 @@
+.dui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--dui-gap-sm);
+  min-width: 52px;
+  height: var(--dui-control-height);
+  padding: 2px 8px;
+  border: var(--dui-border-width) solid var(--dui-command-button-border);
+  background: var(--dui-command-button-bg);
+  color: var(--dui-command-button-text);
+  font-family: var(--dui-font-family);
+  font-size: var(--dui-font-size);
+  line-height: var(--dui-line-height);
+}
+
+.dui-button__icon {
+  display: inline-flex;
+  width: var(--dui-icon-size-compact);
+  height: var(--dui-icon-size-compact);
+  align-items: center;
+  justify-content: center;
+}
+
+.dui-button__icon[hidden] {
+  display: none;
+}
+
+.dui-button__icon > .dui-icon {
+  width: var(--dui-icon-size-compact);
+  height: var(--dui-icon-size-compact);
+}
+
+.dui-button:disabled {
+  border-color: var(--dui-command-button-bg-disabled);
+  background: var(--dui-command-button-bg-disabled);
+  color: var(--dui-command-button-text-disabled);
+  opacity: 1;
+}
+
+.dui-button:not(:disabled):hover {
+  background: var(--dui-command-button-bg-hover);
+}
+
+.dui-button:not(:disabled):active {
+  background: var(--dui-command-button-bg-active);
+}
+
+.dui-check-button {
+  display: grid;
+  position: relative;
+  grid-template-columns: var(--dui-label-width) minmax(0, 1fr);
+  align-items: center;
+  column-gap: var(--dui-gap-sm);
+  min-height: var(--dui-control-height);
+}
+
+.dui-check-button__label {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--dui-color-text);
+}
+
+.dui-check-button__content {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  min-height: var(--dui-control-height);
+}
+
+.dui-check-button__button {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-width: max-content;
+}
+
+.dui-check-button__visible {
+  position: absolute;
+  inset: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--dui-gap-sm);
+  padding: inherit;
+}
+
+.dui-check-button__button[aria-pressed="true"] {
+  border-color: var(--dui-color-focus-border);
+  background: var(--dui-color-focus-bg);
+  color: var(--dui-color-selection-text);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--dui-color-focus-border) 38%, transparent);
+}
+
+.dui-check-button__button:not(:disabled):hover[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--dui-color-focus-bg) 78%, var(--dui-color-focus-border));
+}
+
+.dui-check-button__button:focus {
+  outline: 1px solid var(--dui-color-focus-border);
+  outline-offset: -2px;
+}
+
+.dui-check-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--dui-icon-size-compact);
+  height: var(--dui-icon-size-compact);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.dui-check-button__icon[hidden] {
+  display: none;
+}
+
+.dui-check-button__text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dui-check-button__icon > .dui-icon,
+.dui-tool-button__icon > .dui-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.dui-check-button__measure {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  grid-template-columns: max-content;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dui-check-button__measure-state {
+  display: inline-flex;
+  grid-row: 1;
+  grid-column: 1;
+  align-items: center;
+  gap: var(--dui-gap-sm);
+  white-space: nowrap;
+}
+
+.dui-readonly .dui-check-button__button {
+  color: var(--dui-color-muted);
+}
+
+.dui-invalid .dui-check-button__button {
+  border-color: var(--dui-color-invalid-border);
+}
+
+.dui-warning .dui-check-button__button {
+  border-color: var(--dui-color-warning-border);
+}
+
+.dui-invalid:hover .dui-check-button__content + .dui-text-field__message:not([hidden]),
+.dui-invalid:focus-within .dui-check-button__content + .dui-text-field__message:not([hidden]),
+.dui-warning:hover .dui-check-button__content + .dui-text-field__message:not([hidden]),
+.dui-warning:focus-within .dui-check-button__content + .dui-text-field__message:not([hidden]) {
+  display: block;
+}
+
+.dui-tool-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--dui-toolbar-height);
+  min-width: var(--dui-toolbar-height);
+  height: var(--dui-toolbar-height);
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: var(--dui-color-text);
+  font-family: var(--dui-font-family);
+  font-size: var(--dui-font-size);
+  line-height: 1;
+}
+
+.dui-tool-button:disabled {
+  color: var(--dui-color-muted);
+  opacity: 0.58;
+}
+
+.dui-tool-button:not(:disabled):hover {
+  border-color: var(--dui-color-border);
+  background: var(--dui-button-bg-hover);
+}
+
+.dui-tool-button:not(:disabled):active,
+.dui-tool-button[aria-pressed="true"] {
+  border-color: var(--dui-color-border-strong);
+  background: var(--dui-button-bg-active);
+}
+
+.dui-tool-button:focus {
+  outline: 1px solid var(--dui-color-focus-border);
+  outline-offset: -1px;
+}
+
+.dui-tool-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--dui-icon-size-md);
+  height: var(--dui-icon-size-md);
+  font-weight: 600;
+}
+
+.dui-tool-button--rounded {
+  border-radius: 4px;
+}
+
+.dui-tool-button--text {
+  gap: 4px;
+  width: auto;
+  min-width: var(--dui-toolbar-height);
+  padding: 0 6px;
+}
+
+/* An icon action keeps its hit area, but never paints a button frame. */
+.dui-tool-button.dui-icon-button {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.dui-icon-button:not(:disabled):hover { background: var(--dui-button-bg-hover); }
+.dui-icon-button:not(:disabled):active { background: var(--dui-button-bg-active); }
+.dui-icon-button:focus { outline: none; }
+.dui-icon-button:focus-visible {
+  outline: 2px solid var(--dui-color-focus-border);
+  outline-offset: -2px;
+}
+.dui-toggle-icon-button { display: inline-flex; width: max-content; }
+.dui-toggle-icon-button > .dui-check-button__label,
+.dui-toggle-icon-button .dui-check-button__text,
+.dui-toggle-icon-button .dui-check-button__measure { display: none; }

@@ -1,0 +1,400 @@
+.dui-dock-layout {
+  --dui-dock-strip-size: 28px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--dui-color-bg);
+}
+
+.dui-dock-layout__content {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.dui-dock-layout--left-strip .dui-dock-layout__content {
+  padding-left: var(--dui-dock-strip-size);
+}
+
+.dui-dock-layout--right-strip .dui-dock-layout__content {
+  padding-right: var(--dui-dock-strip-size);
+}
+
+.dui-dock-layout--bottom-strip .dui-dock-layout__content {
+  padding-bottom: var(--dui-dock-strip-size);
+}
+
+.dui-dock-auto-hide-layer {
+  position: absolute;
+  z-index: 8;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--dui-color-bg);
+  box-shadow: var(--dui-shadow-floating);
+}
+
+.dui-dock-auto-hide-layer[hidden] {
+  display: none;
+}
+
+.dui-dock-auto-hide-layer .dui-dock-panel {
+  width: 100%;
+  height: 100%;
+}
+
+.dui-dock-auto-hide-layer--left {
+  border-right: 1px solid var(--dui-color-border-strong);
+}
+
+.dui-dock-auto-hide-layer--right {
+  border-left: 1px solid var(--dui-color-border-strong);
+}
+
+.dui-dock-auto-hide-layer--bottom {
+  border-top: 1px solid var(--dui-color-border-strong);
+}
+
+.dui-dock-drag-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.dui-dock-drag-overlay[hidden] {
+  display: none;
+}
+
+.dui-dock-drag-title {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: var(--dui-gap-md);
+  max-width: 240px;
+  padding: 2px 8px;
+  border: 1px solid var(--dui-window-border);
+  background: var(--dui-window-content-bg);
+  box-shadow: var(--dui-shadow-drag-title);
+  color: var(--dui-color-text);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.dui-dock-drop-zones {
+  position: absolute;
+  inset: 0;
+  /* Outer area targets take precedence where group/tab targets overlap. */
+  z-index: 4;
+}
+
+.dui-dock-group-drop-zones {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+.dui-dock-drop-zone {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--dui-color-focus-border);
+  background: color-mix(in srgb, var(--dui-color-focus-bg) 72%, transparent);
+  color: var(--dui-color-focus-border);
+  font-weight: 600;
+  pointer-events: auto;
+  opacity: 0.55;
+  text-transform: capitalize;
+}
+
+.dui-dock-group-drop-zone {
+  position: absolute;
+  display: grid;
+  grid-template:
+    "top top top" 28px
+    "left tab right" minmax(32px, 1fr)
+    "bottom bottom bottom" 28px /
+    42px minmax(48px, 1fr) 42px;
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid color-mix(in srgb, var(--dui-color-border) 58%, transparent);
+  background: color-mix(in srgb, var(--dui-color-bg) 42%, transparent);
+  pointer-events: none;
+}
+
+.dui-dock-group-drop-part {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 0;
+  border: 1px dashed var(--dui-color-border-strong);
+  background: color-mix(in srgb, var(--dui-color-bg) 82%, transparent);
+  color: var(--dui-color-muted);
+  font-weight: 600;
+  pointer-events: auto;
+  opacity: 0.44;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dui-dock-group-drop-part--top {
+  grid-area: top;
+}
+
+.dui-dock-group-drop-part--left {
+  grid-area: left;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.dui-dock-group-drop-part--tab {
+  grid-area: tab;
+}
+
+.dui-dock-group-drop-part--right {
+  grid-area: right;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.dui-dock-group-drop-part--bottom {
+  grid-area: bottom;
+}
+
+.dui-dock-drop-zone.dui-active {
+  border-style: solid;
+  background: color-mix(in srgb, var(--dui-color-focus-bg) 88%, transparent);
+  opacity: 1;
+}
+
+.dui-dock-group-drop-part.dui-active {
+  border-color: var(--dui-color-focus-border);
+  border-style: solid;
+  background: color-mix(in srgb, var(--dui-color-focus-bg) 70%, transparent);
+  color: var(--dui-color-focus-border);
+  opacity: 0.88;
+}
+
+.dui-dock-drop-zone--left {
+  left: var(--dui-gap-md);
+  top: 52px;
+  bottom: 52px;
+  width: 96px;
+}
+
+.dui-dock-drop-zone--right {
+  right: var(--dui-gap-md);
+  top: 52px;
+  bottom: 52px;
+  width: 96px;
+}
+
+.dui-dock-drop-zone--center {
+  left: 50%;
+  top: 50%;
+  width: 128px;
+  height: 96px;
+  transform: translate(-50%, -50%);
+}
+
+.dui-dock-drop-zone--bottom {
+  left: 128px;
+  right: 128px;
+  bottom: var(--dui-gap-md);
+  height: 72px;
+}
+
+.dui-dock-group {
+  display: grid;
+  grid-template-rows: var(--dui-control-height) minmax(0, 1fr);
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.dui-dock-group--single {
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.dui-dock-group > .dui-tabbar[hidden] {
+  display: none;
+}
+
+.dui-dock-group__content {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.dui-dock-panel {
+  display: grid;
+  grid-template-rows: var(--dui-panel-header-height) minmax(0, 1fr);
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--dui-color-border-strong);
+  background: var(--dui-color-bg);
+}
+
+.dui-dock-panel__header {
+  padding: 2px 4px 2px 6px;
+}
+
+.dui-dock-panel[data-dui-dock-area="center"] .dui-dock-panel__action[data-dui-dock-action="pin"],
+.dui-dock-panel[data-dui-dock-area="center"] .dui-dock-panel__action[data-dui-dock-action="collapse"] {
+  display: none;
+}
+
+.dui-dock-panel__content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  background: var(--dui-window-content-bg);
+}
+
+.dui-dock-panel__content > .dui-control {
+  flex: 1 1 0%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.dui-dock-panel.dui-collapsed {
+  display: none;
+}
+
+.dui-dock-panel--tab-hidden {
+  display: none;
+}
+
+.dui-dock-panel.dui-dock-panel--auto-hide-active {
+  display: grid;
+}
+
+.dui-dock-strip {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  background: var(--dui-color-surface);
+  border: 1px solid var(--dui-color-border-strong);
+}
+
+.dui-dock-strip[hidden] {
+  display: none;
+}
+
+.dui-dock-strip--left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--dui-dock-strip-size);
+  flex-direction: column;
+  align-items: stretch;
+  border-left: 0;
+}
+
+.dui-dock-strip--right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--dui-dock-strip-size);
+  flex-direction: column;
+  align-items: stretch;
+  border-right: 0;
+}
+
+.dui-dock-strip--bottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--dui-dock-strip-size);
+  align-items: stretch;
+  border-bottom: 0;
+}
+
+.dui-dock-strip__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: calc(var(--dui-dock-strip-size) - 6px);
+  min-height: calc(var(--dui-dock-strip-size) - 6px);
+  padding: 2px 6px;
+  border: 1px solid var(--dui-color-border-strong);
+  background: var(--dui-color-bg);
+  color: var(--dui-color-text);
+  font: inherit;
+  font-weight: 600;
+  cursor: default;
+  overflow: hidden;
+  text-align: center;
+  touch-action: none;
+  white-space: nowrap;
+}
+
+.dui-dock-strip__label {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dui-dock-strip--left .dui-dock-strip__button,
+.dui-dock-strip--right .dui-dock-strip__button {
+  width: 100%;
+  min-height: 88px;
+  padding: 6px 2px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.dui-dock-strip--left .dui-dock-strip__button {
+  transform: rotate(180deg);
+}
+
+.dui-dock-strip--bottom .dui-dock-strip__button {
+  min-width: 88px;
+  height: 100%;
+}
+
+.dui-dock-strip__button:hover {
+  border-color: var(--dui-color-border-strong);
+  background: var(--dui-button-bg-hover);
+}
+
+.dui-dock-demo-workspace {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  background: var(--dui-color-bg);
+  color: var(--dui-color-muted);
+}
+
+.dui-log-panel.dui-dock-demo-log {
+  width: 100%;
+  height: 100%;
+}
+
+.dui-log-panel__row {
+  min-height: var(--dui-line-height);
+  border-bottom: 1px solid var(--dui-color-row-border);
+}

@@ -1,0 +1,75 @@
+:root {
+  --dui-header-action-size: var(--dui-icon-button-size-compact);
+  --dui-header-icon-size: var(--dui-icon-size-md);
+}
+
+.dui-window-header {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  min-height: var(--dui-panel-header-height);
+  border-bottom: 1px solid var(--dui-window-border);
+  background: var(--dui-window-header-bg);
+  color: var(--dui-window-header-text);
+  user-select: none;
+}
+
+.dui-window-header__title {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dui-window-header__actions {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 1px;
+}
+
+.dui-header-action {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 var(--dui-header-action-size);
+  width: var(--dui-header-action-size);
+  height: var(--dui-header-action-size);
+  padding: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  color: currentColor;
+  opacity: 0.78;
+  font: inherit;
+  line-height: 0;
+  cursor: default;
+}
+
+.dui-header-action > .dui-icon {
+  width: var(--dui-header-icon-size);
+  height: var(--dui-header-icon-size);
+}
+
+.dui-header-action:hover {
+  border-color: color-mix(in srgb, currentColor 62%, transparent);
+  background: color-mix(in srgb, currentColor 16%, transparent);
+  color: inherit;
+  opacity: 1;
+}
+
+.dui-header-action:focus-visible {
+  border-color: var(--dui-color-focus-border);
+  outline: 1px solid var(--dui-color-focus-border);
+  outline-offset: -2px;
+}
+
+.dui-header-action.dui-active,
+.dui-header-action[aria-pressed="true"] {
+  border-color: color-mix(in srgb, currentColor 68%, transparent);
+  background: color-mix(in srgb, currentColor 20%, transparent);
+  color: inherit;
+  opacity: 1;
+}

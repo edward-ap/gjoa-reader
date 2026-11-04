@@ -1,0 +1,69 @@
+.dui-radio-group--letter .dui-radio-group__visual,
+.dui-check-letter__marker {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-right: var(--dui-gap-md);
+  border: 1px solid var(--dui-color-border-strong);
+  background: var(--dui-input-bg);
+  color: var(--dui-color-text);
+  box-shadow: none;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.dui-radio-group--letter .dui-radio-group__visual {
+  border-radius: 50%;
+}
+
+.dui-radio-group--letter .dui-radio-group__visual::after {
+  display: none;
+}
+
+.dui-radio-group--letter .dui-radio-group__input:checked + .dui-radio-group__visual,
+.dui-check-letter__input:checked + .dui-check-letter__marker {
+  border-color: var(--dui-color-accent-bg);
+  background: var(--dui-color-accent-bg);
+  color: var(--dui-color-accent-text);
+}
+
+.dui-check-letter__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dui-check-letter__marker {
+  border-radius: 4px;
+}
+
+.dui-check-letter__input:focus-visible + .dui-check-letter__marker {
+  outline: 1px solid var(--dui-color-focus-border);
+  outline-offset: 2px;
+}
+
+.dui-disabled .dui-check-letter__marker,
+.dui-readonly .dui-check-letter__marker,
+.dui-check-letter__input:disabled + .dui-check-letter__marker,
+.dui-disabled .dui-radio-group--letter .dui-radio-group__visual,
+.dui-readonly .dui-radio-group--letter .dui-radio-group__visual,
+.dui-radio-group--letter .dui-radio-group__item--disabled .dui-radio-group__visual {
+  border-color: var(--dui-color-border);
+  background: var(--dui-button-bg-disabled);
+  color: var(--dui-color-muted);
+}
+
+.dui-invalid .dui-check-letter__marker {
+  border-color: var(--dui-color-invalid-border);
+}
+
+.dui-warning .dui-check-letter__marker {
+  border-color: var(--dui-color-warning-border);
+}

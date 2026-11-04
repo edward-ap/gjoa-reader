@@ -1,0 +1,12 @@
+export * from '../core/index.js';
+export { CommandRegistry } from '../core/CommandRegistry.js';
+export { ShortcutManager } from '../core/ShortcutManager.js';
+export { IconRegistry } from '../core/IconRegistry.js';
+export { email, required, valueInData } from '../core/validators.js';
+export { ThemeApplicator } from '../ui/ThemeApplicator.js';
+export type {CommandContext,CommandContextProvider,CommandRunOptions,CommandResult,CommandDefinition,RegisteredCommand,CommandState,CommandEvents} from '../core/CommandRegistry.js';
+export type {ShortcutBindingOptions,ShortcutManagerOptions,ShortcutEvents} from '../core/ShortcutManager.js';
+export type {ThemeColors,ThemeRole,ThemeScopeBinding} from '../ui/ThemeApplicator.js';
+export {OverlayManager,overlayManager} from '../core/OverlayManager.js';
+export {MemoryResourceProvider} from '../ui/TreeExplorer.js';
+export {createIcon,icons,renderIcon} from '../ui/display-contracts.js';

@@ -1,0 +1,15 @@
+* text=auto eol=lf
+# Exact upstream and legacy/extension provenance bytes must survive every checkout.
+vendor/dense-ui/** -text
+extensions/** -text
+src-tauri/tests/fixtures/** -text
+src-tauri/assets/** -text
+*.png binary
+*.ico binary
+*.icns binary
+*.dll binary
+*.ttf binary
+*.woff2 binary
+
+# Preserve copied upstream license texts and exact source archives.
+licenses/** -text

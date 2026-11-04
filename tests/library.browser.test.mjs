@@ -1,0 +1,134 @@
+import {testArtifact} from './test-artifacts.mjs';
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { expect } from '@playwright/test';
+import { fixture } from './shell-fixture.mjs';
+const row = (page, id) => page.locator(`[data-dui-control-id=libraryTree] [data-library-id="${id}"]`);
+const ready = page => page.waitForFunction(() => document.querySelector('[data-render-status]')?.dataset.renderStatus === 'ready');
+
+test('Sprint 10 shell: workspace edges, pan, semantic zoom, docking, portrait and compact controls', { timeout: 60000 }, async () => {
+  await fixture(async page => {
+    const errors = []; page.on('pageerror', e => errors.push(e.message));
+    const input = page.getByRole('textbox', { name: 'Page number', exact: true });
+    await row(page, 'book:1').dblclick(); await ready(page);
+    await expect(page.getByRole('button', { name: 'Ready', exact: true })).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByRole('button', { name: 'Ready', exact: true })).toHaveAttribute('title', 'Rendering status');
+    await expect(page.getByRole('button', { name: 'Ready', exact: true })).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
+    await expect(page.getByRole('button', { name: 'Ready', exact: true })).toHaveCSS('box-shadow', 'none');
+    await page.evaluate(() => {
+      const invoke = __TAURI__.core.invoke;
+      window.holdRender = true;
+      __TAURI__.core.invoke = async (command, args) => {
+        if (command === 'render_page' && holdRender) await new Promise(resolve => { window.releaseRender = resolve; });
+        return invoke(command, args);
+      };
+    });
+    await page.getByRole('button', { name: 'Next page', exact: true }).click();
+    await expect(page.getByRole('button', { name: 'Rendering', exact: true })).toHaveAttribute('aria-pressed', 'false');
+    await expect(page.getByRole('button', { name: 'Rendering', exact: true })).toBeDisabled();
+    const lamp = await page.getByRole('button', { name: 'Rendering', exact: true }).boundingBox();
+    await page.mouse.click(lamp.x + lamp.width / 2, lamp.y + lamp.height / 2);
+    await expect(page.getByRole('button', { name: 'Rendering', exact: true })).toHaveAttribute('aria-pressed', 'false');
+    await page.waitForFunction(() => typeof releaseRender === 'function');
+    await page.evaluate(() => { holdRender = false; releaseRender(); }); await ready(page);
+    await expect(page.getByRole('button', { name: 'Ready', exact: true })).toHaveAttribute('aria-pressed', 'true');
+    await input.fill('1'); await input.press('Enter'); await ready(page);
+    const edge = async fraction => { const r = await page.locator('[data-dui-control-id=workspace]').boundingBox(); await page.mouse.click(r.x + r.width * fraction, r.y + r.height * .5); await ready(page); };
+    await edge(.9); await expect(input).toHaveValue('2');
+    await edge(.5); await expect(input).toHaveValue('2');
+    await edge(.1); await expect(input).toHaveValue('1');
+    await edge(.1); await expect(input).toHaveValue('1');
+    await page.getByRole('button', { name: 'Facing Pages', exact: true }).click(); await ready(page);
+    await edge(.9); await expect(input).toHaveValue('2');
+    await edge(.9); await expect(input).toHaveValue('4');
+    await page.getByRole('button', { name: 'Previous page', exact: true }).click(); await ready(page); await expect(input).toHaveValue('2');
+    await input.fill('10'); await input.press('Enter'); await ready(page);
+    await expect(page.getByRole('button', { name: 'Next page', exact: true })).toBeDisabled();
+    await edge(.9); await expect(input).toHaveValue('10');
+    await expect(page.getByRole('button', { name: /Continuous Pages/ })).toBeEnabled();
+    await page.getByRole('button', { name: 'Single Page', exact: true }).click(); await ready(page);
+    const zoom = page.getByRole('textbox', { name: 'Zoom percentage', exact: true });
+    await zoom.fill('150%'); await zoom.press('Enter'); await ready(page);
+    await expect(page.locator('.reader-view-host')).toHaveAttribute('data-zoom', '1.5');
+    const before = await page.evaluate(() => calls.filter(c => c.command === 'render_page').length);
+    const r = await page.locator('[data-dui-control-id=workspace]').boundingBox();
+    await page.mouse.move(r.x + r.width * .1, r.y + 250); await page.mouse.down(); await page.mouse.move(r.x + r.width * .1 + 60, r.y + 160, { steps: 12 }); await page.mouse.up();
+    await page.mouse.wheel(0, 100); await page.waitForTimeout(200);
+    await expect(input).toHaveValue('10');
+    assert.equal(await page.evaluate(() => calls.filter(c => c.command === 'render_page').length), before);
+    const toggle = page.getByRole('button', { name: 'Show or hide Library', exact: true });
+    await toggle.click(); await ready(page);
+    assert.ok((await page.locator('[data-dui-control-id=workspace]').boundingBox()).width > 1090);
+    await expect(page.locator('.reader-view-host')).toHaveAttribute('data-zoom', '1.5');
+    for (let i = 0; i < 4; i++) await toggle.click();
+    await page.setViewportSize({ width: 900, height: 1400 }); await ready(page);
+    await page.getByRole('button', { name: 'Zoom options', exact: true }).click(); await page.getByRole('menuitem', { name: 'Fit', exact: true }).click(); await ready(page);
+    await expect(page.locator('.reader-view-host')).toHaveAttribute('data-zoom-mode', 'fit');
+    await page.screenshot({ path: testArtifact('sprint10/portrait-browser.png') });
+    await page.setViewportSize({ width: 720, height: 480 }); await ready(page);
+    await expect(page.getByRole('button', { name: 'Facing Pages', exact: true })).toBeInViewport();
+    await expect(input).toBeInViewport();
+    assert.equal(await page.locator('.reader-toolbar').count(), 0);
+    const first = await toggle.boundingBox(), last = await page.getByRole('button', { name: 'Annotations', exact: true }).boundingBox();
+    assert.ok(Math.abs((first.x + last.x + last.width) / 2 - 360) < 4, 'controls are centered in the 720px StatusBar');
+    assert.deepEqual(errors, []);
+  });
+});
+
+test('TreeExplorer menu/folder dialogs, drag, Recent MRU, FileUpload repeat/drop/error/cancel lifecycle', { timeout: 60000 }, async () => {
+  await fixture(async page => {
+    const errors = []; page.on('pageerror', e => errors.push(e.message));
+    await expect(page.locator('[data-dui-control-id=libraryTree] [data-library-id]')).toHaveCount(8);
+    assert.ok((await row(page, 'book:1').boundingBox()).y < (await row(page, 'mylib').boundingBox()).y);
+    for (let id = 1; id <= 7; id++) { await row(page, `book:${id}`).dblclick(); await ready(page); }
+    const recent = page.locator('[data-dui-control-id=recentBooks]');
+    await expect(recent.locator('[data-library-id]')).toHaveCount(5);
+    await expect(recent.locator('[data-library-id]').first()).toHaveAttribute('data-library-id', 'book:7');
+    await recent.locator('[data-library-id="book:3"]').click(); await ready(page);
+    await expect(recent.locator('[data-library-id]').first()).toHaveAttribute('data-library-id', 'book:3');
+    await row(page, 'mylib').click({ button: 'right' });
+    await page.getByRole('menuitem', { name: /New Folder/ }).click();
+    let editor = page.getByRole('textbox', { name: 'Name', exact: true }); await editor.fill('Classics'); await editor.press('Enter');
+    await expect(row(page, 'folder:1')).toContainText('Classics');
+    await row(page, 'folder:1').click({ button: 'right' }); await page.getByRole('menuitem', { name: /New Folder/ }).click();
+    await editor.fill('Nested'); await editor.press('Enter'); await expect(row(page, 'folder:2')).toBeVisible();
+    await row(page, 'book:1').dragTo(row(page, 'folder:2'));
+    await expect.poll(() => page.evaluate(() => snapshot.items[0].folderId)).toBe(2);
+    await row(page, 'folder:1').click({ button: 'right' }); await page.getByRole('menuitem', { name: /^Rename/ }).click();
+    await page.getByRole('textbox', { name: 'Name', exact: true }).fill('Fiction'); await page.getByRole('dialog').locator('.dui-dialog__footer').getByRole('button', { name: 'OK', exact: true }).click(); await expect(row(page, 'folder:1')).toContainText('Fiction');
+    await row(page, 'book:1').dragTo(row(page, 'mylib'));
+    await expect.poll(() => page.evaluate(() => snapshot.items[0].inbox)).toBe(false);
+    await row(page, 'folder:2').click({ button: 'right' }); await page.getByRole('menuitem', { name: /^Delete/ }).click(); await page.getByRole('dialog').locator('.dui-dialog__footer').getByRole('button', { name: 'OK', exact: true }).click(); await expect(row(page, 'folder:2')).toHaveCount(0);
+    await row(page, 'mylib').click({ button: 'right' });
+    await expect(page.getByRole('menuitem', { name: /^Delete/ })).toHaveAttribute('aria-disabled', 'true');
+    await page.getByRole('menuitem', { name: /^Rename/ }).click();
+    await page.getByRole('textbox', { name: 'Name', exact: true }).fill('Мои книги');
+    await page.getByRole('dialog').getByRole('button', { name: 'OK', exact: true }).click();
+    await expect(row(page, 'mylib')).toContainText('Мои книги');
+    await expect(page.getByRole('dialog')).toHaveCount(0);
+    await expect(row(page, 'new')).toHaveCount(0);
+    const centered = async () => expect.poll(async () => {
+      const box = await page.getByRole('dialog').boundingBox();
+      const viewport = page.viewportSize();
+      return Math.max(Math.abs(box.x + box.width / 2 - viewport.width / 2), Math.abs(box.y + box.height / 2 - viewport.height / 2));
+    }).toBeLessThan(2);
+    const openImport = async () => { await page.getByRole('button', { name: 'Import book', exact: true }).click(); await centered(); };
+    const file = { name: 'test.djvu', mimeType: 'application/octet-stream', buffer: Buffer.from('AT&TFORMtest') };
+    for (let i = 0; i < 2; i++) { await openImport(); await page.locator('input[type=file]').setInputFiles(file); await expect(page.locator('.dui-file-upload__row[data-status=uploaded]')).toHaveCount(1); await page.getByRole('dialog').locator('.dui-dialog__footer').getByRole('button', { name: 'Close', exact: true }).click(); await expect(page.getByRole('dialog')).toHaveCount(0); }
+    await openImport(); await page.keyboard.press('Escape'); await expect(page.getByRole('dialog')).toHaveCount(0);
+    await openImport();
+    await page.evaluate(() => {
+      const dataTransfer = new DataTransfer(); dataTransfer.items.add(new File(['test'], 'drop.djvu'));
+      document.querySelector('.dui-file-upload').dispatchEvent(new DragEvent('drop', { bubbles: true, cancelable: true, dataTransfer }));
+    });
+    await expect(page.locator('.dui-file-upload__row[data-status=uploaded]')).toHaveCount(1);
+    await page.getByRole('dialog').locator('.dui-dialog__footer').getByRole('button', { name: 'Close', exact: true }).click();
+    await openImport();
+    await page.evaluate(() => { const invoke = __TAURI__.core.invoke; __TAURI__.core.invoke = async (command, args) => { if (command === 'finish_import') throw Error('Unsupported format'); return invoke(command, args); }; });
+    await page.locator('input[type=file]').setInputFiles({ ...file, name: 'bad.txt' });
+    await expect(page.getByRole('dialog')).toContainText('Unsupported format'); await centered();
+    await page.setViewportSize({ width: 900, height: 1000 }); await centered(); await page.keyboard.press('Escape');
+    await openImport(); await page.reload(); await expect(page.getByRole('dialog')).toHaveCount(0);
+    assert.deepEqual(errors, []);
+  });
+});

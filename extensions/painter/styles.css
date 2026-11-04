@@ -1,0 +1,13 @@
+.dui-painter {position:absolute;inset:0;overflow:hidden;pointer-events:none;outline:none;background:transparent}
+.dui-painter > svg {display:block;overflow:hidden;pointer-events:none}
+.dui-painter[data-editable="true"] .dui-painter__hit,.dui-painter[data-editable="true"] [data-painter-object] {pointer-events:all;touch-action:none;cursor:crosshair}
+.dui-painter[data-editable="true"][data-tool="select"] [data-painter-object] {cursor:move}
+.dui-painter[data-editable="false"] * {pointer-events:none!important}
+.dui-painter[data-editable="true"][data-tool="select"] .dui-painter__hit {cursor:default}
+.dui-painter[data-editable="true"][data-tool="eraser"] [data-painter-object],.dui-painter[data-editable="true"][data-tool="eraser"] .dui-painter__hit {cursor:pointer}
+.dui-painter [data-handle] {cursor:nwse-resize;touch-action:none}
+.dui-painter__text-editor {box-sizing:border-box;width:100%;height:100%;resize:none;background:var(--dui-color-bg);color:var(--dui-color-text);border:1px solid var(--dui-color-accent-bg);font-family:var(--dui-font-family);pointer-events:auto}
+
+.dui-painter .dui-painter__draft,.dui-painter .dui-painter__draft * {pointer-events:none!important}
+
+.dui-painter__objects,.dui-painter__draft,.dui-painter__plane {position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:hidden}

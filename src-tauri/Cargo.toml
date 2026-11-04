@@ -1,0 +1,77 @@
+[package]
+name = "reader"
+version = "0.1.0"
+edition = "2024"
+authors = ["Edward Aponasko"]
+license = "MIT"
+default-run = "reader"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
+
+[build-dependencies]
+flate2 = "=1.1.10"
+sha2 = "=0.10.9"
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+djvu-rs = "=0.31.0"
+serde = { version = "1", features = ["derive"] }
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+serde_json = "1"
+flate2 = "=1.1.10"
+tempfile = "3"
+dunce = "1"
+rusqlite = { version = "=0.40.2", features = ["bundled"] }
+sha2 = "=0.10.9"
+unrar = "=0.5.8"
+rustybuzz = "=0.20.1"
+fontdue = "=0.9.4"
+roxmltree = "=0.21.1"
+unicode-linebreak = "=0.1.5"
+unicode-segmentation = "=1.13.3"
+unicode-script = "=0.5.8"
+unicode-bidi = "=0.3.18"
+base64 = "=0.22.1"
+image = { version = "=0.25.10", default-features = false, features = ["bmp", "gif", "jpeg", "png", "webp"] }
+pulldown-cmark = { version = "=0.13.4", default-features = false }
+xmlparser = "=0.13.6"
+pdfium-render = { version = "=0.9.4", default-features = false, features = ["pdfium_7881"] }
+zip = { version = "=8.2.0", default-features = false, features = ["deflate-flate2"] }
+encoding_rs = "=0.8.35"
+tauri-plugin-window-state = "=2.4.1"
+html5ever = "=0.39.0"
+
+[profile.dev.package.djvu-rs]
+opt-level = 3
+
+[dev-dependencies]
+png = "0.18"
+
+# Specification-correct JB2 number resets and bounded large symbols.
+# See ../vendor/djvu-jb2/PATCHES.md; all other decoder crates remain pinned.
+[patch.crates-io]
+djvu-jb2 = { path = "../vendor/djvu-jb2" }
+
+# Keep publication fixture tests practical in debug builds.
+[profile.dev.package.image]
+opt-level = 3
+[profile.dev.package.fontdue]
+opt-level = 3
+[profile.dev.package.rustybuzz]
+opt-level = 3
+
+[target.'cfg(windows)'.dependencies]
+windows-core = "=0.61.2"
+windows = { version = "=0.61.3", features = ["Win32_Graphics_DirectWrite", "Win32_Foundation"] }
+
+# The application owns publication/optimizer work, not only the shaping dependencies.
+# Keep native debug builds usable for real imports while retaining debug information.
+[profile.dev.package.reader]
+opt-level = 3
+
+# Publication also spends substantial CPU in Unicode, parsing and codec dependencies.
+# Match interactive import behavior in development without dropping debug checks/symbols.
+[profile.dev]
+opt-level = 2

@@ -1,0 +1,62 @@
+body.dui-page,
+.dui-page {
+  margin: 0;
+  padding: 12px;
+  font-family: var(--dui-font-family);
+  font-size: var(--dui-font-size);
+  line-height: var(--dui-line-height);
+  color: var(--dui-color-text);
+  background: var(--dui-color-surface);
+}
+
+.dui-theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: var(--dui-gap-sm);
+  min-height: var(--dui-toolbar-height);
+  padding: var(--dui-gap-sm);
+  border-bottom: 1px solid var(--dui-color-border-strong);
+  background: var(--dui-color-surface-strong);
+}
+
+.dui-theme-switcher__label {
+  color: var(--dui-color-muted);
+  font-weight: 600;
+}
+
+body.dui-page.dui-page--full,
+.dui-page.dui-page--full {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+}
+
+.dui-page--full .dui-app-root,
+.dui-profile-compact.dui-page--full .dui-app-root {
+  width: 100%;
+  height: 100%;
+}
+
+.dui-control {
+  box-sizing: border-box;
+  font-family: var(--dui-font-family);
+  font-size: var(--dui-font-size);
+  line-height: var(--dui-line-height);
+  color: var(--dui-color-text);
+}
+
+.dui-control.dui-hidden,
+.dui-control[hidden] {
+  display: none !important;
+}
+
+.dui-control *,
+.dui-control *::before,
+.dui-control *::after {
+  box-sizing: border-box;
+}
+
+.dui-disabled {
+  opacity: 0.72;
+}

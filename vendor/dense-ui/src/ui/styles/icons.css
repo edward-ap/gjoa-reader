@@ -1,0 +1,8 @@
+.dui-icon {
+  display: block;
+  width: var(--dui-icon-size-md);
+  height: var(--dui-icon-size-md);
+  flex: 0 0 auto;
+  overflow: visible;
+  color: inherit;
+}

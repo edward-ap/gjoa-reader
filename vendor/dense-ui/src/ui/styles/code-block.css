@@ -1,0 +1,64 @@
+.dui-code-block {
+  display: grid;
+  grid-template-rows: var(--dui-control-height) minmax(0, auto);
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--dui-color-border-strong);
+  background: var(--dui-color-bg);
+}
+
+.dui-code-block__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  padding-left: var(--dui-gap-md);
+  border-bottom: 1px solid var(--dui-color-border-strong);
+  background: var(--dui-color-surface-strong);
+}
+
+.dui-code-block__language {
+  color: var(--dui-color-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dui-code-block__copy {
+  align-self: stretch;
+  min-width: 58px;
+  padding: 0 var(--dui-gap-md);
+  border: 0;
+  border-left: 1px solid var(--dui-command-button-border);
+  background: var(--dui-command-button-bg);
+  color: var(--dui-command-button-text);
+  font: inherit;
+  cursor: default;
+}
+
+.dui-code-block__copy:hover {
+  background: var(--dui-command-button-bg-hover);
+}
+
+.dui-code-block__copy:active {
+  background: var(--dui-command-button-bg-active);
+}
+
+.dui-code-block__pre {
+  min-width: 0;
+  max-height: calc(6 * 18px + 2 * var(--dui-gap-md));
+  margin: 0;
+  padding: var(--dui-gap-md) var(--dui-gap-lg);
+  overflow: auto;
+  background: color-mix(in srgb, var(--dui-color-surface) 62%, var(--dui-color-bg));
+  color: var(--dui-color-text);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 12px;
+  line-height: 18px;
+  tab-size: 2;
+  white-space: pre;
+}
+
+.dui-code-block__pre:focus {
+  outline: 1px solid var(--dui-color-focus-border);
+  outline-offset: -1px;
+}

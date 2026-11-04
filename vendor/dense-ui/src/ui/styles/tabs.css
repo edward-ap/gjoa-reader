@@ -1,0 +1,337 @@
+.dui-tabbar {
+  display: grid;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--dui-color-surface);
+}
+
+.dui-tabbar--horizontal {
+  grid-template-columns: 0 minmax(0, 1fr) 0;
+  align-items: flex-end;
+  min-height: var(--dui-control-height);
+}
+
+.dui-tabbar--vertical {
+  grid-template-rows: 0 minmax(0, 1fr) 0;
+  align-items: stretch;
+  width: var(--dui-control-height);
+  min-width: var(--dui-control-height);
+  min-height: 0;
+}
+
+.dui-tabbar--borderless.dui-tabbar--top {
+  border-bottom: 1px solid var(--dui-color-border-strong);
+}
+
+.dui-tabbar--borderless.dui-tabbar--bottom {
+  border-top: 1px solid var(--dui-color-border-strong);
+}
+
+.dui-tabbar--borderless.dui-tabbar--left {
+  border-right: 1px solid var(--dui-color-border-strong);
+}
+
+.dui-tabbar--borderless.dui-tabbar--right {
+  border-left: 1px solid var(--dui-color-border-strong);
+}
+
+.dui-tabbar--bordered {
+  border: 1px solid var(--dui-window-border);
+}
+
+.dui-tabbar--borderless.dui-tabbar--horizontal {
+  border-right: 0;
+  border-left: 0;
+}
+
+.dui-tabbar--borderless.dui-tabbar--top {
+  border-top: 0;
+}
+
+.dui-tabbar--borderless.dui-tabbar--bottom {
+  border-bottom: 0;
+}
+
+.dui-tabbar--borderless.dui-tabbar--vertical {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.dui-tabbar--borderless.dui-tabbar--left {
+  border-left: 0;
+}
+
+.dui-tabbar--borderless.dui-tabbar--right {
+  border-right: 0;
+}
+
+.dui-tabbar--horizontal.dui-tabbar--overflowing {
+  grid-template-columns: var(--dui-control-height) minmax(0, 1fr) var(--dui-control-height);
+}
+
+.dui-tabbar--vertical.dui-tabbar--overflowing {
+  grid-template-rows: var(--dui-control-height) minmax(0, 1fr) var(--dui-control-height);
+}
+
+.dui-tabbar__viewport {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.dui-tabbar--horizontal.dui-tabbar--native-overflow .dui-tabbar__viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.dui-tabbar--vertical.dui-tabbar--native-overflow .dui-tabbar__viewport {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.dui-tabbar__track {
+  display: flex;
+  align-items: flex-end;
+}
+
+.dui-tabbar--horizontal .dui-tabbar__track {
+  width: max-content;
+  min-width: 100%;
+}
+
+.dui-tabbar--vertical .dui-tabbar__track {
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  height: max-content;
+  min-height: 100%;
+}
+
+.dui-tabbar__scroll {
+  display: inline-grid;
+  place-items: center;
+  width: var(--dui-control-height);
+  height: var(--dui-control-height);
+  padding: 0;
+  border: 1px solid var(--dui-color-border-strong);
+  border-bottom: 0;
+  background: var(--dui-button-bg);
+  color: var(--dui-color-text);
+}
+
+.dui-tabbar--vertical .dui-tabbar__scroll {
+  width: 100%;
+}
+
+.dui-tabbar__scroll:hover:not(:disabled) {
+  background: var(--dui-button-bg-hover);
+}
+
+.dui-tabbar__scroll:disabled {
+  background: var(--dui-button-bg-disabled);
+  color: var(--dui-color-muted);
+}
+
+.dui-tabbar__scroll > .dui-icon {
+  width: var(--dui-icon-size-md);
+  height: var(--dui-icon-size-md);
+}
+
+.dui-tabbar__tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--dui-gap-xs);
+  max-width: 180px;
+  height: var(--dui-control-height);
+  min-width: 52px;
+  padding: 2px 8px;
+  margin: 0 0 -1px -1px;
+  border: 1px solid var(--dui-color-border-strong);
+  background: var(--dui-color-surface);
+  color: var(--dui-color-text);
+  cursor: default;
+  user-select: none;
+  flex: 0 0 auto;
+}
+
+.dui-tabbar__tab:first-child {
+  margin-left: 0;
+}
+
+.dui-tabbar--vertical .dui-tabbar__tab {
+  flex-direction: row;
+  justify-content: flex-start;
+  width: var(--dui-control-height);
+  min-width: var(--dui-control-height);
+  max-width: var(--dui-control-height);
+  height: auto;
+  min-height: 52px;
+  max-height: 180px;
+  padding: 8px 2px;
+  margin: -1px 0 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.dui-tabbar--vertical .dui-tabbar__tab:first-child {
+  margin-top: 0;
+}
+
+.dui-tabbar--left .dui-tabbar__label,
+.dui-tabbar--left .dui-tabbar__close {
+  transform: rotate(180deg);
+}
+
+.dui-tabbar--vertical .dui-tabbar__label {
+  max-height: 140px;
+}
+
+.dui-tabbar__tab:hover {
+  background: var(--dui-button-bg-hover);
+}
+
+.dui-tabbar__tab.dui-active {
+  z-index: 1;
+  border-color: var(--dui-color-accent-bg);
+  background: var(--dui-color-accent-bg);
+  color: var(--dui-color-accent-text);
+}
+
+.dui-tabbar__tab:focus {
+  outline: 1px solid var(--dui-color-focus-border);
+  outline-offset: -2px;
+}
+
+.dui-tabbar__label {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dui-tabbar__close {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--dui-color-muted);
+  font: inherit;
+  line-height: 12px;
+  cursor: default;
+}
+
+.dui-tabbar__close > .dui-icon {
+  width: var(--dui-icon-size-sm);
+  height: var(--dui-icon-size-sm);
+}
+
+.dui-tabbar__tab.dui-active .dui-tabbar__close {
+  color: inherit;
+}
+
+.dui-tabbar__close:hover {
+  border-color: var(--dui-color-border-strong);
+  background: var(--dui-button-bg-active);
+  color: var(--dui-color-text);
+}
+
+.dui-tabbar.dui-disabled .dui-tabbar__tab,
+.dui-tabbar__tab.dui-disabled {
+  color: var(--dui-color-muted);
+  pointer-events: none;
+}
+
+.dui-tabbar-lab-content {
+  display: block;
+  width: 100%;
+  min-height: 96px;
+  padding: var(--dui-gap-md);
+  background: var(--dui-color-bg);
+}
+
+.dui-tabbed-frame {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+.dui-tabbed-frame--top {
+  grid-template-areas: "tabs" "content";
+  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.dui-tabbed-frame--bottom {
+  grid-template-areas: "content" "tabs";
+  grid-template-rows: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.dui-tabbed-frame--left {
+  grid-template-areas: "tabs content";
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.dui-tabbed-frame--right {
+  grid-template-areas: "content tabs";
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.dui-tabbed-frame > .dui-tabbar {
+  grid-area: tabs;
+}
+
+.dui-tabbed-frame > .dui-tab-content {
+  grid-area: content;
+}
+
+.dui-tabbed-frame > .dui-tabbar--bordered {
+  border-bottom-color: var(--dui-color-border-strong);
+}
+
+.dui-tabbed-frame > .dui-tabbar--bordered + .dui-tab-content {
+  border: 1px solid var(--dui-window-border);
+  background: var(--dui-window-content-bg);
+}
+
+.dui-tabbed-frame--top > .dui-tabbar--bordered + .dui-tab-content {
+  margin-top: -1px;
+}
+
+.dui-tabbed-frame--bottom > .dui-tabbar--bordered {
+  margin-top: -1px;
+}
+
+.dui-tabbed-frame--left > .dui-tabbar--bordered + .dui-tab-content {
+  margin-left: -1px;
+}
+
+.dui-tabbed-frame--right > .dui-tabbar--bordered {
+  margin-left: -1px;
+}
+
+.dui-tabbed-frame > .dui-tabbar--borderless + .dui-tab-content {
+  border: 0;
+}
+
+/* Hidden overflow buttons must not paint or participate in grid placement. */
+.dui-tabbar__scroll[hidden] {
+  display: none;
+}
+.dui-tabbar--horizontal > .dui-tabbar__viewport {
+  grid-column: 2;
+  grid-row: 1;
+}
+.dui-tabbar--vertical > .dui-tabbar__viewport {
+  grid-column: 1;
+  grid-row: 2;
+}

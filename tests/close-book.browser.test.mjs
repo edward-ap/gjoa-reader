@@ -1,0 +1,36 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { expect } from '@playwright/test';
+import { fixture } from './shell-fixture.mjs';
+test('Close in Library and Recent follows the active book and preserves it', { timeout: 40000 }, async () => {
+  await fixture(async page => {
+    const row = id => page.locator(`[data-dui-control-id=libraryTree] [data-library-id="book:${id}"]`);
+    const close = () => page.getByRole('menuitem', { name: 'Close', exact: true });
+    await row(1).click({button:'right'});
+    await expect(close()).toBeDisabled();
+    await page.keyboard.press('Escape');
+    await row(1).dblclick();
+    await expect(page.getByRole('button',{name:'Ready',exact:true})).toBeVisible();
+    await row(2).click({button:'right'});
+    await expect(close()).toBeDisabled();
+    await page.keyboard.press('Escape');
+    await row(1).click({button:'right'});
+    await expect(close()).toBeEnabled();
+    assert.equal(await close().evaluate(el => el.previousElementSibling?.getAttribute('role')), 'separator');
+    await close().click();
+    await expect.poll(() => page.evaluate(() => calls.filter(c=>c.command==='close_document').length)).toBe(1);
+    const recent = page.locator('[data-dui-control-id=recentBooks] [data-library-id="book:1"]');
+    await recent.click({button:'right'});
+    await expect(close()).toBeDisabled();
+    await page.keyboard.press('Escape');
+    await recent.click();
+    await expect(page.getByRole('button',{name:'Ready',exact:true})).toBeVisible();
+    await recent.click({button:'right'});
+    await expect(close()).toBeEnabled();
+    assert.equal(await close().evaluate(el => el.previousElementSibling?.getAttribute('role')), 'separator');
+    await close().click();
+    await expect.poll(() => page.evaluate(() => calls.filter(c=>c.command==='close_document').length)).toBe(2);
+    assert.equal(await page.evaluate(() => snapshot.items.length),7);
+    assert.deepEqual(await page.evaluate(() => snapshot.recent),[1]);
+  });
+});
