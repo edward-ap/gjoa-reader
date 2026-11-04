@@ -365,8 +365,16 @@
       }
     ],
     "source": "https://github.com/gribuser/fb2/tree/4d3740e319039911c30d291abb0c8b26ec99703b",
-    "license": "FictionBook.xsd contains BSD-2-Clause-style notice; companion schemas lack individual visible license headers",
-    "obligations": "Preserve complete schema notice and provenance; confirm repository-level grant covers companions rather than treating each headerless file as MIT"
+    "license": "BSD-2-Clause (repository-wide license in the exact pinned upstream)",
+    "obligations": "Preserve full repository copyright, conditions and disclaimer in source; reproduce them in documentation/materials accompanying binary redistribution. Application MIT does not replace BSD-2-Clause.",
+    "licensePath": "docs/specifications/fb2/LICENSE.md",
+    "repositoryLicense": {
+      "upstreamURL": "https://raw.githubusercontent.com/gribuser/fb2/4d3740e319039911c30d291abb0c8b26ec99703b/LICENSE.md",
+      "gitBlob": "89dbbf3948cad06e3cbbe426e56f6321ed60d4f2",
+      "bytes": 1308,
+      "sha256": "b5e8a64ae8c61c8587ac325cae8dafd5f49b16c1f2beff550f1e06eb9597e43c"
+    },
+    "provenancePath": "docs/specifications/fb2/provenance.json"
   },
   "iconFamily": [
     {
@@ -810,19 +818,7 @@
       "license": "MIT"
     }
   ],
-  "unresolved": [
-    {
-      "id": "fb2-companion-schemas",
-      "paths": [
-        "docs/specifications/fb2/FictionBookGenres.xsd",
-        "docs/specifications/fb2/FictionBookLang.xsd",
-        "docs/specifications/fb2/FictionBookLinks.xsd"
-      ],
-      "status": "scope-confirmation-needed",
-      "needed": "Confirm repository-level permission covering the companion schemas that lack individual visible headers. Preserve the BSD-2-Clause-style notice in FictionBook.xsd and upstream pinned provenance; do not infer the companion files are MIT.",
-      "source": "https://github.com/gribuser/fb2/tree/4d3740e319039911c30d291abb0c8b26ec99703b"
-    }
-  ],
+  "unresolved": [],
   "binaryDistributionPlan": {
     "status": "Notice mapping prepared; this manifest is not itself a public release package or a license grant for unresolved assets",
     "documentPath": "licenses/ASSETS.md",
@@ -1020,6 +1016,18 @@
         "purpose": "Upstream attribution inventory and separate UI font/color-math notices",
         "bytes": 2788,
         "sha256": "3680a40d743c8117fbaaa50ef4affc9d2f0538387ddeb45ae42e6ebb5650e63a"
+      },
+      {
+        "sourcePath": "docs/specifications/fb2/LICENSE.md",
+        "distributionPath": "licenses/fb2-schema/LICENSE.md",
+        "bytes": 1308,
+        "sha256": "b5e8a64ae8c61c8587ac325cae8dafd5f49b16c1f2beff550f1e06eb9597e43c"
+      },
+      {
+        "sourcePath": "docs/specifications/fb2/provenance.json",
+        "distributionPath": "licenses/fb2-schema/provenance.json",
+        "bytes": 2358,
+        "sha256": "5f705114b0a7081041a1ea98d125171df91da63d7692c4d8d873c63df637932d"
       }
     ],
     "additionalRequiredScope": "Merge the separately prepared Rust/native license inventory and notices. Preserve no-endorsement/trademark/change-marking/patent terms as applicable. Do not ship build/test tools unless their separate redistribution terms are fulfilled.",

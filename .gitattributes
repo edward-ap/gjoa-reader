@@ -13,3 +13,6 @@ src-tauri/assets/** -text
 
 # Preserve copied upstream license texts and exact source archives.
 licenses/** -text
+
+# Preserve pinned upstream schemas and their repository-wide license verbatim.
+docs/specifications/fb2/** -text

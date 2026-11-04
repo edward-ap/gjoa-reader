@@ -23,3 +23,19 @@
 # Nested crate/tool outputs are never source distribution inputs.
 **/target/
 **/node_modules/
+
+# Local runtime/test profiles and signing/auth material are never source.
+/session.json
+/recent.json
+/window-state.json
+/webview-profile/
+/profiles/
+/profile-*/
+**/.env
+**/.env.*
+!**/.env.example
+/.npmrc
+**/.cargo/credentials*
+*.pfx
+*.p12
+*.key

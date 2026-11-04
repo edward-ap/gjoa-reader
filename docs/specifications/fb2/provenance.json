@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/gribuser/fb2",
+  "commit": "4d3740e319039911c30d291abb0c8b26ec99703b",
+  "license": "BSD-2-Clause",
+  "licensePath": "docs/specifications/fb2/LICENSE.md",
+  "copyright": "Copyright (c) 2004, Dmitry Gribov",
+  "evidence": "Repository-wide LICENSE.md is present in the exact pinned root tree; each schema and license Git blob was verified. No contrary per-file grant was found. Individual header absence does not override the repository license.",
+  "files": [
+    {
+      "path": "docs/specifications/fb2/FictionBook.xsd",
+      "gitBlob": "bc55511aba3b74b4a2f9ab931a6f1885deac6dc1",
+      "bytes": 34541,
+      "sha256": "db2c0a239f4654db808d580b4d835fda9b41df09c169556116c4092ca47865b3",
+      "upstreamURL": "https://raw.githubusercontent.com/gribuser/fb2/4d3740e319039911c30d291abb0c8b26ec99703b/FictionBook.xsd"
+    },
+    {
+      "path": "docs/specifications/fb2/FictionBookGenres.xsd",
+      "gitBlob": "e61ad042e78d3ab1f606d926aca20dea1632a59a",
+      "bytes": 8216,
+      "sha256": "4e412d345b72c633a763e4c49f1e7c198e9f21b74b6be53d2d844d7b90133722",
+      "upstreamURL": "https://raw.githubusercontent.com/gribuser/fb2/4d3740e319039911c30d291abb0c8b26ec99703b/FictionBookGenres.xsd"
+    },
+    {
+      "path": "docs/specifications/fb2/FictionBookLang.xsd",
+      "gitBlob": "27111ff99df9b4655be35ceb72b95c3310c1b909",
+      "bytes": 480,
+      "sha256": "4873a0ec10a86a68c8e511ded5fdbb71f1cc8d7319bc71a791cd13575db51158",
+      "upstreamURL": "https://raw.githubusercontent.com/gribuser/fb2/4d3740e319039911c30d291abb0c8b26ec99703b/FictionBookLang.xsd"
+    },
+    {
+      "path": "docs/specifications/fb2/FictionBookLinks.xsd",
+      "gitBlob": "8c8abb934fbb4c0ef912ed7e24adc975a2b5f89c",
+      "bytes": 642,
+      "sha256": "f4697d9a42f191a9030b74f7611dd340b0298860b5eb30e67ea6560b52ff6af6",
+      "upstreamURL": "https://raw.githubusercontent.com/gribuser/fb2/4d3740e319039911c30d291abb0c8b26ec99703b/FictionBookLinks.xsd"
+    },
+    {
+      "path": "docs/specifications/fb2/LICENSE.md",
+      "gitBlob": "89dbbf3948cad06e3cbbe426e56f6321ed60d4f2",
+      "bytes": 1308,
+      "sha256": "b5e8a64ae8c61c8587ac325cae8dafd5f49b16c1f2beff550f1e06eb9597e43c",
+      "upstreamURL": "https://raw.githubusercontent.com/gribuser/fb2/4d3740e319039911c30d291abb0c8b26ec99703b/LICENSE.md"
+    }
+  ]
+}

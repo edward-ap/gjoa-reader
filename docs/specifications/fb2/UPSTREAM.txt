@@ -1,4 +1,6 @@
 Upstream: https://github.com/gribuser/fb2
 Commit: 4d3740e319039911c30d291abb0c8b26ec99703b
 Retrieved: 2026-09-10
-Unmodified schema files; license notices are inside each upstream file.
+License reverified: 2026-11-04
+
+All four schema files are byte-identical to the pinned upstream. The repository-wide BSD-2-Clause LICENSE.md is copied verbatim beside them; FictionBook.xsd also retains its embedded notice. See provenance.json for Git blob/SHA256 verification. Preserve the complete copyright, conditions and disclaimer in source and accompanying binary documentation. Application MIT does not relicense these schemas.

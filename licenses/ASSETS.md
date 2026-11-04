@@ -1,6 +1,6 @@
 # Asset and native-component notices
 
-The application's user-owned code may be distributed under its root license. That grant does not relicense the fonts, native components, upstream framework/extension code, schemas, or artwork listed here. Keep their original notices and terms. Asset rights marked unresolved below are not granted by this document. This is a practical notice inventory, not a legal guarantee or a certification of a complete public package.
+The application's user-owned code may be distributed under its root license. That grant does not relicense the fonts, native components, upstream framework/extension code, schemas, or artwork listed here. Keep their original notices and terms. This is a practical notice inventory, not a legal guarantee or a certification of a complete public package.
 
 ## Binary-distribution acknowledgments
 
@@ -65,15 +65,15 @@ Tæt UI is pinned to [commit bfd3ddcddf1cdc539397e5d2ac5ed3cb976e72c2](https://g
 
 ## Schemas
 
-The unmodified FB2 schema source is [gribuser/fb2 commit4d3740e319039911c30d291abb0c8b26ec99703b](https://github.com/gribuser/fb2/tree/4d3740e319039911c30d291abb0c8b26ec99703b), recorded in docs/specifications/fb2/UPSTREAM.txt. FictionBook.xsd contains a BSD-2-Clause-style copyright/conditions/disclaimer. Preserve that complete notice. The companion FictionBookGenres.xsd, FictionBookLang.xsd and FictionBookLinks.xsd lack individual visible license headers: repository-level permission scope for those companions still needs confirmation. They are not designated MIT by this document.
+The four unmodified FB2 schemas come from [gribuser/fb2 commit 4d3740e319039911c30d291abb0c8b26ec99703b](https://github.com/gribuser/fb2/tree/4d3740e319039911c30d291abb0c8b26ec99703b). That exact repository root contains [LICENSE.md](../docs/specifications/fb2/LICENSE.md), copyright 2004 Dmitry Gribov, with BSD-2-Clause redistribution terms. Its full bytes are preserved beside the schemas; [provenance.json](../docs/specifications/fb2/provenance.json) records the verified Git blobs and SHA256s. FictionBook.xsd also keeps its embedded notice. The absence of individual headers in the three companion files does not override this repository-wide license evidence. They remain BSD-2-Clause, not application MIT.
 
 ## Project artwork
 
 The ship image, native icon family and static Æ PNG are project-owned artwork under MIT. See [ARTWORK.md](ARTWORK.md) and [artwork-provenance.json](artwork-provenance.json) for license scope and file hashes. The emblem uses a stored PNG and width/height/baseline metrics; no separate font is required for its display. Page text uses Literata and UI text uses Noto Sans, under their existing font terms.
 
-## Remaining schema scope
+## Schema redistribution
 
-Only the companion FictionBookGenres.xsd, FictionBookLang.xsd and FictionBookLinks.xsd retain the specific permission-scope question described above. Project artwork licensing is separate from upstream schema permissions; no MIT grant is inferred for them.
+Retain the full copyright, conditions and disclaimer in source distributions; reproduce them in documentation/materials accompanying binary redistribution. The notice tool includes the exact root license and pinned provenance. No schema deletion or Git history rewrite is needed for this notice correction.
 
 ## Accompanying files for a binary archive/folder
 
@@ -110,3 +110,5 @@ The following source files should be copied without altering their legal text to
 | vendor/taet-ui/THIRD_PARTY_NOTICES.md | licenses/taet-ui/THIRD_PARTY_NOTICES.md |
 
 Merge the separate Rust/native dependency notice inventory as well. The absence of a blanket source-offer obligation in the inspected asset notices is not an assertion about every Rust/native dependency or every future build/tool configuration. Do not redistribute additional tools/browser/runtime installers merely because they are present on a build machine.
+
+FB2 companion notice mapping: docs/specifications/fb2/LICENSE.md and provenance.json are copied to licenses/fb2-schema/LICENSE.md and provenance.json with exact hashes.

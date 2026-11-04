@@ -19,7 +19,7 @@ GjøaReader original author-owned code is MIT, Copyright(c)2026 Edward Aponasko;
 
 ## Native libraries, fonts, specifications and artwork
 
-[licenses/ASSETS.md](licenses/ASSETS.md) records exact asset licenses, acknowledgements, project-owned artwork and remaining companion-schema scope. Preserve all publication font OFL/provenance files in src-tauri/assets/fonts, the complete PDFium LICENSE/VERSION/provenance.json/licenses set under src-tauri/assets/pdfium, and existing notices under docs/specifications/fb2. PDFium includes FreeType and Independent JPEG Group code; required acknowledgements are supplied in the asset notice document. Project artwork licensing does not grant upstream companion-schema permissions or relicense third-party fonts.
+[licenses/ASSETS.md](licenses/ASSETS.md) records exact asset licenses, acknowledgements, project-owned artwork and the pinned FB2 repository-wide BSD-2-Clause notice. Preserve all publication font OFL/provenance files in src-tauri/assets/fonts, the complete PDFium LICENSE/VERSION/provenance.json/licenses set under src-tauri/assets/pdfium, and existing notices under docs/specifications/fb2. PDFium includes FreeType and Independent JPEG Group code; required acknowledgements are supplied in the asset notice document. The schema set keeps its upstream BSD-2-Clause notice; project artwork licensing does not relicense schemas or third-party fonts.
 
 ## Build/test tools
 

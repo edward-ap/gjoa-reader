@@ -18,7 +18,8 @@
     "test:native:release": "node scripts/native-smoke.mjs --release",
     "taet:verify": "node scripts/vendor-taet-ui.mjs --verify",
     "taet:fetch": "node scripts/vendor-taet-ui.mjs --fetch",
-    "test:native:formats": "node scripts/native-formats-smoke.mjs --release"
+    "test:native:formats": "node scripts/native-formats-smoke.mjs --release",
+    "screenshots:readme": "node scripts/readme-screenshots.mjs --release"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",

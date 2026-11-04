@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 3,
+  "reviewedOn": "2026-11-04",
+  "applicationVersion": "0.1.0 (project configuration)",
+  "uiVersion": "Tæt UI 0.6.0-rc.4 (project pin)",
+  "capture": "Project-owner supplied Windows application screenshots with native titlebar. PNG bytes preserved during documentation update; no regeneration, recoloring, resizing or compositing performed.",
+  "content": "Start screen with no open book; reading and theme-editor screenshots show the original synthetic A Reading Voyage demonstration.",
+  "license": "Project-owned application material, artwork and synthetic prose are MIT. Upstream application components retain their own notices.",
+  "demo": {
+    "path": "demo/A Reading Voyage.fb2",
+    "sha256": "2d7e94d2219cc8d8e00ccb9ee7c8c4e563339d46dfdd647711fd0a8005dea59d",
+    "bytes": 10655
+  },
+  "publicationReview": {
+    "state": "Current screenshot content reviewed: original synthetic demonstration material; no third-party publication reuse hold identified.",
+    "visualPrivacy": "No personal file paths, emails, credentials or unrelated desktop windows observed.",
+    "sourceIdentification": "Visible title, author, chapter heading and prose checked against demo/A Reading Voyage.fb2.",
+    "metadata": "No nonempty PNG text metadata or EXIF chunks found."
+  },
+  "files": [
+    {
+      "path": "GjøaReader.png",
+      "width": 1088,
+      "height": 1611,
+      "bytes": 729407,
+      "sha256": "d99b04e599bc2f1ddaf0143950101a4a4eda695151813edd39a84d58d9cfd663",
+      "alt": "GjøaReader start screen with no book open",
+      "description": "Start screen with project-owned ship artwork, native Windows titlebar and no open document."
+    },
+    {
+      "path": "reading-light.png",
+      "width": 1088,
+      "height": 1611,
+      "bytes": 867643,
+      "sha256": "b6608dc7c5b2c0cdb3c3ac27fb4945f479c0c66a37a05a9e311ff1a0cd02b25d",
+      "alt": "Single Page reading with custom green paper",
+      "description": "Page 3 of the synthetic A Reading Voyage, custom green paper, dark application chrome and native Windows titlebar."
+    },
+    {
+      "path": "reading-facing-dark.png",
+      "width": 2140,
+      "height": 1611,
+      "bytes": 1297053,
+      "sha256": "828dc898c80eb9fcb6f58cea593fb336707a57f1957cfb9ca17f60d8d0ec8004",
+      "alt": "Facing Pages with dark application chrome and custom tan paper",
+      "description": "Pages 2 and 3 of the synthetic A Reading Voyage in Facing Pages, custom tan paper and native Windows titlebar."
+    },
+    {
+      "path": "custom-colors.png",
+      "width": 1088,
+      "height": 1611,
+      "bytes": 289038,
+      "sha256": "e9f4fdc85055178e24d55e511ce8507536244ba297d7fb160459b01db19fe544",
+      "alt": "Built-in Tæt ThemeDesigner editing a custom pastel application palette",
+      "description": "Custom application theme editor: RGB color, three harmony anchors, Surface/Border/State controls and light/dark foundation; synthetic A Reading Voyage behind the dialog."
+    }
+  ]
+}

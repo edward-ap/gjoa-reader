@@ -14,7 +14,7 @@ RenderViewport and Painter are local MIT derivatives of the previously archived 
 
 Cargo.lock and the Rust publication/decoder/render/IPC source remain outside this UI migration. Fonts, edition identities, original PDF behavior and the three-page Continuous cache policy are unchanged. Native PDFium version/provenance/notices remain under src-tauri/assets/pdfium. Publication fonts retain exact legacy/current bytes and OFL/provenance under src-tauri/assets/fonts. The local MIT DjVu patch and notices remain in vendor/djvu-jb2.
 
-Original application code and project-owned artwork are MIT; source specifications and dependencies retain their own terms. See LICENSE_SCOPE.md, ../THIRD_PARTY_NOTICES.md and ../licenses/ASSETS.md. Companion FB2 schema permission scope remains a separate pre-publication question. UI migration does not change those rights.
+Original application code and project-owned artwork are MIT; source specifications and dependencies retain their own terms. See LICENSE_SCOPE.md, ../THIRD_PARTY_NOTICES.md and ../licenses/ASSETS.md. The pinned FB2 schema set retains its repository-wide BSD-2-Clause license and complete notice; UI migration does not change those rights.
 
 ## Updates and validation
 

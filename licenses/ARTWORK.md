@@ -8,4 +8,4 @@ The project-owned artwork below is provided under the [MIT License](../LICENSE),
 
 The emblem is displayed as a PNG and requires no separate font. Current generated page text uses Literata; UI text uses Noto Sans. These and retained legacy fonts keep their separate OFL terms and notices in [ASSETS.md](ASSETS.md). Project artwork MIT does not relicense third-party fonts or native components.
 
-The remaining companion FB2 schema permission-scope question is documented in [ASSETS.md](ASSETS.md).
+The separately licensed FB2 schema set retains its upstream BSD-2-Clause notice; see [ASSETS.md](ASSETS.md).

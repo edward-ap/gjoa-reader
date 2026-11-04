@@ -8,7 +8,7 @@ Copyright (c)2026 Edward Aponasko. Original author-owned GjøaReader application
 - Rust dependencies and the patched DjVu decoder keep their individual licenses/copyrights. Native UnRAR includes extraction-specific restrictions; wrapper MIT/Apache metadata does not replace them. See [Rust dependency notices](../licenses/RUST_DEPENDENCIES.md).
 - MPL-covered source remains under MPL2.0. The five exact cached archives and hashes, local acquisition instructions and immutable upstream download references are in [source availability](../licenses/SOURCE_AVAILABILITY.md). Application MIT does not restrict the recipient's rights in that source.
 - Publication/UI fonts retain OFL and any reserved-name conditions. PDFium and its native dependencies retain their complete notice set, including FreeType/IJG acknowledgements. No OS font binaries are distributed.
-- Project-owned ship/icon artwork and the static Æ PNG are under MIT; see [artwork licensing](../licenses/ARTWORK.md). Source specifications retain upstream terms; the three companion-schema permission scopes remain unconfirmed.
+- Project-owned ship/icon artwork and the static Æ PNG are under MIT; see [artwork licensing](../licenses/ARTWORK.md). The pinned FB2 specifications retain their repository-wide BSD-2-Clause terms; preserve docs/specifications/fb2/LICENSE.md and provenance.json.
 - User books, Library data, metadata and external paths are not distributed and acquire no license from this repository.
 
 ## Distribution scope
