@@ -5,16 +5,19 @@ use crate::{
 };
 use std::io::Write;
 fn epub_file(path: &Path, css: &str, body: &str) {
+    epub_file_with_headers(path, css, body, "application/epub+zip", "");
+}
+fn epub_file_with_headers(path: &Path, css: &str, body: &str, mimetype: &str, doctype: &str) {
     let mut zip = zip::ZipWriter::new(std::fs::File::create(path).unwrap());
     let options =
         zip::write::SimpleFileOptions::default().compression_method(zip::CompressionMethod::Stored);
     let opf = r#"<package xmlns="http://www.idpf.org/2007/opf" version="3.0"><metadata xmlns:dc="http://purl.org/dc/elements/1.1/"><dc:title>Proof</dc:title><dc:creator>Writer</dc:creator></metadata><manifest><item id="second" href="second.xhtml" media-type="application/xhtml+xml"/><item id="first" href="first.xhtml" media-type="application/xhtml+xml"/></manifest><spine><itemref idref="first"/><itemref idref="second"/></spine></package>"#;
     let html = format!(
-        r#"<html xmlns="http://www.w3.org/1999/xhtml"><head><style>{css}</style></head><body>{body}</body></html>"#
+        r#"{doctype}<html xmlns="http://www.w3.org/1999/xhtml"><head><style>{css}</style></head><body>{body}</body></html>"#
     );
     // Archive order deliberately disagrees with the reading order.
     for (name, content) in [
-        ("mimetype", "application/epub+zip"),
+        ("mimetype", mimetype),
         (
             "META-INF/container.xml",
             r#"<container><rootfiles><rootfile full-path="OPS/book.opf"/></rootfiles></container>"#,
@@ -30,6 +33,52 @@ fn epub_file(path: &Path, css: &str, body: &str) {
         zip.write_all(content.as_bytes()).unwrap();
     }
     zip.finish().unwrap();
+}
+#[test]
+fn epub_legacy_headers_import_and_reopen() {
+    let temp = tempfile::tempdir().unwrap();
+    let root = temp.path().join("library");
+    let mut library = Library::new(&root).unwrap();
+    const XHTML_HEADER: &str = concat!(
+        "\u{feff}<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n",
+        "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" ",
+        "\"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\r\n",
+    );
+    for (index, doctype) in ["", XHTML_HEADER].iter().enumerate() {
+        // Recognition must survive both an unrelated name and upload staging.
+        let path = temp.path().join(format!("legacy-{index}.bin"));
+        epub_file_with_headers(
+            &path,
+            "",
+            "<h1>Глава</h1><p>Русский текст.</p>",
+            "application/epub+zip\r\n",
+            doctype,
+        );
+        let imported = library.import_path(&path, None).unwrap();
+        assert_eq!(imported.item.format, "epub");
+        assert!(imported.item.page_count > 0);
+        let payload = edition_root(&root, &imported.item.edition_id).unwrap();
+        let model: model::Publication =
+            serde_json::from_slice(&std::fs::read(payload.join("publication.json")).unwrap())
+                .unwrap();
+        assert!(model.text.contains("Русский текст."));
+        assert!(model.text.find("Глава").unwrap() < model.text.find("SECOND").unwrap());
+        let manifest: Manifest =
+            serde_json::from_slice(&std::fs::read(payload.join("manifest.json")).unwrap()).unwrap();
+        std::fs::remove_file(root.join(manifest.source_path)).unwrap();
+        let (doc, _) =
+            edition::resolve(&root, &imported.item.edition_id, &FormatRegistry::default()).unwrap();
+        let raster = doc
+            .render_page(
+                0,
+                RenderRequest {
+                    width: 160,
+                    height: 224,
+                },
+            )
+            .unwrap();
+        assert!(raster.rgba.chunks_exact(4).any(|p| p[0] < 240));
+    }
 }
 #[test]
 fn epub_spine_semantics_and_css_independence() {

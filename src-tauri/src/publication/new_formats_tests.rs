@@ -81,20 +81,22 @@ fn zip_container_is_not_automatically_a_comic() {
     let source = temp.path().join("renamed.cbz");
     zip_file(&source, &[("readme.txt", b"hello".to_vec())]);
     assert!(FormatRegistry::default().detect(&source).is_err());
-    zip_file(
-        &source,
-        &[
-            ("mimetype", b"application/epub+zip".to_vec()),
-            ("cover.jpg", raster(image::ImageFormat::Jpeg)),
-        ],
-    );
-    assert_eq!(
-        FormatRegistry::default()
-            .detect(&source)
-            .unwrap()
-            .format_id(),
-        epub::EPUB
-    );
+    for mimetype in ["application/epub+zip", "application/epub+zip\r\n"] {
+        zip_file(
+            &source,
+            &[
+                ("mimetype", mimetype.as_bytes().to_vec()),
+                ("cover.jpg", raster(image::ImageFormat::Jpeg)),
+            ],
+        );
+        assert_eq!(
+            FormatRegistry::default()
+                .detect(&source)
+                .unwrap()
+                .format_id(),
+            epub::EPUB
+        );
+    }
 }
 const MD: &str = "# Markdown proof\n\nРусский текст, **bold**, *italic*, `code` и [link](https://example.com). Note[^a].\n\n## Section\n\n> Quotation\n\n3. Third\n4. Fourth\n   - Nested\n\n- [x] Task\n\n```rust\nfn main() {\n    hello();\n}\n```\n\n| Name | Value |\n|:-----|------:|\n| one | 12 |\n\nLine one  \nLine two\n\n![Alt text](missing.png)\n\n[^a]: Footnote text.\n";
 #[test]

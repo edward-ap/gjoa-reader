@@ -41,10 +41,15 @@ impl DocumentFormatHandler for EpubFormatHandler {
         _header: &[u8],
     ) -> crate::reader::document::Result<ProbeResult> {
         match Archive::open(path).and_then(|mut a| a.read("mimetype", 128)) {
-            Ok(bytes) if bytes == b"application/epub+zip" => Ok(ProbeResult::Supported),
+            Ok(bytes) if is_mimetype(&bytes) => Ok(ProbeResult::Supported),
             _ => Ok(ProbeResult::NotMine),
         }
     }
+}
+pub(super) fn is_mimetype(bytes: &[u8]) -> bool {
+    // Some older converters write a line ending into this otherwise exact marker.
+    // Use the same tolerance for recognition, publication and ZIP/comic routing.
+    bytes.trim_ascii() == b"application/epub+zip"
 }
 struct Archive {
     zip: zip::ZipArchive<std::fs::File>,
@@ -146,10 +151,22 @@ fn resource(base: &str, href: &str) -> Result<String> {
     Ok(parts.join("/"))
 }
 fn xml(bytes: &[u8]) -> Result<roxmltree::Document<'_>> {
+    let source = std::str::from_utf8(bytes)?;
+    // EPUB 2 XHTML commonly declares a public DTD. Accept the declaration only;
+    // internal subsets stay forbidden and no external entity resolver is installed.
+    for token in xmlparser::Tokenizer::from(source) {
+        match token? {
+            xmlparser::Token::DtdStart { .. } => {
+                return Err("EPUB internal DTD subsets are unsupported".into());
+            }
+            xmlparser::Token::ElementStart { .. } => break,
+            _ => {}
+        }
+    }
     Ok(roxmltree::Document::parse_with_options(
-        std::str::from_utf8(bytes)?,
+        source,
         roxmltree::ParsingOptions {
-            allow_dtd: false,
+            allow_dtd: true,
             nodes_limit: 250_000,
             ..Default::default()
         },
@@ -451,7 +468,7 @@ pub fn publish(path: &Path, root: &Path, manifest: &mut Manifest) -> Result<()> 
     #[cfg(test)]
     PARSES.with(|n| n.set(n.get() + 1));
     let mut archive = Archive::open(path)?;
-    if archive.read("mimetype", 128)? != b"application/epub+zip" {
+    if !is_mimetype(&archive.read("mimetype", 128)?) {
         return Err("Not an EPUB container".into());
     }
     if archive.names.contains("META-INF/encryption.xml") {
@@ -613,4 +630,58 @@ pub fn publish(path: &Path, root: &Path, manifest: &mut Manifest) -> Result<()> 
         &serde_json::to_vec(&book)?,
     )?);
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn epub_mimetype_tolerance_is_limited_to_surrounding_ascii_whitespace() {
+        for bytes in [
+            b"application/epub+zip".as_slice(),
+            b"application/epub+zip\n",
+            b" \tapplication/epub+zip\r\n",
+        ] {
+            assert!(is_mimetype(bytes));
+        }
+        for bytes in [
+            b"application/epub+zip-extra".as_slice(),
+            b"application/epub+zip\0",
+            b"application/epub +zip",
+            b"application/zip",
+            b"",
+        ] {
+            assert!(!is_mimetype(bytes));
+        }
+    }
+
+    #[test]
+    fn epub_doctype_never_resolves_external_resources_or_allows_internal_subsets() {
+        for declaration in [
+            "<!DOCTYPE html>",
+            "<!DOCTYPE html SYSTEM 'file:///nonexistent-epub.dtd'>",
+            "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.1//EN' 'http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd'>",
+        ] {
+            let source = format!("{declaration}<html><body><p>Text &amp; more</p></body></html>");
+            assert!(xml(source.as_bytes()).is_ok());
+        }
+        for declaration in [
+            "<!DOCTYPE html [<!ENTITY local 'expanded'>]>",
+            "<!DOCTYPE html [<!ENTITY secret SYSTEM 'file:///secret'>]>",
+            "<!DOCTYPE html SYSTEM 'http://example.invalid/epub.dtd' []>",
+        ] {
+            let source = format!("{declaration}<html><body><p>Text</p></body></html>");
+            assert!(
+                xml(source.as_bytes())
+                    .unwrap_err()
+                    .to_string()
+                    .contains("internal DTD")
+            );
+        }
+        assert!(
+            xml(b"<!DOCTYPE html SYSTEM 'file:///nonexistent-epub.dtd'><html>&unknown;</html>")
+                .is_err()
+        );
+    }
 }

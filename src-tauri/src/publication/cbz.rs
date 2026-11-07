@@ -44,7 +44,7 @@ impl DocumentFormatHandler for CbzFormatHandler {
             if let Ok(entry) = archive.by_name("mimetype") {
                 let mut bytes = Vec::new();
                 entry.take(128).read_to_end(&mut bytes)?;
-                if bytes == b"application/epub+zip" {
+                if super::epub::is_mimetype(&bytes) {
                     return Ok(ProbeResult::NotMine);
                 }
             }
